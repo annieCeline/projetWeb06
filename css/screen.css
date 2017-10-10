@@ -1,0 +1,203 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #303030;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
+
+    /*    NAVIGATIONS */
+
+nav {
+    background-color: #ef562d;
+    position: fixed;
+    opacity: 1;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none; 
+    padding-left: 0px;
+}
+
+li {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 1.2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #303030;
+    font-style: italic;
+}
+
+#nav_laterale {
+/*    color: #ef562d;*/
+    align-items: center;
+    border: 1px dashed #ef562d;
+    border-radius: 10%;
+    border-right: none;
+    box-shadow: 2px 9px 43px -5px rgba(0,0,0,0.75);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    height: 9rem;;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    right: 0px;
+    width: 2.5rem;
+}
+
+#reseaux_sociaux {
+    display: flex;
+    flex-direction: column;
+}
+
+#profil_recherche {
+    display: flex;
+    flex-direction: column;
+}
+
+
+    /*    HEADER*/
+
+header {
+    align-items: center;
+    background-image: url(../assets/Logo.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 23rem;
+    width: 75%;
+}
+
+header > h1 {
+    color: #ef562d;
+    font-size: 4.5rem; 
+    line-height: 8rem;
+    margin-left: 20rem;
+    position: relative;
+    bottom: 2rem;
+}
+
+header > p {
+    line-height: 2.5rem;
+    width: 60%; 
+}
+
+header > img {
+    max-width: 100%;
+}
+
+/*    SECTIONS PROGRAMME*/
+
+section, footer{
+    margin: auto;
+    width: 75%;
+}
+
+#programme {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8rem;    
+    padding-top: 8rem;
+}
+
+.programme_images {
+    display: flex;
+    width: 80rem;
+}
+
+#programme h2 {
+    color: #ef562d;
+    font-size: 3.5rem;
+    line-height:4rem;
+    margin-left: 2rem;
+    padding-right: 2rem;
+}
+
+#programme p {
+    font-size: 2rem;    
+    font-weight: 400;
+}
+
+#programme img {
+    height: 200px;
+    padding: 1.4rem;
+    width: 250px;
+}
+
+    /*SECTION COUP DE COEUR*/
+
+#coupDeCoeur_container {
+    background-color: #ef562d;
+    margin-top: 12rem;
+    margin-bottom: 4rem;
+    padding-bottom: 5rem;    
+    padding-top: 5rem;
+}
+
+#coupDeCoeur_container div {
+    margin: auto;
+    width: 75%;
+}
+
+q {
+    color: white;
+    font-size: 1.8rem;
+    font-style: italic;
+    line-height: 2.5rem;
+    quotes: "\00ab" "\00bb";
+    text-align: center;
+}
+
+#coupDeCoeur_container p{
+    color: white;
+    text-align: center;
+}
+
+#coupDeCoeur_container img {
+    vertical-align: middle;
+}
+
+#coupDeCoeur_container a {
+    color: white;
+    font-size: 1.6rem;
+    font-style: italic;
+    padding-left: 2rem; 
+    padding-right: 2rem;
+    text-decoration: none;
+}
+
+#coupDeCoeur_container a:hover {
+    text-decoration: underline;    
+}
+
+
+        /*FOOTER*/
+
+footer {
+    border-top: 1px solid #ef562d;
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: space-between;
+    margin-top: 10rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
