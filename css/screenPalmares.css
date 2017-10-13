@@ -1,0 +1,258 @@
+/*orange: ef562d*/
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	color: #303030;
+	font-family: 'Space Mono', monospace;
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+}
+
+
+/*    NAVIGATIONS */
+
+nav {
+	background-color: #ef562d;
+	position: fixed;
+	opacity: 1;
+	width: 100%;
+}
+
+
+/*Nav plus grand que les autres parties*/
+
+header ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style: none;
+}
+
+
+/*nav avec même width que les autres parties*/
+
+/*
+
+ul {
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+
+}
+*/
+
+/* code annie*/
+
+header nav {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding-left: 0px;
+}
+
+header li {
+	font-size: 1.8rem;
+	font-weight: 700;
+	margin-left: 4rem;
+	margin-right: 4rem;
+	padding: 1.2rem;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #303030;
+	font-style: italic;
+}
+
+
+/* logo et phrase de présentation*/
+
+#presentation {
+	align-items: center;
+	background-image: url(../assets/images/logo/logo.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	padding-top: 23rem;
+	width: 75%;
+}
+
+#presentation > h1 {
+	color: #ef562d;
+	font-size: 4.5rem;
+	line-height: 8rem;
+	margin-left: 20rem;
+	position: relative;
+	bottom: 2rem;
+}
+
+#presentation > p {
+	line-height: 2.5rem;
+	width: 60%;
+}
+
+#presentation > img {
+	max-width: 100%;
+}
+
+
+/*
+
+Les réseaux sociaux 
+*/
+
+#nav_laterale {
+	/* color: #ef562d;*/
+	border: 1px dashed #ef562d;
+	border-radius: 15%;
+	border-right: none;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.6rem;
+	/*    height: 9rem;*/
+	justify-content: space-between;
+	padding: 1rem;
+	position: fixed;
+	top: 20%;
+	right: 0px;
+	width: 2.5rem;
+}
+
+#reseaux_sociaux {
+	display: flex;
+	flex-direction: column;
+}
+
+#profil_recherche {
+	display: flex;
+	flex-direction: column;
+}
+
+i {
+	padding: 1.5rem;
+}
+
+
+/*Sections*/
+
+section,
+footer {
+	margin: 0 auto;
+	width: 75%;
+}
+
+section {
+	padding-bottom: 2.5rem;
+	margin-bottom: 2.5rem;
+}
+
+main > section:nth-child(2),
+section:nth-child(3),
+section:nth-child(4) {
+	border-bottom: 1px solid #ef562d;
+	
+}
+
+#ParentWebDoc,#ParentWebSerie,#ParentTransmedia,#projetc {
+	display: flex;
+	flex-direction: column;	
+	justify-content: space-between;
+	
+}
+
+
+
+main section:not(:first-child) h2 {
+	color: #ef562d;
+}
+
+h2{
+	margin-bottom: 7rem;
+
+	font-size: 4rem;
+}
+
+#ParentWebDoc h2 {
+	align-self: flex-end;
+}
+
+#ParentTransmedia h2 {
+	align-self: flex-end;
+}
+
+
+.previewFilms {	
+	width:300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+
+
+.previewFilms figure {
+	margin: 0;
+	padding: 0;
+}
+
+
+.previewFilms img {
+	width: 300px;
+
+}
+
+.previewFilms p, figcaption {
+	text-align: center;
+}
+
+
+.previewFilms:nth-child(2) {
+position: absolute;
+	top:-5%;
+	left:34%;
+	
+
+
+}
+
+.parentPreviewFilms{
+	
+/*	width:100%;*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items:flex-start;
+	position: relative;
+	z-index: -1;
+}
+
+
+/*FOOTER*/
+
+footer {
+	border-top: 1px solid #ef562d;
+	display: flex;
+	font-size: 1.4rem;
+	justify-content: space-between;
+	margin-top: 10rem;
+	padding-top: 2rem;
+	padding-bottom: 1.5rem;
+}
+
+
+
+/* Responsive ____________________________________ */
