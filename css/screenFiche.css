@@ -53,6 +53,7 @@ nav a:hover {
     flex-direction: column;
     font-size: 1.6rem;
     height: 9rem;
+    ;
     justify-content: space-between;
     padding: 1rem;
     position: fixed;
@@ -71,7 +72,7 @@ nav a:hover {
 }
 
 
-/* HEADER */
+/*    HEADER*/
 
 header {
     align-items: center;
@@ -100,7 +101,6 @@ header>p {
     margin: 4rem;
 }
 
-
 /*
 header>img {
     max-width: 100%;
@@ -108,7 +108,7 @@ header>img {
 */
 
 
-/* SECTIONS INFO */
+/*    SECTIONS PROGRAMME*/
 
 section,
 footer {
@@ -116,8 +116,7 @@ footer {
     width: 75%;
 }
 
-#programme,
-#don {
+#programme {
     display: flex;
     justify-content: space-around;
     padding-bottom: 8rem;
@@ -132,70 +131,86 @@ footer {
     padding-right: 2rem;
 }
 
-#programme div {
-    width: 60%;
+#programme p {
+    font-size: 2rem;
+    font-weight: 400;
+}
+#programme p span{
+    font-weight: bold;
 }
 
-#programme p {
-    font-weight: 400;
+#programme img {
+    height: 200px;
+    padding: 1.4rem;
+    width: 250px;
+}
+
+
+/*SECTION COUP DE COEUR*/
+
+#trailer {
+    color: #ffffff;
+    font-size: 3.5rem;
+    line-height: 4rem;
     margin-left: 2rem;
     padding-right: 2rem;
+    text-align: center;
 }
 
-#don {
-    align-items: center;
-}
-
-#don button {
-    height: 4rem;
-    color: #fff;
+#coupDeCoeur_container {
     background-color: #ef562d;
-    padding-left: 1.4rem;
-    padding-right: 1.4rem;
-    border-radius: 1.4rem;
+    margin-top: 12rem;
+    margin-bottom: 4rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
 }
 
-#logoDon {
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
+#coupDeCoeur_container div {
+    width: 56rem;
+    margin: auto;
+    width: 75%;
 }
 
-
-/*SECTION PLAN*/
-
-#carte {
-    display: flex;
-    flex-direction: column;
+#coupDeCoeur_container div:nth-child(2){
+    width: 56%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-
-/*SECTION CONTACT*/
-
-form {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+#coupDeCoeur_container iframe {
+    width: 56rem;
+    height: 31rem;
 }
 
-form button {
-    height: 4rem;
-    width: 15rem;
-    background-color: none;
-    border: 0.1rem solid #ef562d;
-    border-radius: 2.4rem;
+q {
+    color: white;
+    font-size: 1.8rem;
+    font-style: italic;
+    line-height: 2.5rem;
+    quotes: "\00ab" "\00bb";
+    text-align: center;
 }
 
-form input,
-textarea {
-    border: 0.1rem solid #ef562d;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    resize: none;
+#coupDeCoeur_container p {
+    color: white;
+    text-align: center;
 }
 
-textarea {
-    height: 10rem;
+#coupDeCoeur_container img {
+    vertical-align: middle;
+}
+
+#coupDeCoeur_container a {
+    color: white;
+    font-size: 1.4rem;
+    font-style: italic;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-decoration: none;
+}
+
+#coupDeCoeur_container a:hover {
+    text-decoration: underline;
 }
 
 
@@ -209,37 +224,4 @@ footer {
     margin-top: 10rem;
     padding-top: 2rem;
     padding-bottom: 1.5rem;
-}
-
-
-/*MEDIA QUERIES */
-
-@media (max-width: 900px) {
-    /* HEADER */
-    header {
-        background-size: auto;
-        flex-direction: column;
-    }
-    header>p {
-        line-height: 2.5rem;
-        width: 90%;
-        margin: 0rem;
-    }
-    /* SECTIONS INFO */
-    #programme,
-    #don {
-        flex-direction: column;
-    }
-    #programme h2 {
-        order: -1;
-    }
-    #carte iframe {
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-    }
-    form {
-        width: 100%;
-    }
 }
