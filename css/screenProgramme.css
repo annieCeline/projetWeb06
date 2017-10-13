@@ -1,0 +1,308 @@
+/*orange: ef562d*/
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	color: #303030;
+	font-family: 'Space Mono', monospace;
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+}
+
+
+/*    NAVIGATIONS */
+
+nav {
+	background-color: #ef562d;
+	position: fixed;
+	opacity: 1;
+	width: 100%;
+}
+
+
+/*Nav plus grand que les autres parties*/
+
+header ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style: none;
+}
+
+
+/*nav avec même width que les autres parties*/
+
+/*
+
+ul {
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+
+}
+*/
+
+
+/* code annie*/
+
+
+header nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0px;
+}
+
+
+header li {
+	font-size: 1.8rem;
+	font-weight: 700;
+	
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 1.2rem;
+
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #303030;
+	font-style: italic;
+}
+
+
+/*
+
+Les réseaux sociaux 
+*/
+
+#nav_laterale {
+	/* color: #ef562d;*/
+	border: 1px dashed #ef562d;
+	border-radius: 15%;
+	border-right: none;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.6rem;
+	/*    height: 9rem;*/
+	justify-content: space-between;
+	padding: 1rem;
+	position: fixed;
+	top: 20%;
+	right: 0px;
+	width: 2.5rem;
+}
+
+#reseaux_sociaux {
+	display: flex;
+	flex-direction: column;
+}
+
+#profil_recherche {
+	display: flex;
+	flex-direction: column;
+}
+
+i {
+	padding: 1.5rem;
+}
+
+#presentation {
+	align-items: center;
+	background-image: url(../assets/images/logo/logo.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	padding-top: 23rem;
+	width: 75%;
+}
+
+#presentation>h1 {
+	color: #ef562d;
+	font-size: 4.5rem;
+	line-height: 8rem;
+	margin-left: 20rem;
+	position: relative;
+	bottom: 2rem;
+}
+
+#presentation>p {
+	line-height: 2.5rem;
+	width: 60%;
+}
+
+#presentation>img {
+	max-width: 100%;
+}
+
+
+/*First section*/
+
+section:nth-of-type(2) {
+	background-color: #ef562d;
+	display: flex;
+	justify-content: space-around;
+	color: #e6e6e6;
+}
+
+section:nth-of-type(2) div {
+	display: flex;
+	flex-direction: column;
+}
+
+section:nth-of-type(2) a {}
+
+section:nth-of-type(2) a {
+	color: #e6e6e6;
+}
+
+section:nth-of-type(2) div:nth-last-child(1) {
+	margin: auto;
+	width: 75%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+/*Button Tag films*/
+
+#catalogueFilms {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	color: #ef562d;
+}
+
+#tagsFilms {
+	width: 100%;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: #ef562d;
+}
+
+button {
+	border: 1px solid #ef562d;
+	background-color: #ffffff;
+}
+
+section:not(:nth-of-type(2)),
+footer {
+	margin: auto;
+	width: 75%;
+}
+
+
+/*Le catalogue*/
+
+#previewFilms {
+	width: 100%;
+	padding: 0;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position: relative;
+	z-index: -1;
+}
+
+#previewFilms ul {
+	display: block;
+	margin: 5px;
+}
+
+#previewFilms img {
+	max-width: 300px;
+	max-height: 260px;
+	display: block;
+}
+
+#previewFilms a {
+	display: block;
+	position: relative;
+	width: 100%;
+	z-index: 0;
+	/* background-color: rgba(90, 90, 90, 0.5);*/
+}
+
+#sectionFilms li {
+	display:block;
+	list-style: none;
+	position: relative;
+	margin-top: 15px;
+	  overflow:hidden;
+}
+
+#sectionFilms .hoverInfo {
+	display: none;
+	width:100%;
+	background-color: rgba(28, 25, 18, 0.7);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	color: white;
+}
+
+.hoverInfo #infoFilm {
+	position: absolute;
+	left: 15%;
+	top: 25%;
+	text-align: center;
+}
+
+.hoverInfo #dateLieu {
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
+}
+
+.hoverInfo #dateLieu h4:first-child {
+	color: orange;
+}
+
+#infosAnnexes {
+	text-align: center;
+}
+
+.hoverInfo #moreInfo {
+	position: absolute;
+	bottom: 4%;
+	right: 4%;
+	color: blue;
+}
+
+h3,
+h4 {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+
+/*FOOTER*/
+
+footer {
+	border-top: 1px solid #ef562d;
+	display: flex;
+	font-size: 1.4rem;
+	justify-content: space-between;
+	margin-top: 10rem;
+	padding-top: 2rem;
+	padding-bottom: 1.5rem;
+}
