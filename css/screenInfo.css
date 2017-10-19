@@ -27,7 +27,7 @@ ul {
 }
 
 li {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: 700;
     margin-left: 4rem;
     margin-right: 4rem;
@@ -46,9 +46,11 @@ nav a:hover {
 
 #nav_laterale {
     /*    color: #ef562d;*/
+    align-items: center;
     border: 1px dashed #ef562d;
     border-radius: 15%;
     border-right: none;
+    box-shadow: -2px 4px 10px -5px rgba(0, 0, 0, 0.75);
     display: flex;
     flex-direction: column;
     font-size: 1.6rem;
@@ -116,7 +118,7 @@ footer {
     width: 75%;
 }
 
-#programme,
+.programme,
 #don {
     display: flex;
     justify-content: space-around;
@@ -124,7 +126,7 @@ footer {
     padding-top: 8rem;
 }
 
-#programme h2 {
+.programme h2 {
     color: #ef562d;
     font-size: 3.5rem;
     line-height: 4rem;
@@ -132,11 +134,11 @@ footer {
     padding-right: 2rem;
 }
 
-#programme div {
+.programme div {
     width: 60%;
 }
 
-#programme p {
+.programme p {
     font-weight: 400;
     margin-left: 2rem;
     padding-right: 2rem;
@@ -214,25 +216,56 @@ footer {
 
 /*MEDIA QUERIES */
 
-@media (max-width: 900px) {
+@media screen and (min-width: 501px) and (max-width: 960px) {
     /* HEADER */
     header {
-        background-size: auto;
+        align-items: flex-start;
+        background-size: 200px;
+        background-position: left 10rem;
         flex-direction: column;
+        width: 90%;
+        padding-top: 9rem;
+    }
+    header>h1 {
+        margin-left: 15rem;
+        margin-top: 9.5rem;
     }
     header>p {
-        line-height: 2.5rem;
         width: 90%;
-        margin: 0rem;
+    }
+    /*NAVIGATIONS */
+    li {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 0.2rem;
+        text-align: center;
     }
     /* SECTIONS INFO */
-    #programme,
+    .programme,
     #don {
         flex-direction: column;
     }
-    #programme h2 {
+    .programme h2 {
         order: -1;
+        font-size: 3rem;
     }
+    .programme div {
+        width: 100%;
+    }
+    #logoDon {
+        width: 75%;
+    }
+    /*SECTION VIDEO*/
+    #video-container div {
+        max-width: 100%;
+}
+    /*NAVIGATIONS */
+    #nav_laterale {
+        top: 20rem;
+        width: 2rem;
+    }
+    /*SECTION PLAN*/
     #carte iframe {
         left: 0;
         top: 0;
@@ -241,5 +274,65 @@ footer {
     }
     form {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        align-items: flex-start;
+        background-size: 140px;
+        background-position: left 9rem;
+        flex-direction: column;
+        width: 90%;
+        padding-top: 9rem;
+    }
+    header>h1 {
+        margin-left: 9.5rem;
+        margin-top: 8rem;
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+    header>p {
+        width: 90%;
+        margin: 1rem;
+    }
+    /* SECTIONS INFO */
+    section,
+    footer {
+        width: 90%;
+    }
+    .programme,
+    #don {
+        flex-direction: column;
+    }
+    .programme h2 {
+        order: -1;
+        font-size: 3rem;
+    }
+    .programme div {
+        width: 100%;
+    }
+    #logoDon {
+        width: 90%;
+    }
+    /*    NAVIGATIONS */
+    #nav_laterale {
+        top: 15rem;
+        width: 1.50rem;
+        height: 7rem;
+    }
+    /*SECTION PLAN*/
+    #carte iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+    form {
+        width: 100%;
+    }
+    /*FOOTER*/
+    footer {
+        flex-direction: column;
     }
 }
