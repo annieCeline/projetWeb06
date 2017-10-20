@@ -10,12 +10,30 @@
     <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/screenFiche.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i" rel="stylesheet">  
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+    
+        
+    $('nav > div').click(function(e){
+        $('nav > ul').toggleClass("visible"); 
+   
+    });    
+        
+    });
+    </script>
 
 </head>
 
 <body>
     <nav>
+        <div>
+            <img src="./assets/symboleMenu50x76.png" alt="Menu">
+        </div>
+   
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="programme.html">Programme</a></li>
@@ -23,11 +41,11 @@
             <li><a href="palmares.html">Palmares</a></li>
             <li><a href="lefestival.html">Le Festival</a></li>
         </ul>
+    
     </nav>
 
     <header>
-        <!--        <img src="./assets/LogoGras_Kerning0etTitre324x197.png" alt="logo">-->
-        <h1>Le <br>Festival</h1>
+        <h1>Web <br>Série</h1>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nobis, at neque nostrum. Dolorum porro totam aut cumque distinctio, ipsa, iusto sequi. Quis assumenda, repellendus.</p>
     </header>
@@ -48,7 +66,7 @@
 
         <div id="video-container">
             <div>
-                <h2 id="trailer">Trailer</h2>
+                <h2 id="trailer">La théorie des balls</h2>
                 <div>
                     <iframe src="https://www.youtube.com/embed/w6SraeFJl-8?rel=0&amp;controls=0&amp;showinfo=0"></iframe>
                 </div>

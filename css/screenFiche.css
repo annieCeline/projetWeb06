@@ -20,9 +20,11 @@ nav {
 }
 
 ul {
+    align-items: center;
     display: flex;
     justify-content: center;
     list-style: none;
+    margin: 0px;
     padding-left: 0px;
 }
 
@@ -36,12 +38,19 @@ li {
 
 nav a {
     color: white;
+    padding-bottom: 0.2rem;
     text-decoration: none;
 }
 
 nav a:hover {
     color: #303030;
-    font-style: italic;
+    border-bottom: 1px solid #303030;
+}
+
+        /*MOBILE // MENU HAMBURGER REVISITE */
+
+nav > div {
+    display: none;
 }
 
 #nav_laterale {
@@ -50,7 +59,7 @@ nav a:hover {
     border: 1px dashed #ef562d;
     border-radius: 15%;
     border-right: none;
-    box-shadow: -2px 4px 10px -5px rgba(0,0,0,0.75);
+    box-shadow: -2px 4px 10px -5px rgba(0, 0, 0, 0.75);
     display: flex;
     flex-direction: column;
     font-size: 1.6rem;
@@ -89,11 +98,12 @@ header {
 
 header>h1 {
     color: #ef562d;
-    font-size: 4.5rem;
+    font-size: 4rem;
     line-height: 8rem;
     margin-left: 20rem;
     position: relative;
     bottom: 2rem;
+    z-index: -1;
 }
 
 header>p {
@@ -101,13 +111,6 @@ header>p {
     width: 60%;
     margin: 4rem;
 }
-
-
-/*
-header>img {
-    max-width: 100%;
-}
-*/
 
 
 /*    SECTIONS PROGRAMME*/
@@ -118,14 +121,14 @@ footer {
     width: 75%;
 }
 
-#programme {
+.programme {
     display: flex;
     justify-content: space-around;
     padding-bottom: 8rem;
     padding-top: 8rem;
 }
 
-#programme h2 {
+.programme h2 {
     color: #ef562d;
     font-size: 3.5rem;
     line-height: 4rem;
@@ -133,16 +136,16 @@ footer {
     padding-right: 2rem;
 }
 
-#programme p {
+.programme p {
     font-size: 2rem;
     font-weight: 400;
 }
 
-#programme p span {
+.programme p span {
     font-weight: bold;
 }
 
-#programme img {
+.programme img {
     height: 200px;
     padding: 1.4rem;
     width: 250px;
@@ -156,7 +159,7 @@ footer {
     font-size: 3.5rem;
     line-height: 4rem;
     margin-left: 2rem;
-    padding-right: 2rem;
+    margin-right: 2rem;
     text-align: center;
 }
 
@@ -171,18 +174,18 @@ footer {
 #video-container div {
     width: 56rem;
     margin: auto;
-    width: 75%;
 }
 
 #video-container div:nth-child(2) {
-    width: 56%;
+    width: 56rem;
+    height: 31rem;
     margin-left: auto;
     margin-right: auto;
 }
 
 #video-container iframe {
-    width: 56rem;
-    height: 31rem;
+    width: 100%;
+    height: 100%;
 }
 
 q {
@@ -247,27 +250,45 @@ footer {
     .programme div {
         width: 100%;
     }
-    #logoDon {
-        width: 75%;
+    /*SECTION VIDEO*/
+    #video-container div {
+        width: 40rem;
+    }
+    #video-container div:nth-child(2) {
+        width: 40rem;
+        height: 22rem;
     }
     /*    NAVIGATIONS */
     #nav_laterale {
         top: 20rem;
         width: 2rem;
     }
-    /*SECTION PLAN*/
-    #carte iframe {
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-    }
-    form {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 500px) {
+            /*NAV     */
+    .visible {
+        background-color: #ef562d; 
+        display: block;
+        text-align: center;
+    }
+    
+    nav {
+        background-color: white;
+    }
+
+    nav > div { /*La souris/menu hamb apparait*/
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul { 
+        display: none;
+    } 
+    
+    nav > ul > li {
+        font-size: 2.5rem;
+    }
     header {
         align-items: flex-start;
         background-size: 140px;
@@ -304,6 +325,16 @@ footer {
     }
     #logoDon {
         width: 90%;
+    }
+    
+
+    /*SECTION VIDEO*/
+    #video-container div {
+        width: 25rem;
+    }
+    #video-container div:nth-child(2) {
+        width: 25rem;
+        height: 14rem;
     }
     /*    NAVIGATIONS */
     #nav_laterale {
