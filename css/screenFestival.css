@@ -9,8 +9,7 @@ body {
     line-height: 2.5rem;
 }
 
-
-    /*    NAVIGATIONS */
+/*    NAVIGATIONS */
 
 nav {
     background-color: #ef562d;
@@ -76,7 +75,6 @@ nav a:hover {
     display: flex;
     flex-direction: column;
 }
-
 
     /*    HEADER*/
 
@@ -153,64 +151,7 @@ section, footer{
     width: 250px;
 }
 
-    /*SECTION COUP DE COEUR*/
-
-#coupDeCoeur_container {
-/*    background-color: #ef562d;*/
-    background-image: url(../assets/coupDeCoeurCover.png);
-    background-repeat: round;
-    background-size: contain;
-    margin-top: 12rem;
-    margin-bottom: 4rem;
-    padding-bottom: 11rem;    
-    padding-top: 15rem;
-/*    transform: rotate(-3deg);*/
-}
-
-#coupDeCoeur_container div {
-    margin: auto;
-    width: 75%;
-}
-
-q {
-    color: white;
-    font-size: 1.4rem;
-    font-style: italic;
-    line-height: 2.5rem;
-    quotes: "\00ab" "\00bb";
-    text-align: center;
-    vertical-align: middle;
-}
-
-#coupDeCoeur_container p{
-    color: white;
-    text-align: center;
-}
-
-#coupDeCoeur_container img {
-    vertical-align: middle;
-    height: 6rem;
-    width: 6rem;
-}
-
-#coupDeCoeur_container a {
-    color: white;
-    font-size: 1.6rem;
-    font-style: italic;
-    margin-left: 2rem; 
-    margin-right: 2rem;
-    padding-bottom: 0.6rem;
-    text-decoration: none;
-}
-
-#coupDeCoeur_container a:hover {
-    border-bottom: 1px solid #303030;
-    color: #303030;
-/*    text-decoration: underline;    */
-}
-
-
-        /*FOOTER*/
+ /*FOOTER*/
 
 footer {
     border-top: 1px solid #ef562d;
@@ -222,12 +163,11 @@ footer {
     padding-bottom: 1.5rem;
 }
 
-        /*MOBILE // MENU HAMBURGER REVISITE */
+       /*MOBILE // MENU HAMBURGER REVISITE */
 
 nav > div {
     display: none;
 }
-
 
         /*MEDIA QUERIES*/
         
