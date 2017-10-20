@@ -1,5 +1,7 @@
 /*orange: ef562d*/
 
+/*blue: #2dc6ef;*/
+
 html {
 	font-size: 62.5%;
 }
@@ -12,53 +14,29 @@ body {
 }
 
 
-/*    NAVIGATIONS */
+/*NAVIGATION*/
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	justify-content: center;
+	list-style: none;
+	padding-left: 0px;
+}
 
 nav {
 	background-color: #ef562d;
 	position: fixed;
 	opacity: 1;
 	width: 100%;
+	z-index: 2;
 }
 
 
-/*Nav plus grand que les autres parties*/
-
-header ul {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	list-style: none;
-}
-
-
-/*nav avec même width que les autres parties*/
-
-/*
-
-ul {
-    margin: 0 auto;
-    width: 75%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-    padding-left: 0;
-
-}
-*/
-
-/* code annie*/
-
-header nav {
-	display: flex;
-	justify-content: center;
-	list-style: none;
-	padding-left: 0px;
-}
-
-header li {
-	font-size: 1.8rem;
+nav li {
+	font-family: 'Megrim', cursive;
+	font-size: 1.9rem;
 	font-weight: 700;
 	margin-left: 4rem;
 	margin-right: 4rem;
@@ -76,11 +54,43 @@ nav a:hover {
 }
 
 
-/* logo et phrase de présentation*/
+/*LES RESEAUX SOCIAUX */
 
-#presentation {
+#nav_laterale {
+	/* color: #ef562d;*/
 	align-items: center;
-	background-image: url(../assets/images/logo/logo.png);
+	border: 1px dashed #ef562d;
+	border-radius: 10%;
+	border-right: none;
+	box-shadow: 2px 9px 43px -5px rgba(0, 0, 0, 0.75);
+	display: flex;
+	flex-direction: column;
+	font-size: 1.6rem;
+	height: 9rem;
+	justify-content: space-between;
+	padding: 1rem;
+	position: fixed;
+	top: 20%;
+	right: 0px;
+	width: 2.5rem;
+}
+
+#reseaux_sociaux {
+	display: flex;
+	flex-direction: column;
+}
+
+#profil_recherche {
+	display: flex;
+	flex-direction: column;
+}
+
+
+/*HEADER*/
+
+header {
+	align-items: center;
+	background-image: url(../assets/images/logo/Logo.png);
 	background-position: left center;
 	background-repeat: no-repeat;
 	display: flex;
@@ -90,28 +100,30 @@ nav a:hover {
 	width: 75%;
 }
 
-#presentation > h1 {
+header > h1 {
 	color: #ef562d;
-	font-size: 4.5rem;
+	font-family: 'Megrim', cursive;
+	font-size: 5rem;
 	line-height: 8rem;
 	margin-left: 20rem;
 	position: relative;
 	bottom: 2rem;
+	z-index: -1;
 }
 
-#presentation > p {
+header > p {
 	line-height: 2.5rem;
+	margin: 4rem;
 	width: 60%;
 }
 
-#presentation > img {
+header > img {
 	max-width: 100%;
 }
 
 
 /*
-
-Les réseaux sociaux 
+LES RESEAUX SOCIAUX 
 */
 
 #nav_laterale {
@@ -140,10 +152,7 @@ Les réseaux sociaux
 	display: flex;
 	flex-direction: column;
 }
-
-i {
-	padding: 1.5rem;
-}
+/*
 
 
 /*Sections*/
@@ -166,7 +175,7 @@ section:nth-child(4) {
 	
 }
 
-#ParentWebDoc,#ParentWebSerie,#ParentTransmedia,#projetc {
+#sectionWebDoc,#sectionWebSerie,#sectionTransmedia,#sectionProjet {
 	display: flex;
 	flex-direction: column;	
 	justify-content: space-between;
@@ -179,17 +188,16 @@ main section:not(:first-child) h2 {
 	color: #ef562d;
 }
 
-h2{
+section h2{
 	margin-bottom: 7rem;
-
 	font-size: 4rem;
 }
 
-#ParentWebDoc h2 {
+#sectionWebDoc h2 {
 	align-self: flex-end;
 }
 
-#ParentTransmedia h2 {
+#sectionTransmedia h2 {
 	align-self: flex-end;
 }
 
@@ -255,4 +263,9 @@ footer {
 
 
 
-/* Responsive ____________________________________ */
+/* ;;;;;;;;;;;;;;Responsive ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;*/
+/* Tablette*/
+/* Mobile*/
+
+
+
