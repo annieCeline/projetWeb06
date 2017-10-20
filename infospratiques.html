@@ -12,11 +12,28 @@
 
     <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+    
+        
+    $('nav > div').click(function(e){
+        $('nav > ul').toggleClass("visible"); 
+   
+    });    
+        
+    });
+    </script>
 </head>
 
 <body>
 
     <nav>
+        <div>
+            <img src="./assets/symboleMenu50x76.png" alt="Menu">
+        </div>
+   
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="programme.html">Programme</a></li>
@@ -24,11 +41,12 @@
             <li><a href="palmares.html">Palmares</a></li>
             <li><a href="lefestival.html">Le Festival</a></li>
         </ul>
+    
     </nav>
 
 
     <header>
-        <!--        <img src="./assets/LogoGras_Kerning0etTitre324x197.png" alt="logo">-->
+
         <h1>Info <br>Pratiques</h1>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nobis, at neque nostrum. Dolorum porro totam aut cumque distinctio, ipsa, iusto sequi. Quis assumenda, repellendus.</p>

@@ -20,9 +20,11 @@ nav {
 }
 
 ul {
+    align-items: center;
     display: flex;
     justify-content: center;
     list-style: none;
+    margin: 0px;
     padding-left: 0px;
 }
 
@@ -36,13 +38,22 @@ li {
 
 nav a {
     color: white;
+    padding-bottom: 0.2rem;
     text-decoration: none;
 }
 
 nav a:hover {
     color: #303030;
-    font-style: italic;
+    border-bottom: 1px solid #303030;
 }
+
+        /*MOBILE // MENU HAMBURGER REVISITE */
+
+nav > div {
+    display: none;
+}
+
+
 
 #nav_laterale {
     /*    color: #ef562d;*/
@@ -94,6 +105,7 @@ header>h1 {
     margin-left: 20rem;
     position: relative;
     bottom: 2rem;
+    z-index: -1;
 }
 
 header>p {
@@ -278,6 +290,28 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+.visible {
+        background-color: #ef562d; 
+        display: block;
+        text-align: center;
+    }
+    
+    nav {
+        background-color: white;
+    }
+
+    nav > div { /*La souris/menu hamb apparait*/
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul { 
+        display: none;
+    } 
+    
+    nav > ul > li {
+        font-size: 2.5rem;
+    }
     header {
         align-items: flex-start;
         background-size: 140px;
@@ -315,7 +349,24 @@ footer {
     #logoDon {
         width: 90%;
     }
-    /*    NAVIGATIONS */
+    
+    nav {
+        background-color: white;
+    }
+
+    nav > div { /*La souris/menu hamb apparait*/
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul { 
+        display: none;
+    } 
+    
+    nav > ul > li {
+        font-size: 2.5rem;
+    }
+    
     #nav_laterale {
         top: 15rem;
         width: 1.50rem;
