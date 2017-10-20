@@ -1,5 +1,7 @@
 /*orange: ef562d*/
 
+/*blue: #2dc6ef;*/
+
 html {
 	font-size: 62.5%;
 }
@@ -12,62 +14,33 @@ body {
 }
 
 
-/*    NAVIGATIONS */
+/*NAVIGATION*/
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	justify-content: center;
+	list-style: none;
+	padding-left: 0px;
+}
 
 nav {
 	background-color: #ef562d;
 	position: fixed;
 	opacity: 1;
 	width: 100%;
+	z-index: 2;
 }
 
 
-/*Nav plus grand que les autres parties*/
-
-header ul {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	list-style: none;
-}
-
-
-/*nav avec même width que les autres parties*/
-
-/*
-
-ul {
-    margin: 0 auto;
-    width: 75%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-    padding-left: 0;
-
-}
-*/
-
-
-/* code annie*/
-
-
-header nav {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding-left: 0px;
-}
-
-
-header li {
-	font-size: 1.8rem;
+nav li {
+	font-family: 'Megrim', cursive;
+	font-size: 1.9rem;
 	font-weight: 700;
-	
-    margin-left: 4rem;
-    margin-right: 4rem;
-    padding: 1.2rem;
-
+	margin-left: 4rem;
+	margin-right: 4rem;
+	padding: 1.2rem;
 }
 
 nav a {
@@ -81,20 +54,19 @@ nav a:hover {
 }
 
 
-/*
-
-Les réseaux sociaux 
-*/
+/*LES RESEAUX SOCIAUX */
 
 #nav_laterale {
 	/* color: #ef562d;*/
+	align-items: center;
 	border: 1px dashed #ef562d;
-	border-radius: 15%;
+	border-radius: 10%;
 	border-right: none;
+	box-shadow: 2px 9px 43px -5px rgba(0, 0, 0, 0.75);
 	display: flex;
 	flex-direction: column;
 	font-size: 1.6rem;
-	/*    height: 9rem;*/
+	height: 9rem;
 	justify-content: space-between;
 	padding: 1rem;
 	position: fixed;
@@ -113,13 +85,12 @@ Les réseaux sociaux
 	flex-direction: column;
 }
 
-i {
-	padding: 1.5rem;
-}
 
-#presentation {
+/*HEADER*/
+
+header {
 	align-items: center;
-	background-image: url(../assets/images/logo/logo.png);
+	background-image: url(../assets/images/logo/Logo.png);
 	background-position: left center;
 	background-repeat: no-repeat;
 	display: flex;
@@ -129,26 +100,43 @@ i {
 	width: 75%;
 }
 
-#presentation>h1 {
+header > h1 {
 	color: #ef562d;
-	font-size: 4.5rem;
+	font-family: 'Megrim', cursive;
+	font-size: 5rem;
 	line-height: 8rem;
 	margin-left: 20rem;
 	position: relative;
 	bottom: 2rem;
+	z-index: -1;
 }
 
-#presentation>p {
+header > p {
 	line-height: 2.5rem;
+	margin: 4rem;
 	width: 60%;
 }
 
-#presentation>img {
+header > img {
 	max-width: 100%;
 }
 
 
-/*First section*/
+/*Gestion des sections à part le deuxième*/
+
+section:not(:nth-of-type(2)),
+footer {
+	margin: auto;
+	width: 75%;
+}
+
+section {
+	padding-bottom: 2.5rem;
+	margin-bottom: 2.5rem;
+}
+
+
+/*Download Programme*/
 
 section:nth-of-type(2) {
 	background-color: #ef562d;
@@ -162,7 +150,6 @@ section:nth-of-type(2) div {
 	flex-direction: column;
 }
 
-section:nth-of-type(2) a {}
 
 section:nth-of-type(2) a {
 	color: #e6e6e6;
@@ -180,7 +167,7 @@ section:nth-of-type(2) div:nth-last-child(1) {
 /*Button Tag films*/
 
 #catalogueFilms {
-	margin-top: 20px;
+	margin-top: 2.5rem;
 	display: flex;
 	flex-direction: column;
 	color: #ef562d;
@@ -188,7 +175,7 @@ section:nth-of-type(2) div:nth-last-child(1) {
 
 #tagsFilms {
 	width: 100%;
-	margin-top: 20px;
+	margin-top: 2.5rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -198,101 +185,183 @@ section:nth-of-type(2) div:nth-last-child(1) {
 button {
 	border: 1px solid #ef562d;
 	background-color: #ffffff;
-}
-
-section:not(:nth-of-type(2)),
-footer {
-	margin: auto;
-	width: 75%;
+	border-radius: 5%;
+	padding: 0.5rem;
+	cursor: pointer;
 }
 
 
-/*Le catalogue*/
+/*THUMBNAILS*/
 
-#previewFilms {
+/*Gestion ul */
+
+/*Gestion des li*/
+
+#sectionFilms [data-tag] {
+	display: block;
+	list-style: none;
+	position: relative;
+	margin-top: 2rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	transition: all 0.45s ease;
+	box-sizing: border-box
+}
+
+/*Gestion des thumbnails*/
+
+#thumbnails {
 	width: 100%;
 	padding: 0;
-	margin-top: 30px;
+	margin-top: 2.5rem;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	position: relative;
-	z-index: -1;
 }
 
-#previewFilms ul {
-	display: block;
-	margin: 5px;
-}
-
-#previewFilms img {
-	max-width: 300px;
-	max-height: 260px;
+#thumbnails img{
 	display: block;
 }
 
-#previewFilms a {
-	display: block;
-	position: relative;
+#thumbnails a {
 	width: 100%;
-	z-index: 0;
-	/* background-color: rgba(90, 90, 90, 0.5);*/
-}
-
-#sectionFilms li {
-	display:block;
-	list-style: none;
+	display: block;
 	position: relative;
-	margin-top: 15px;
-	  overflow:hidden;
 }
 
-#sectionFilms .hoverInfo {
-	display: none;
-	width:100%;
-	background-color: rgba(28, 25, 18, 0.7);
+
+
+/*;;;;;;;;;HOVER;;;;;;;;;;;;;;;;*/
+
+/*info hover*/
+
+[data-tag] .hoverInfo {
+	visibility: hidden;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	right: 0;
 	left: 0;
 	color: white;
-}
-
-.hoverInfo #infoFilm {
-	position: absolute;
-	left: 15%;
-	top: 25%;
 	text-align: center;
+	line-height: 1rem;
+	z-index: 1;
 }
 
-.hoverInfo #dateLieu {
-	position: absolute;
-	bottom: 5%;
-	left: 5%;
+h3:nth-of-type(1) {
+	font-size: 1.5rem;
 }
 
-.hoverInfo #dateLieu h4:first-child {
-	color: orange;
+h3:nth-of-type(2) {
+	font-size: 1.5rem;
 }
 
-#infosAnnexes {
-	text-align: center;
-}
-
-.hoverInfo #moreInfo {
-	position: absolute;
-	bottom: 4%;
-	right: 4%;
-	color: blue;
+h4{
+	font-size: 1.2rem;
 }
 
 h3,
 h4 {
-	margin-top: 2px;
-	margin-bottom: 2px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
+
+
+/*info film: titre et auteur*/
+.hoverInfo .infoFilm {
+	position: absolute;
+	left: 15%;
+	right: 15%;
+	top: 25%;
+	/*	bottom: 25%;*/
+}
+
+
+
+/*infos annexes : date, lieu, more info */
+.infosAnnexes {
+	text-align: center;
+/*	line-height: 0.5rem;*/
+}
+
+/*date et lieu*/
+.hoverInfo .dateLieu {
+	position: absolute;
+	bottom: 5%;
+	left: 3%;
+}
+
+
+/*color date*/
+.hoverInfo .dateLieu h4:first-child {
+	color: #ef562d;
+}
+
+
+/*More info*/
+.hoverInfo .moreInfo {
+	position: absolute;
+	bottom: 5%;
+	right: 3%;
+	color: #2dc6ef;
+	text-decoration-line: underline;
+}
+
+
+
+/*Gestion hover*/
+[data-tag]:before,
+[data-tag]:after {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	content: '';
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	opacity: 0;
+}
+
+[data-tag]:before {
+	-webkit-transform: scaleY(1);
+	transform: scaleY(1.5);
+}
+
+[data-tag]:after {
+	-webkit-transform: scaleY(1);
+	transform: scaleY(1.5);
+}
+
+
+[data-tag]:hover .hoverInfo {
+	top: 0;
+	left: 0;
+	visibility: visible;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+
+[data-tag]:hover:before,
+.hoverInfo:before,
+[data-tag]:hover:after,
+.hoverInfo:after {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
 
 
 /*FOOTER*/
@@ -305,4 +374,14 @@ footer {
 	margin-top: 10rem;
 	padding-top: 2rem;
 	padding-bottom: 1.5rem;
+}
+
+
+/*MEDIA QUERIES */
+
+@media (max-width: 900px) {
+	
+	
+	
+
 }
