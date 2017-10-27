@@ -29,7 +29,7 @@ ul {
 }
 
 li {
-     font-family: 'Pacifico', cursive;
+    font-family: 'Space Mono', monospace;
     font-size: 1.9rem;
     font-weight: 700;
     margin-left: 4rem;
@@ -52,7 +52,7 @@ nav a:hover {
 #nav_laterale {
 /*    color: #ef562d;*/
     align-items: center;
-    border: 1px dashed #ef562d;
+    border: 1px dashed #2dc6ef;
     border-radius: 10%;
     border-right: none;
     box-shadow: -2px 4px 10px -5px rgba(0,0,0,0.75);
@@ -94,7 +94,7 @@ header {
 
 header > h1 {
     color: #ef562d;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Space Mono', monospace;
     font-size: 5rem; 
     line-height: 8rem;
     margin-left: 20rem;
@@ -123,6 +123,7 @@ section, footer{
 .programme {
     display: flex;
     justify-content: space-between;
+    max-width: 120rem;
     padding-bottom: 8rem;    
     padding-top: 8rem;
 }
@@ -133,7 +134,7 @@ section, footer{
 
 .programme h2 {
     color: #ef562d;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Space Mono', monospace;
     font-size: 4rem;
     line-height:4rem;
     padding-right: 2rem;
@@ -145,10 +146,9 @@ section, footer{
 }
 
 .programme img {
-    border: 1px dashed #ef562d;
+    border: 1px dashed #2dc6ef;
     height: 200px;
     margin: 1.4rem;
-    max-width: 120rem;
     padding: 1.4rem;
     width: 250px;
 }
@@ -281,7 +281,26 @@ nav > div {
         margin: 1rem;
     }
     
-
+/*    SECTIONS*/
+    section,
+    footer {
+        width: 90%;
+    } 
+    .programme {
+        flex-direction: column;
+    }
+    .programme h2 {
+        order: -1;
+        font-size: 3rem;
+    }
+    .programme div {
+        width: 100%;
+    }
+    #nav_laterale {
+        top: 15rem;
+        width: 1.50rem;
+        height: 7rem;
+    }
 }
 
 
