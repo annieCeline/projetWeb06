@@ -20,7 +20,7 @@
 	<script>
 		$(document).ready(function() {
 
-			$('#catalogueFilms button').click(function() {
+			$('#filmsCategories button').click(function() {
 				//				console.log("click");
 
 				var visibleTag = $(this).data('cat');
@@ -36,6 +36,11 @@
 					}
 				});
 			});
+
+			$('nav > div').click(function(e) {
+				$('nav > ul').toggleClass("visible");
+
+			});
 		});
 	</script>
 
@@ -46,6 +51,10 @@
 <body>
 
 	<nav>
+
+		<div>
+			<img src="./assets/images/logo/symboleMenu50x76.png" alt="Menu">
+		</div>
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="programme.html">Programme</a></li>
@@ -58,16 +67,17 @@
 	<!--HEADER-->
 
 	<header>
-		<h1>Le <br>Festival</h1>
+		<h1>Le <br>Programme</h1>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nobis, at neque nostrum. Dolorum porro totam aut cumque distinctio, ipsa, iusto sequi. Quis assumenda, repellendus.</p>
 	</header>
 
 
-	<!-- Les réseaux sociaux -->
+
 
 	<main>
 
+		<!-- Les réseaux sociaux -->
 		<section id="nav_laterale">
 			<div id="reseaux_sociaux">
 				<i class="fa fa-twitter" aria-hidden="true"></i>
@@ -83,47 +93,54 @@
 		<!--Download programme-->
 		<section id="downloadProgramme">
 
-
 			<div>
+				<div>
 
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+					<p>Lorem ipsum dolor sit amet</p>
 
-				<a href=""><img src="./assets/images/logo/blackDownload.png" alt=""></a>
+<!--					<a href=""><img src="./assets/images/logo/blackDownload.png" alt=""></a>-->
 
-				<!--PDF-->
-				<!-- <a href=".pdf">Programme à télécharger</a>-->
+					<!--PDF-->
+					<!-- <a href=".pdf">Programme à télécharger</a>-->
+				</div>
+
+
+				<h2>Agenda</h2>
 			</div>
 
-
-			<h2>Les Lives</h2>
 
 
 		</section>
 
-		<!--Catalogue des films-->
 
-		<section id="catalogueFilms">
-			<h2>Le catalogue</h2>
-			<div id="tagsFilms">
-				<!--Les buttons tags-->
-				<button data-cat="tout">Tout</button>
+		<div id="parentButtonFilms">
 
-				<button data-cat="webdoc">Web Doc</button>
+			<!--Catalogue des films-->
 
-				<button data-cat="webserie">Web Serie</button>
+			<section id="filmsCategories">
 
-				<button data-cat="transmedia">Transmedia</button>
+				<h2>Le catalogue</h2>
+				<div id="tagsFilms">
+					<!--Les buttons tags-->
+					<button data-cat="tout">Tout</button>
 
-				<button data-cat="projet">Projet</button>
-			</div>
-		</section>
+					<button data-cat="webdoc">Web Doc</button>
 
-		<!--THUMBNAIL-->
-		<section id="sectionFilms">
-			<ul id="thumbnails">
-				<li data-tag="webdoc">
-					<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
+					<button data-cat="webserie">Web Serie</button>
+
+					<button data-cat="transmedia">Transmedia</button>
+
+					<button data-cat="projet">Projet</button>
+				</div>
+
+			</section>
+
+			<!--THUMBNAIL-->
+			<section id="sectionFilms">
+				<ul id="thumbnails">
+					<li data-tag="webdoc">
+						<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -142,11 +159,11 @@
 						</div>
 					</a>
 
-				</li>
+					</li>
 
 
-				<li data-tag="transmedia">
-					<a href="#"><img src="./assets/images/films/thumbnail/gentriville.png" alt="gentriville">
+					<li data-tag="transmedia">
+						<a href="#"><img src="./assets/images/films/thumbnail/gentriville.png" alt="gentriville">
 
 						<!--Hover info-->
 						<div class="hoverInfo">
@@ -165,10 +182,10 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
-				<li data-tag="webserie">
-					<a href="#"><img src="./assets/images/films/thumbnail/nanaroscope.png" alt="Nanaroscope">
+					<li data-tag="webserie">
+						<a href="#"><img src="./assets/images/films/thumbnail/nanaroscope.png" alt="Nanaroscope">
 
 						<!--Hover info-->
 						<div class="hoverInfo">
@@ -187,10 +204,10 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
-				<li data-tag="webdoc">
-					<a href="#"><img src="./assets/images/films/thumbnail/methodekenloach.png" alt="Methode ken loach">
+					<li data-tag="webdoc">
+						<a href="#"><img src="./assets/images/films/thumbnail/methodekenloach.png" alt="Methode ken loach">
 
 						<!--Hover info-->
 						<div class="hoverInfo">
@@ -209,11 +226,10 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
-				<li data-tag="webserie">
-					<a href="#"><img src="./assets/images/films/thumbnail/fallingforchallenge.png" alt="Falling for challenge">
-
+					<li data-tag="webserie">
+						<a href="#"><img src="./assets/images/films/thumbnail/fallingforchallenge.png" alt="Falling for challenge">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -231,10 +247,10 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
-				<li data-tag="webdoc">
-					<a href="#"><img src="./assets/images/films/thumbnail/donottrack2.png" alt="Do not track">
+					<li data-tag="webdoc">
+						<a href="#"><img src="./assets/images/films/thumbnail/donottrack.png" alt="Do not track">
 
 						<!--Hover info-->
 						<div class="hoverInfo">
@@ -253,10 +269,10 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
-				<li data-tag="webdoc">
-					<a href="#"><img src="./assets/images/films/thumbnail/networkeffect.png" alt="Network effect">
+					<li data-tag="webdoc">
+						<a href="#"><img src="./assets/images/films/thumbnail/networkeffect.png" alt="Network effect">
 					
 						<!--Hover info-->
 						<div class="hoverInfo">
@@ -275,10 +291,10 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
-				<li data-tag="webserie">
-					<a href="#"><img src="./assets/images/films/thumbnail/adrianbliss2.png" alt="Adrian Bliss">
+					<li data-tag="projet">
+						<a href="#"><img src="./assets/images/films/thumbnail/adrianbliss.png" alt="Adrian Bliss">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -296,10 +312,10 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
-				<li data-tag="webdoc">
-					<a href="#"><img src="./assets/images/films/thumbnail/Alma.png" alt="Alma, a tale of violence">
+					<li data-tag="webdoc">
+						<a href="#"><img src="./assets/images/films/thumbnail/Alma.png" alt="Alma, a tale of violence">
 
 						<!--Hover info-->
 						<div class="hoverInfo">
@@ -318,11 +334,11 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
 
-				<li data-tag="transmedia">
-					<a href="#"><img src="./assets/images/films/thumbnail/Alteration.png" alt="Alteration">
+					<li data-tag="transmedia">
+						<a href="#"><img src="./assets/images/films/thumbnail/Alteration.png" alt="Alteration">
 
 						<!--Hover info-->
 						<div class="hoverInfo">
@@ -341,16 +357,16 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
 
-				<li data-tag="webdoc">
-					<a href="#"><img src="./assets/images/films/thumbnail/DarkWeb.png" alt="Dark Web">
+					<li data-tag="webdoc">
+						<a href="#"><img src="./assets/images/films/thumbnail/downthedeepdarkweb.png" alt="Down the Deep Dark Web">
 
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
-								<h3>Dark Web</h3>
+								<h3>Down The Deep Dark Web</h3>
 								<h3>Auteur</h3>
 							</div>
 							<div class="infosAnnexes">
@@ -364,10 +380,10 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
-				<li data-tag="webdoc">
-					<a href="#"><img src="./assets/images/films/thumbnail/legrandcomplot.png" alt="Le grand complot">
+					<li data-tag="webdoc">
+						<a href="#"><img src="./assets/images/films/thumbnail/legrandcomplot.png" alt="Le grand complot">
 
 						<!--Hover info-->
 						<div class="hoverInfo">
@@ -386,11 +402,11 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
 
-				<li data-tag="webdoc">
-					<a href="#"><img src="./assets/images/films/thumbnail/waynak.png" alt="Waynak">
+					<li data-tag="webdoc">
+						<a href="#"><img src="./assets/images/films/thumbnail/waynak.png" alt="Waynak">
 
 						<!--Hover info-->
 						<div class="hoverInfo">
@@ -409,11 +425,11 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
 
-				<li data-tag="webserie">
-					<a href="#"><img src="./assets/images/films/thumbnail/tobecontinued.png" alt="To be continued">
+					<li data-tag="webserie">
+						<a href="#"><img src="./assets/images/films/thumbnail/tobecontinued.png" alt="To be continued">
 
 						<!--Hover info-->
 						<div class="hoverInfo">
@@ -432,11 +448,11 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
 
-				<li data-tag="webdoc">
-					<a href="#"><img src="./assets/images/films/thumbnail/terreur404.png" alt="Terreur 404">
+					<li data-tag="webdoc">
+						<a href="#"><img src="./assets/images/films/thumbnail/terreur404.png" alt="Terreur 404">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -454,10 +470,10 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
-				<li data-tag="transmedia">
-					<a href="#"><img src="./assets/images/films/thumbnail/seances.png" alt="Seances">
+					<li data-tag="transmedia">
+						<a href="#"><img src="./assets/images/films/thumbnail/seances.png" alt="Seances">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -475,10 +491,10 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
-				<li data-tag="webdoc">
-					<a href="#"><img src="./assets/images/films/thumbnail/facebookistan.png" alt="Facebookistan">
+					<li data-tag="webdoc">
+						<a href="#"><img src="./assets/images/films/thumbnail/facebookistan.png" alt="Facebookistan">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -496,12 +512,12 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
 
 
-				<li data-tag="webserie">
-					<a href="#"><img src="./assets/images/films/thumbnail/thefoxyfive1.png" alt="The Foxy Five">
+					<li data-tag="webserie">
+						<a href="#"><img src="./assets/images/films/thumbnail/thefoxyfive1.png" alt="The Foxy Five">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -519,11 +535,11 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
 
-				<li data-tag="webserie">
-					<a href="#"><img src="./assets/images/films/thumbnail/wearefathers1.png" alt="We are fathers">
+					<li data-tag="webserie">
+						<a href="#"><img src="./assets/images/films/thumbnail/wearefathers.png" alt="We are fathers">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -541,11 +557,11 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
 
-				<li data-tag="webserie">
-					<a href="#"><img src="./assets/images/films/thumbnail/browngirls.png" alt="Brown Girls">
+					<li data-tag="webserie">
+						<a href="#"><img src="./assets/images/films/thumbnail/browngirls.png" alt="Brown Girls">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -563,14 +579,14 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
 
 
 
 
-				<li data-tag="webserie">
-					<a href="#"><img src="./assets/images/films/thumbnail/clicktoyourheart1.png" alt="Click to your heart">
+					<li data-tag="webserie">
+						<a href="#"><img src="./assets/images/films/thumbnail/clicktoyourheart.png" alt="Click to your heart">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -588,10 +604,10 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
-				<li data-tag="webserie">
-					<a href="#"><img src="./assets/images/films/thumbnail/cestcalhistoire.png" alt="C'est ça l'histoire">
+					<li data-tag="webserie">
+						<a href="#"><img src="./assets/images/films/thumbnail/cestcalhistoire.png" alt="C'est ça l'histoire">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -609,11 +625,57 @@
 							</div>
 						</div>
 					</a>
-				</li>
-			</ul>
-		</section>
+					</li>
+					
+					
+					<li data-tag="webserie">
+						<a href="#"><img src="./assets/images/films/thumbnail/racontetaville.png" alt="Raconte ta ville">
+						<!--Hover info-->
+						<div class="hoverInfo">
+							<div class="infoFilm">
+								<h3>Raconte ta ville</h3>
+								<h3>Auteur</h3>
+							</div>
+							<div class="infosAnnexes">
+								<div class="dateLieu">
+									<h4>Date</h4>
+									<h4>Lieu</h4>
+								</div>
+								<div class="moreInfo">
+									<h4>More info</h4>
+								</div>
+							</div>
+						</div>
+					</a>
+					</li>
+					
+					<li data-tag="webserie">
+						<a href="#"><img src="./assets/images/films/thumbnail/latheoriedesballs.png" alt="La théorie des balls">
+						<!--Hover info-->
+						<div class="hoverInfo">
+							<div class="infoFilm">
+								<h3>La théorie des balls</h3>
+								<h3>Auteur</h3>
+							</div>
+							<div class="infosAnnexes">
+								<div class="dateLieu">
+									<h4>Date</h4>
+									<h4>Lieu</h4>
+								</div>
+								<div class="moreInfo">
+									<h4>More info</h4>
+								</div>
+							</div>
+						</div>
+					</a>
+					</li>
+				</ul>
+
+			</section>
+		</div>
+
 	</main>
-	
+
 	<!--FOOTER-->
 	<footer>
 		<p>&copy;Interface3 - 2017</p>

@@ -11,19 +11,11 @@ body {
 	font-family: 'Space Mono', monospace;
 	font-size: 1.6rem;
 	line-height: 2.5rem;
+	box-sizing: border-box;
 }
 
 
 /*NAVIGATION*/
-
-nav ul {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	justify-content: center;
-	list-style: none;
-	padding-left: 0px;
-}
 
 nav {
 	background-color: #ef562d;
@@ -33,10 +25,19 @@ nav {
 	z-index: 2;
 }
 
+nav ul {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0px;
+	padding-left: 0px;
+}
+
+
 
 nav li {
-	font-family: 'Megrim', cursive;
-	font-size: 1.9rem;
+	font-size: 1.8rem;
 	font-weight: 700;
 	margin-left: 4rem;
 	margin-right: 4rem;
@@ -45,13 +46,19 @@ nav li {
 
 nav a {
 	color: white;
+	padding-bottom: 0.2rem;
 	text-decoration: none;
 }
 
 nav a:hover {
 	color: #303030;
-	font-style: italic;
+	border-bottom: 1px solid #303030;
 }
+
+nav > div {
+	display: none;
+}
+
 
 
 /*LES RESEAUX SOCIAUX */
@@ -73,6 +80,7 @@ nav a:hover {
 	top: 20%;
 	right: 0px;
 	width: 2.5rem;
+	/*	z-index: 1;*/
 }
 
 #reseaux_sociaux {
@@ -124,11 +132,20 @@ header > img {
 
 /*Gestion des sections à part le deuxième*/
 
+/*
 section:not(:nth-of-type(2)),
 footer {
 	margin: auto;
 	width: 75%;
 }
+*/
+
+section,
+footer {
+	margin: auto;
+	width: 75%;
+}
+
 
 section {
 	padding-bottom: 2.5rem;
@@ -138,7 +155,9 @@ section {
 
 /*Download Programme*/
 
-section:nth-of-type(2) {
+#downloadProgramme {
+	margin: auto;
+	width: 100%;
 	background-color: #ef562d;
 	display: flex;
 	justify-content: space-around;
@@ -150,12 +169,11 @@ section:nth-of-type(2) div {
 	flex-direction: column;
 }
 
-
 section:nth-of-type(2) a {
 	color: #e6e6e6;
 }
 
-section:nth-of-type(2) div:nth-last-child(1) {
+#downloadProgramme div:nth-last-child(1) {
 	margin: auto;
 	width: 75%;
 	display: flex;
@@ -166,7 +184,13 @@ section:nth-of-type(2) div:nth-last-child(1) {
 
 /*Button Tag films*/
 
-#catalogueFilms {
+#parentButtonFilms {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+#filmsCategories {
 	margin-top: 2.5rem;
 	display: flex;
 	flex-direction: column;
@@ -187,7 +211,9 @@ button {
 	background-color: #ffffff;
 	border-radius: 5%;
 	padding: 0.5rem;
+	width: 100%;
 	cursor: pointer;
+	margin: 0.5rem;
 }
 
 
@@ -198,6 +224,8 @@ button {
 /*Gestion des li*/
 
 #sectionFilms [data-tag] {
+
+	/*	width:240px; */
 	display: block;
 	list-style: none;
 	position: relative;
@@ -208,7 +236,8 @@ button {
 	box-sizing: border-box
 }
 
-/*Gestion des thumbnails*/
+
+/*Gestion des thumbnails/ul*/
 
 #thumbnails {
 	width: 100%;
@@ -221,16 +250,17 @@ button {
 	position: relative;
 }
 
-#thumbnails img{
+#thumbnails img {
 	display: block;
+	width: 100%;
 }
+
 
 #thumbnails a {
 	width: 100%;
 	display: block;
 	position: relative;
 }
-
 
 
 /*;;;;;;;;;HOVER;;;;;;;;;;;;;;;;*/
@@ -262,7 +292,7 @@ h3:nth-of-type(2) {
 	font-size: 1.5rem;
 }
 
-h4{
+h4 {
 	font-size: 1.2rem;
 }
 
@@ -274,6 +304,7 @@ h4 {
 
 
 /*info film: titre et auteur*/
+
 .hoverInfo .infoFilm {
 	position: absolute;
 	left: 15%;
@@ -283,14 +314,16 @@ h4 {
 }
 
 
-
 /*infos annexes : date, lieu, more info */
+
 .infosAnnexes {
 	text-align: center;
-/*	line-height: 0.5rem;*/
+	/*	line-height: 0.5rem;*/
 }
 
+
 /*date et lieu*/
+
 .hoverInfo .dateLieu {
 	position: absolute;
 	bottom: 5%;
@@ -299,12 +332,14 @@ h4 {
 
 
 /*color date*/
+
 .hoverInfo .dateLieu h4:first-child {
 	color: #ef562d;
 }
 
 
 /*More info*/
+
 .hoverInfo .moreInfo {
 	position: absolute;
 	bottom: 5%;
@@ -314,8 +349,8 @@ h4 {
 }
 
 
-
 /*Gestion hover*/
+
 [data-tag]:before,
 [data-tag]:after {
 	background-color: rgba(0, 0, 0, 0.5);
@@ -340,7 +375,6 @@ h4 {
 	transform: scaleY(1.5);
 }
 
-
 [data-tag]:hover .hoverInfo {
 	top: 0;
 	left: 0;
@@ -352,7 +386,6 @@ h4 {
 	transition-delay: 0.1s;
 }
 
-
 [data-tag]:hover:before,
 .hoverInfo:before,
 [data-tag]:hover:after,
@@ -361,7 +394,6 @@ h4 {
 	transform: scale(1);
 	opacity: 1;
 }
-
 
 
 /*FOOTER*/
@@ -379,9 +411,157 @@ footer {
 
 /*MEDIA QUERIES */
 
-@media (max-width: 900px) {
-	
-	
-	
+/*MOBILE*/
+
+@media screen and (max-width: 500px) {
+
+	.visible {
+		background-color: #ef562d;
+		display: block;
+		text-align: center;
+	}
+	nav {
+		background-color: white;
+	}
+	nav > div {
+		/*La souris/menu hamb apparait*/
+		display: flex;
+		justify-content: flex-end;
+	}
+	nav ul {
+		display: none;
+	}
+	nav > ul > li {
+		font-size: 2.5rem;
+	}
+	header {
+		align-items: flex-start;
+		background-size: 140px;
+		background-position: left 9rem;
+		flex-direction: column;
+		width: 90%;
+		padding-top: 9rem;
+	}
+	header > h1 {
+		margin-left: 9.5rem;
+		margin-top: 8rem;
+		font-size: 3rem;
+		line-height: 4.5rem;
+	}
+	header > p {
+		width: 90%;
+		margin: 1rem;
+	}
+	/* SECTIONS INFO */
+	section,
+	footer {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	#filmsCategories {
+		width: 90%;
+	}
+
+	#downloadProgramme div {
+		margin: 0 auto;
+		width: 90%;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	#downloadProgramme h2 {
+		align-self: flex-start;
+	}
+
+	#filmsCategories h2 {
+		align-self: center;
+	}
+
+
+	/*	Button/tags*/
+	#tagsFilms {
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: column;
+		color: #ef562d;
+	}
+
+
+	button {
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+		padding: 0.5rem;
+	}
+
+	/*THUMBNAILS */
+	#thumbnails {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		position: relative;
+	}
+
+	/*FOOTER*/
+	footer {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+
+/*Tablets*/
+
+@media screen and (min-width: 501px) and (max-width: 1024px) {
+
+	header {
+		align-items: flex-start;
+		background-size: 200px;
+		background-position: left 10rem;
+		flex-direction: column;
+		width: 90%;
+		padding-top: 9rem;
+	}
+	header > h1 {
+		margin-left: 15rem;
+		margin-top: 9.5rem;
+	}
+	header > p {
+		width: 90%;
+	}
+	/*    NAVIGATIONS */
+	nav li {
+		font-size: 1.5rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		padding: 0.2rem;
+		text-align: center;
+	}
+
+	#nav_laterale {
+		top: 20rem;
+		width: 2rem;
+	}
+
+	/*Sections films*/
+	/*ul*/
+	#sectionFilms #thumbnails {
+		width: 100%;
+	}
+	/*li*/
+	#sectionFilms [data-tag] {
+		width: 45%
+	}
+
+
+
+
+
 
 }

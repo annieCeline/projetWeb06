@@ -261,7 +261,8 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-            /*NAV     */
+	
+    /*NAV     */
     .visible {
         background-color: #ef562d; 
         display: block;
