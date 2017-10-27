@@ -71,6 +71,7 @@ nav > div {
     position: fixed;
     right: 0px;
     width: 2.5rem;
+    top: 20rem;
 }
 
 #reseaux_sociaux {
@@ -88,7 +89,7 @@ nav > div {
 
 header {
     align-items: center;
-    background-image: url(../assets/Logo.png);
+    background-image: url(../assets/images/logo/Logo.png);
     background-position: left center;
     background-repeat: no-repeat;
     display: flex;
@@ -274,7 +275,6 @@ footer {
 }
     /*NAVIGATIONS */
     #nav_laterale {
-        top: 20rem;
         width: 2rem;
     }
     /*SECTION PLAN*/
