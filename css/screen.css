@@ -52,7 +52,7 @@ nav a:hover {
 #nav_laterale {
 /*    color: #ef562d;*/
     align-items: center;
-    border: 1px dashed #2dc6ef;
+    border: 1px dashed #ef562d;
     border-radius: 10%;
     border-right: none;
     box-shadow: -2px 4px 10px -5px rgba(0,0,0,0.75);
@@ -146,7 +146,7 @@ section, footer{
 }
 
 .programme img {
-    border: 1px dashed #2dc6ef;
+    border: 1px dashed #ef562d;
     height: 200px;
     margin: 1.4rem;
     padding: 1.4rem;
@@ -156,19 +156,18 @@ section, footer{
     /*SECTION COUP DE COEUR*/
 
 #coupDeCoeur_container {
-/*    background-color: #ef562d;*/
-    background-image: url(../assets/coupDeCoeurCover.png);
-    background-repeat: round;
-    background-size: contain;
+    background-color: #ef562d;
     margin-top: 12rem;
     margin-bottom: 4rem;
-    padding-bottom: 11rem;    
-    padding-top: 15rem;
-/*    transform: rotate(-3deg);*/
+    padding-bottom: 8rem;    
+    padding-top: 11rem;
+    transform: skewY(-1deg);
+    z-index: -1;
 }
 
 #coupDeCoeur_container div {
     margin: auto;
+    transform: skewY(1deg);
     width: 75%;
 }
 
@@ -179,17 +178,20 @@ q {
     line-height: 2.5rem;
     quotes: "\00ab" "\00bb";
     text-align: center;
+    transform: skewY(0deg);
     vertical-align: middle;
 }
 
 #coupDeCoeur_container p{
     color: white;
     text-align: center;
+    transform: skewY(0deg);
 }
 
 #coupDeCoeur_container img {
-    vertical-align: middle;
     height: 6rem;
+    transform: skewY(0deg);
+    vertical-align: middle;
     width: 6rem;
 }
 
@@ -201,6 +203,7 @@ q {
     margin-right: 2rem;
     padding-bottom: 0.6rem;
     text-decoration: none;
+    transform: skewY(0deg);
 }
 
 #coupDeCoeur_container a:hover {
