@@ -9,11 +9,9 @@ try {
     die('Problème technique'); 
 }
 
-$sql_characters = $pdo->query('SELECT *  
-                               FROM t_films
-                               ORDER BY titre ASC');
+$sql_films = $pdo->query('SELECT * FROM t_films ORDER BY titre ASC');
 
-$data = $sql_characters->fetchAll(PDO::FETCH_ASSOC); // tableau à 2 dimensions
+$data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau à 2 dimensions
 //var_dump($data); // L'entièreté de nos données
 ?>
 
@@ -23,7 +21,7 @@ $data = $sql_characters->fetchAll(PDO::FETCH_ASSOC); // tableau à 2 dimensions
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
+	<meta charset="UTF-8" /> 
 	<title>Programme</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="./css/normalize.css" />
@@ -145,40 +143,35 @@ $data = $sql_characters->fetchAll(PDO::FETCH_ASSOC); // tableau à 2 dimensions
 			<ul id="thumbnails">
 			<?php
                 for ($i = 0; $i < count($data); $i++) {
-                    echo '<li data-tag="' . $data[$i]['catégorie'] . '">';
+                    echo '<li data-tag="' . $data[$i]['categorie'] . '">';
                     echo '<a href="detail.php?id=' . $data[$i]['id_film']. '">';
-                    echo '<img src="./assets/images/films/thumbnail/' . $data[$i]['titre'] . '.png" alt="' . $data[$i]['titre'] . '">';
+                    echo '<img src="./assets/images/films/thumbnail/' . str_replace(' ', '', $data[$i]['titre']) . '.png" alt="' . $data[$i]['titre'] . '">';
 
-                }
-            ?>
-<!--
-					<img src="./assets/images/films/thumbnail/memories.png" alt="memories">
-						Hover info
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Memories</h3>
-								<h3>Jakob Gottschau</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4></h4>
--->
-<!--									<h4>Cinema Galeries</h4>-->
-<!--
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-
-				</li>
+           
+                    //Hover info
+						echo '<div class="hoverInfo">';
+							echo '<div class="infoFilm">';
+								echo '<h3>' . $data[$i]['titre'] . '</h3>';
+								echo '<h3>' . $data[$i]['realisateur'] . '</h3>';
+							echo '</div>';
+							echo '<div class="infosAnnexes">';
+								echo '<div class="dateLieu">';
+                                    echo '<h4>' . $data[$i]['diffusion'] . '</h4>';
+									echo '<h4>Cinema Galeries</h4>';
+								echo '</div>';
+								echo '<div class="moreInfo">';
+									echo '<h4>More info</h4>';
+								echo '</div>';
+							echo '</div>';
+						echo '</div>';
+					echo '</a>';
+				echo '</li>'; 
+                                               }
+?>
             </ul>                
 
 		</section>
 	</main>
--->
 	
 	<!--FOOTER-->
 	<footer>
