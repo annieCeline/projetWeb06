@@ -132,7 +132,6 @@ header > img {
 
 
 
-
 /*Sections*/
 
 section,
@@ -154,6 +153,7 @@ main > section:nth-child(2),
 section:nth-child(3),
 section:nth-child(4) {
 	border-bottom: 1px solid #ef562d;
+    
 
 }
 
@@ -201,7 +201,6 @@ section h2 {
 	width: 100%;
 	padding-left: 0;
 	/*
-	
 	margin-top: 3rem;
 */
 	display: flex;
