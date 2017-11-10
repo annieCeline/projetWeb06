@@ -142,17 +142,14 @@ footer {
 
 .programme p {
     font-weight: 400;
+    width: 70rem;
 }
 
 .programme p span {
     font-weight: bold;
 }
 
-.programme img {
-    height: 200px;
-    padding: 1.4rem;
-    width: 250px;
-}
+
 
 
 /*SECTION VIDEO*/
