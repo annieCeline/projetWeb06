@@ -1,6 +1,9 @@
 <?php
+
+//on récupère le fichier de config
 require_once('./config/config.php');
 
+//on se connecte à la base de données
 try {
     $pdo = new PDO(MYSQL_DSN, DB_USER, DB_PWD);
 } catch (PDOException $e) {
@@ -9,9 +12,11 @@ try {
     die('Problème technique'); 
 }
 
+//on selectionne tous les films (par ordre alphabétique ascendant) de la bdd via une requête sql statique
 $sql_films = $pdo->query('SELECT * FROM t_films ORDER BY titre ASC');
 
-$data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau à 2 dimensions
+//le tout est stocké dans un tableau ($data)
+$data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimensions
 //var_dump($data); // L'entièreté de nos données
 ?>
 
@@ -142,6 +147,12 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau à 2 dimensions
 		<section id="sectionFilms">
 			<ul id="thumbnails">
 			<?php
+
+// On boucle à travers le tableau data(qui contient tous les films de la bdd) et pour chaque itération on affiche l'image et on récupère les infos qui s'affichent avec le hover (catégorie, titre, diffusion, etc.)
+
+//Pour afficher l'image, les noms de fichiers ont été harmonisés dans le dossier thumbnail (en un mot sans espace), ainsi on récypère le titre et on l'incruste dans la source de l'image
+
+//Quand on clique sur l'image, elle renvoie à une page detail.php?id='l'id du film dans la bdd'                 
                 for ($i = 0; $i < count($data); $i++) {
                     echo '<li data-tag="' . $data[$i]['categorie'] . '">';
                     echo '<a href="detail.php?id=' . $data[$i]['id_film']. '">';

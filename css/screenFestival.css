@@ -221,7 +221,31 @@ nav > div {
         width: 90%;
         margin: 1rem;
     }
+
+        /*    SECTIONS*/
+    section,
+    footer {
+        width: 90%;
+    } 
+    .programme {
+        flex-direction: column;
+    }
     
+    .programme_images {
+        flex-direction: column;
+    }
+    .programme h2 {
+        order: -1;
+        font-size: 3rem;
+    }
+    .programme div {
+        width: 100%;
+    }
+    #nav_laterale {
+        top: 15rem;
+        width: 1.50rem;
+        height: 7rem;
+    }
 
 }
 
