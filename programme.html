@@ -2,47 +2,47 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<title>Programme</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="./css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="./css/screenProgramme.css" />
+    <meta charset="UTF-8" />
+    <title>Programme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/screenProgramme.css" />
 
-	<link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i" rel="stylesheet">
 
-	<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
-	<script>
-		$(document).ready(function() {
+    <script>
+        $(document).ready(function() {
 
-			$('#filmsCategories button').click(function() {
-				//				console.log("click");
+            $('#filmsCategories button').click(function() {
+                //				console.log("click");
 
-				var visibleTag = $(this).data('cat');
-				//				console.log(visibleTag);
+                var visibleTag = $(this).data('cat');
+                //				console.log(visibleTag);
 
-				$('#thumbnails > li').each(function() {
+                $('#thumbnails > li').each(function() {
 
-					$(this).css('display', 'block');
+                    $(this).css('display', 'block');
 
-					if (visibleTag != 'tout' && $(this).data('tag') != visibleTag) {
+                    if (visibleTag != 'tout' && $(this).data('tag') != visibleTag) {
 
-						$(this).css('display', 'none');
-					}
-				});
-			});
+                        $(this).css('display', 'none');
+                    }
+                });
+            });
 
-			$('nav > div').click(function(e) {
-				$('nav > ul').toggleClass("visible");
+            $('nav > div').click(function(e) {
+                $('nav > ul').toggleClass("visible");
 
-			});
-		});
-	</script>
+            });
+        });
+    </script>
 
 
 
@@ -50,637 +50,639 @@
 
 <body>
 
-	<nav>
+    <nav>
 
-		<div>
-			<img src="./assets/images/logo/symboleMenu50x76.png" alt="Menu">
-		</div>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="programme.html">Programme</a></li>
-			<li><a href="infospratiques.html">Infos Pratiques</a></li>
-			<li><a href="palmares.html">Palmares</a></li>
-			<li><a href="festival.html">Le Festival</a></li>
-		</ul>
-	</nav>
+        <div>
+            <img src="./assets/images/logo/symboleMenu50x76.png" alt="Menu">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programme.html">Programme</a></li>
+            <li><a href="infospratiques.html">Infos Pratiques</a></li>
+            <li><a href="palmares.html">Palmares</a></li>
+            <li><a href="festival.html">Le Festival</a></li>
+        </ul>
+    </nav>
 
-	<!--HEADER-->
+    <!--HEADER-->
 
-	<header>
-		<h1>Le <br>Programme</h1>
+    <header>
+        <h1>Le <br>Programme</h1>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nobis, at neque nostrum. Dolorum porro totam aut cumque distinctio, ipsa, iusto sequi. Quis assumenda, repellendus.</p>
-	</header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nobis, at neque nostrum. Dolorum porro totam aut cumque distinctio, ipsa, iusto sequi. Quis assumenda, repellendus.</p>
+    </header>
 
 
 
 
-	<main>
+    <main>
 
-		<!-- Les réseaux sociaux -->
-		<section id="nav_laterale">
-			<div id="reseaux_sociaux">
-				<i class="fa fa-twitter" aria-hidden="true"></i>
-				<i class="fa fa-facebook" aria-hidden="true"></i>
-			</div>
-			<div id="profil_recherche">
-				<i class="fa fa-user" aria-hidden="true"></i>
-				<i class="fa fa-search" aria-hidden="true"></i>
-			</div>
-		</section>
+        <!-- Les réseaux sociaux -->
+        <section id="nav_laterale">
+            <div id="reseaux_sociaux">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+            <div id="profil_recherche">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+        </section>
 
 
-		<!--Download programme-->
-		<section id="downloadProgramme">
+        <!--Download programme-->
+        <section id="downloadProgramme">
 
-			<div>
-				<div>
+            <div>
+                <div>
 
 
-					<p>Lorem ipsum dolor sit amet</p>
+                    <!--PDF-->
+                    <p>Télécharger le programme</p>
+                    <a href="./assets/document/agenda.pdf"><img src="./assets/images/logo/pdf-file-hand-drawn-symbol-2.png" alt=""></a>
 
-<!--					<a href=""><img src="./assets/images/logo/blackDownload.png" alt=""></a>-->
 
-					<!--PDF-->
-					<!-- <a href=".pdf">Programme à télécharger</a>-->
-				</div>
-
-
-				<h2>Agenda</h2>
-			</div>
-
+                </div>
 
 
-		</section>
-
-
-		<div id="parentButtonFilms">
-
-			<!--Catalogue des films-->
-
-			<section id="filmsCategories">
-
-				<h2>Le catalogue</h2>
-				<div id="tagsFilms">
-					<!--Les buttons tags-->
-					<button data-cat="tout">Tout</button>
-
-					<button data-cat="webdoc">Web Doc</button>
-
-					<button data-cat="webserie">Web Serie</button>
-
-					<button data-cat="transmedia">Transmedia</button>
-
-					<button data-cat="projet">Projet</button>
-				</div>
-
-			</section>
-
-			<!--THUMBNAIL-->
-			<section id="sectionFilms">
-				<ul id="thumbnails">
-					<li data-tag="webdoc">
-						<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Memories</h3>
-								<h3>Jakob Gottschau</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4></h4>
-<!--									<h4>Cinema Galeries</h4>-->
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-
-					</li>
-
-
-					<li data-tag="transmedia">
-						<a href="#"><img src="./assets/images/films/thumbnail/gentriville.png" alt="gentriville">
-
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Gentriville</h3>
-								<h3>M.Sterlin &amp; E.Walter</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-					<li data-tag="webserie">
-						<a href="#"><img src="./assets/images/films/thumbnail/nanaroscope.png" alt="Nanaroscope">
-
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Nanaroscope</h3>
-								<h3>Régis Brochier</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-					<li data-tag="webdoc">
-						<a href="#"><img src="./assets/images/films/thumbnail/methodekenloach.png" alt="Methode ken loach">
-
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>La méthode Ken Loach</h3>
-								<h3>Emmanuel Roy</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-					<li data-tag="webserie">
-						<a href="#"><img src="./assets/images/films/thumbnail/fallingforchallenge.png" alt="Falling for challenge">
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Falling for challenge</h3>
-								<h3>Auteur</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-					<li data-tag="webdoc">
-						<a href="#"><img src="./assets/images/films/thumbnail/donottrack.png" alt="Do not track">
-
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Do not track</h3>
-<!--								<h3>Auteur</h3>-->
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-					<li data-tag="webdoc">
-						<a href="#"><img src="./assets/images/films/thumbnail/networkeffect.png" alt="Network effect">
-					
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Network effect</h3>
-								<h3>Auteur</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-					<li data-tag="projet">
-						<a href="#"><img src="./assets/images/films/thumbnail/adrianbliss.png" alt="Adrian Bliss">
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Adrian Bliss</h3>
-								<h3>Auteur</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-					<li data-tag="webdoc">
-						<a href="#"><img src="./assets/images/films/thumbnail/Alma.png" alt="Alma, a tale of violence">
-
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Alma</h3>
-								<h3>Auteur</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-
-					<li data-tag="transmedia">
-						<a href="#"><img src="./assets/images/films/thumbnail/Alteration.png" alt="Alteration">
-
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Alteration</h3>
-								<h3>Auteur</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-
-					<li data-tag="webdoc">
-						<a href="#"><img src="./assets/images/films/thumbnail/downthedeepdarkweb.png" alt="Down the Deep Dark Web">
-
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Down The Deep Dark Web</h3>
-								<h3>Auteur</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-					<li data-tag="webdoc">
-						<a href="#"><img src="./assets/images/films/thumbnail/legrandcomplot.png" alt="Le grand complot">
-
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Le grand complot</h3>
-								<h3>Auteur</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-
-					<li data-tag="webdoc">
-						<a href="#"><img src="./assets/images/films/thumbnail/waynak.png" alt="Waynak">
-
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Waynak</h3>
-								<h3>Auteur</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-
-					<li data-tag="webserie">
-						<a href="#"><img src="./assets/images/films/thumbnail/tobecontinued.png" alt="To be continued">
-
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>To be continued</h3>
-								<h3>Auteur</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-
-					<li data-tag="webdoc">
-						<a href="#"><img src="./assets/images/films/thumbnail/terreur404.png" alt="Terreur 404">
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Terreur 404</h3>
-								<h3>Auteur</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-					<li data-tag="transmedia">
-						<a href="#"><img src="./assets/images/films/thumbnail/seances.png" alt="Seances">
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Seances</h3>
-								<h3>Auteur</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-					<li data-tag="webdoc">
-						<a href="#"><img src="./assets/images/films/thumbnail/facebookistan.png" alt="Facebookistan">
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Facebookistan</h3>
-								<h3>Auteur</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-
-
-					<li data-tag="webserie">
-						<a href="#"><img src="./assets/images/films/thumbnail/thefoxyfive1.png" alt="The Foxy Five">
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>The Foxy Five</h3>
-								<h3>Auteur</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-
-					<li data-tag="webserie">
-						<a href="#"><img src="./assets/images/films/thumbnail/wearefathers.png" alt="We are fathers">
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>We are fathers</h3>
-								<h3>Auteur</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-
-					<li data-tag="webserie">
-						<a href="#"><img src="./assets/images/films/thumbnail/browngirls.png" alt="Brown Girls">
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Brown Girls</h3>
-								<h3>Auteur</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-
-
-
-
-					<li data-tag="webserie">
-						<a href="#"><img src="./assets/images/films/thumbnail/clicktoyourheart.png" alt="Click to your heart">
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Click to your heart</h3>
-								<h3>Auteur</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-					<li data-tag="webserie">
-						<a href="#"><img src="./assets/images/films/thumbnail/cestcalhistoire.png" alt="C'est ça l'histoire">
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>C'est ça l'histoire!</h3>
-								<h3>Auteur</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-					
-					
-					<li data-tag="webserie">
-						<a href="#"><img src="./assets/images/films/thumbnail/racontetaville.png" alt="Raconte ta ville">
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Raconte ta ville</h3>
-								<h3>Auteur</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-					
-					<li data-tag="webserie">
-						<a href="#"><img src="./assets/images/films/thumbnail/latheoriedesballs.png" alt="La théorie des balls">
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>La théorie des balls</h3>
-								<h3>Auteur</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4>Date</h4>
-									<h4>Lieu</h4>
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-				</ul>
-
-			</section>
-		</div>
-
-	</main>
-
-	<!--FOOTER-->
-	<footer>
-		<p>&copy;Interface3 - 2017</p>
-		<p>info@brusselswebfest.be</p>
-	</footer>
+                <h2>Agenda</h2>
+            </div>
+
+
+
+        </section>
+
+
+        <div id="parentButtonFilms">
+
+            <!--Catalogue des films-->
+
+            <section id="filmsCategories">
+
+                <h2>Le catalogue</h2>
+
+                <!--Les buttons tags-->
+                <div id="tagsFilms">
+
+                    <button data-cat="tout">Tout</button>
+
+                    <button data-cat="webdoc">Web Doc</button>
+
+                    <button data-cat="webserie">Web Serie</button>
+
+                    <button data-cat="transmedia">Transmedia</button>
+
+                    <button data-cat="projet">Projet</button>
+                </div>
+
+            </section>
+
+            <!--THUMBNAIL-->
+
+            <section id="sectionFilms">
+                <ul id="thumbnails">
+                    <li data-tag="webdoc">
+                        <a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>Memories</h3>
+                                    <h3>Jakob Gottschau</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4></h4>
+                                        <!--									<h4>Cinema Galeries</h4>-->
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </li>
+
+
+                    <li data-tag="transmedia">
+                        <a href="#"><img src="./assets/images/films/thumbnail/gentriville.png" alt="gentriville">
+
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>Gentriville</h3>
+                                    <h3>M.Sterlin &amp; E.Walter</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>11.11.17</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li data-tag="webserie">
+                        <a href="#"><img src="./assets/images/films/thumbnail/nanaroscope.png" alt="Nanaroscope">
+
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>Nanaroscope</h3>
+                                    <h3>Régis Brochier</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>23.11.17</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li data-tag="webdoc">
+                        <a href="#"><img src="./assets/images/films/thumbnail/methodekenloach.png" alt="Methode ken loach">
+
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>La méthode Ken Loach</h3>
+                                    <h3>Emmanuel Roy</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li data-tag="webserie">
+                        <a href="#"><img src="./assets/images/films/thumbnail/fallingforchallenge.png" alt="Falling for challenge">
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>Falling for challenge</h3>
+                                    <h3>Auteur</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li data-tag="webdoc">
+                        <a href="#"><img src="./assets/images/films/thumbnail/donottrack.png" alt="Do not track">
+
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>Do not track</h3>
+                                    <!--								<h3>Auteur</h3>-->
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li data-tag="webdoc">
+                        <a href="#"><img src="./assets/images/films/thumbnail/networkeffect.png" alt="Network effect">
+
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>Network effect</h3>
+                                    <h3>Auteur</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li data-tag="projet">
+                        <a href="#"><img src="./assets/images/films/thumbnail/adrianbliss.png" alt="Adrian Bliss">
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>Adrian Bliss</h3>
+                                    <h3>Auteur</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li data-tag="webdoc">
+                        <a href="#"><img src="./assets/images/films/thumbnail/Alma.png" alt="Alma, a tale of violence">
+
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>Alma, a tale of violence</h3>
+                                    <h3>Auteur</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li data-tag="transmedia">
+                        <a href="#"><img src="./assets/images/films/thumbnail/Alteration.png" alt="Alteration">
+
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>Alteration</h3>
+                                    <h3>Auteur</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li data-tag="webdoc">
+                        <a href="#"><img src="./assets/images/films/thumbnail/downthedeepdarkweb.png" alt="Down the Deep Dark Web">
+
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>Down The Deep, Dark Web</h3>
+                                    <h3>Auteur</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li data-tag="webdoc">
+                        <a href="#"><img src="./assets/images/films/thumbnail/legrandcomplot.png" alt="Le grand complot">
+
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>Le grand complot</h3>
+                                    <h3>Auteur</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li data-tag="webdoc">
+                        <a href="#"><img src="./assets/images/films/thumbnail/waynak.png" alt="Waynak">
+
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>Waynak</h3>
+                                    <h3>Auteur</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li data-tag="webserie">
+                        <a href="#"><img src="./assets/images/films/thumbnail/tobecontinued.png" alt="To be continued">
+
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>To be continued</h3>
+                                    <h3>Auteur</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li data-tag="webdoc">
+                        <a href="#"><img src="./assets/images/films/thumbnail/terreur404.png" alt="Terreur 404">
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>Terreur 404</h3>
+                                    <h3>Auteur</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li data-tag="transmedia">
+                        <a href="#"><img src="./assets/images/films/thumbnail/seances.png" alt="Seances">
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>Seances</h3>
+                                    <h3>Auteur</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li data-tag="webdoc">
+                        <a href="#"><img src="./assets/images/films/thumbnail/facebookistan.png" alt="Facebookistan">
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>Facebookistan</h3>
+                                    <h3>Auteur</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+
+                    <li data-tag="webserie">
+                        <a href="#"><img src="./assets/images/films/thumbnail/thefoxyfive1.png" alt="The Foxy Five">
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>The Foxy Five</h3>
+                                    <h3>Auteur</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li data-tag="webserie">
+                        <a href="#"><img src="./assets/images/films/thumbnail/wearefathers.png" alt="We are fathers">
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>We are fathers</h3>
+                                    <h3>Auteur</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li data-tag="webserie">
+                        <a href="#"><img src="./assets/images/films/thumbnail/browngirls.png" alt="Brown Girls">
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>Brown Girls</h3>
+                                    <h3>Auteur</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+
+
+
+                    <li data-tag="webserie">
+                        <a href="#"><img src="./assets/images/films/thumbnail/clicktoyourheart.png" alt="Click to your heart">
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>Click to your heart</h3>
+                                    <h3>Auteur</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li data-tag="webserie">
+                        <a href="#"><img src="./assets/images/films/thumbnail/cestcalhistoire.png" alt="C'est ça l'histoire">
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>C'est ça l'histoire!</h3>
+                                    <h3>Auteur</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li data-tag="webserie">
+                        <a href="#"><img src="./assets/images/films/thumbnail/racontetaville.png" alt="Raconte ta ville">
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>Raconte ta ville</h3>
+                                    <h3>Auteur</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li data-tag="webserie">
+                        <a href="#"><img src="./assets/images/films/thumbnail/latheoriedesballs.png" alt="La théorie des balls">
+                            <!--Hover info-->
+                            <div class="hoverInfo">
+                                <div class="infoFilm">
+                                    <h3>La théorie des balls</h3>
+                                    <h3>Auteur</h3>
+                                </div>
+                                <div class="infosAnnexes">
+                                    <div class="dateLieu">
+                                        <h4>Date</h4>
+                                        <h4>Lieu</h4>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <h4>More info</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </section>
+        </div>
+
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <p>&copy;Interface3 - 2017</p>
+        <p>info@brusselswebfest.be</p>
+    </footer>
 
 </body>
 
