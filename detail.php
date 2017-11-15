@@ -83,7 +83,7 @@ $sql_films->execute();
         
         
         if($sql_films->errorInfo()[0] == "00000"){
-            $data = $sql_films->fetchAll(PDO::FETCH_ASSOC);    
+            $data = $sql_films->fetchAll(PDO::FETCH_ASSOC);
         echo '<div id="video-container">';
 //var_dump($data); 
             if (count($data) == 1) { 
@@ -91,6 +91,9 @@ $sql_films->execute();
                 echo '<h2 id="trailer">' . $data[0]['titre'] . '</h2>';
                 echo '<div>';
                 echo '<iframe src="' . $data[0]['ressourceVideo'] . '"></iframe>';
+                echo '<img id="like" src="./assets/logos/applause32.png" alt="like">';
+                echo '<div id="nbLikes"></div>';
+                echo '<input id="id_film" type="hidden" value="'.$data[0]['id_film'] . '">';
                 echo '</div>';
             echo '</div>';
         echo '</div>';
@@ -125,7 +128,6 @@ $sql_films->execute();
             echo 'Veuillez ne pas changer l\'URL svp';
 };    
     ?>
-    
     </main>
 
     <footer>
@@ -133,4 +135,6 @@ $sql_films->execute();
         <p>info@brusselswebfest.com</p>
     </footer>
 </body>
+
+<script src="./like.js"></script>
 </html>

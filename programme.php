@@ -43,8 +43,11 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 
 	<script>
 		$(document).ready(function() {
-
-			$('#catalogueFilms button').click(function() {
+            
+            // ajouter la classe pour que le bouton Tout soit active
+            // blablablabla
+            
+            $('#catalogueFilms button').click(function() {
 				//				console.log("click");
 
 				var visibleTag = $(this).data('cat');
@@ -78,7 +81,6 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 			<li><a href="lefestival.html">Le Festival</a></li>
 		</ul>
 	</nav>
-
 	<!--HEADER-->
 
 	<header>
