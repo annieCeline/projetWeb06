@@ -20,23 +20,28 @@
     <script>
         $(document).ready(function() {
 
-            $('#filmsCategories button').click(function() {
-                //				console.log("click");
+            $('#idTous').addClass('buttonSelected');
 
+            $('#filmsCategories button').click(function(e) {
+
+
+                console.log("click");
                 var visibleTag = $(this).data('cat');
-                //				console.log(visibleTag);
+                console.log(visibleTag);
+                //console.log(this);
+                
+                $('#filmsCategories button').removeClass('buttonSelected');
+                $(this).addClass('buttonSelected');
 
-                $('#thumbnails > li').each(function() {
-
+                //LI//
+                $('#thumbnails > li').each(function(e) {
                     $(this).css('display', 'block');
-
-                    if (visibleTag != 'tout' && $(this).data('tag') != visibleTag) {
-
+                    //console.log(this);
+                    if (visibleTag != 'tous' && $(this).data('tag') != visibleTag) {
                         $(this).css('display', 'none');
                     }
                 });
             });
-
             $('nav > div').click(function(e) {
                 $('nav > ul').toggleClass("visible");
 
@@ -124,7 +129,7 @@
                 <!--Les buttons tags-->
                 <div id="tagsFilms">
 
-                    <button data-cat="tout">Tout</button>
+                    <button data-cat="tous" id="idTous">Tous</button>
 
                     <button data-cat="webdoc">Web Doc</button>
 
