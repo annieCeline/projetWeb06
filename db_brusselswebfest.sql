@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 08, 2017 at 04:32 PM
+-- Generation Time: Nov 10, 2017 at 01:14 PM
 -- Server version: 10.1.22-MariaDB
 -- PHP Version: 7.0.18
 
@@ -73,7 +73,7 @@ CREATE TABLE `t_films` (
 INSERT INTO `t_films` (`id_film`, `categorie`, `titre`, `realisateur`, `origine`, `diffusion`, `genre`, `saison`, `duree`, `langue`, `synopsis`, `ressourceImage`, `ressourceVideo`) VALUES
 (1, 'webdoc', 'These memories won\'t last', 'Stuart Campbell', '', '27-11-2017', '', 0, '', '', '', '', ''),
 (2, 'transmedia', 'Gentriville', 'M.Sterlin & E.Walter', '', '27-11-2017', '', 0, '', '', '', '', ''),
-(3, 'webserie', 'Nanaroscope', 'Régis Brochier', '', '27-11-2017', '', 0, '', '', '', '', ''),
+(3, 'webserie', 'Nanaroscope', 'Régis Brochier', '', '27-11-2017', 'Mauvais film', 1, '', '', 'Nanaroscope est un éclat de rire.  Zombies nazis, ninjas américains, gitans cannibales, cow-boys nains, sosies de Bruce Lee... Magnifiquement ratés, ce sont de sublimes accidents, imputables à des producteurs hasardeux et des réalisateurs improbables, que l\'on remercie ici par une fine sélection de leurs chefs-d\'œuvre. Leurs réalisateurs et leurs acteurs, nous sont inconnus mais ces films sont des œuvres qui à leur manière ne sont pas dénuées de panache, d’esprit et d’une forme de beauté.', '', 'https://www.youtube.com/embed/9otvDXjsfHI'),
 (4, 'webserie', 'Vlogvember', 'Adrian Bliss', '', '27-11-2017', '', 0, '', '', '', '', ''),
 (5, 'webdoc', 'Alma, a tale of violence', 'Ruben Korenfeld', '', '27-11-2017', '', 0, '', '', '', '', ''),
 (6, 'transmedia', 'Altération', 'Jérôme Blanquet ', '', '27-11-2017', '', 0, '', '', '', '', ''),
@@ -83,7 +83,7 @@ INSERT INTO `t_films` (`id_film`, `categorie`, `titre`, `realisateur`, `origine`
 (10, 'webdoc', 'Down the Deep, Dark web', 'Duki Dror & Tzachi Schiff', '', '28-11-2017', '', 0, '', '', '', '', ''),
 (11, 'webdoc', 'Do not track', 'Brett Gaylor', '', '28-11-2017', '', 0, '', '', '', '', ''),
 (12, 'webdoc', 'Facebookistan', 'Jakob Gottschau', '', '28-11-2017', '', 0, '', '', '', '', ''),
-(13, 'webserie', 'Falling for challenge', '', '', '28-11-2017', '', 0, '', '', '', '', ''),
+(13, 'webserie', 'Falling for challenge', 'Lee Hyeong Min', 'Corée du sud', '28-11-2017', '', 0, '', '', '', '', 'https://www.youtube.com/embed/5EG_7_4ffYI'),
 (14, 'webserie', 'La théorie des balls', 'Slimane-Baptiste Berhoun', 'France', '28-11-2017', 'Comédie', 1, '9min', 'Français', 'Mitch, devenu DRH dans l\'entreprise de Stan (clochard étant en fait un riche patron héritier d\'une grosse fortune familiale), décide de créer en parallèle de son travail et grâce à ses employés, la « théorie des Balls » ; une théorie soi-disant scientifique qui explique le comportement des gens grâce à des particules quantiques (les « Balls ») qui influent sur notre personnalité et nos relations.\r\n\r\nMitch essaie donc de faire publier sa thèse dans la maison d\'édition de son ancienne amie de lycée Héloïse, devenue éditrice. Mais entre un patron hyperactif, un comptable amateur de pornographie et bien d\'autres employés tous plus incompétents les uns que les autres, la théorie des Balls devient vite un défi de taille.', '', 'https://www.youtube.com/embed/w6SraeFJl-8?rel=0&amp;controls=0&amp;showinfo=0'),
 (15, 'transmedia', 'Le grand complot ', 'Junge Römer ', '', '28-11-2017', '', 0, '', '', '', '', ''),
 (16, 'webdoc', 'La méthode de Ken Loach', 'Emmanuel Roy', '', '28-11-2017', '', 0, '', '', '', '', ''),
@@ -92,7 +92,9 @@ INSERT INTO `t_films` (`id_film`, `categorie`, `titre`, `realisateur`, `origine`
 (19, 'webserie', 'The foxy five', 'Jabu Nadia Newman', '', '28-11-2017', '', 0, '', '', '', '', ''),
 (20, 'webserie', 'To be continued ', '', '', '29-11-2017', '', 0, '', '', '', '', ''),
 (21, 'webdoc', 'Waynak', '', '', '29-11-2017', '', 0, '', '', '', '', ''),
-(22, 'webserie', 'We are fathers ', 'Jerry Ying ', '', '29-11-2017', '', 0, '', '', '', '', '');
+(22, 'webserie', 'We are fathers ', 'Jerry Ying ', '', '29-11-2017', '', 0, '', '', '', '', ''),
+(23, 'webdoc', 'Raconte ta ville', '', '', '', '', 0, '', '', '', '', ''),
+(24, 'webdoc', 'Network Effect', '', '', '', '', 0, '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -155,7 +157,7 @@ ALTER TABLE `t_filmlikes`
 -- AUTO_INCREMENT for table `t_films`
 --
 ALTER TABLE `t_films`
-  MODIFY `id_film` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id_film` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 --
 -- AUTO_INCREMENT for table `t_users`
 --
