@@ -1,1 +1,0 @@
-SELECT SUM(nblikes) AS nombreLikes FROM t_filmlikes WHERE t_filmlikes.id_film = 9

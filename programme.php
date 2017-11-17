@@ -104,7 +104,7 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 		<!--Download programme-->
 		<section id="downloadProgramme">
 
-
+            <div>
 			<div>
 
 
@@ -118,7 +118,7 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 
 
 			<h2>Agenda</h2>
-
+        </div>
 
 		</section>
 
