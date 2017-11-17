@@ -5,17 +5,23 @@ if (isset($_POST['nom'], $_POST['email'], $_POST['sujet'], $_POST['message'])){
         $msg = strip_tags($_POST['message']);
         $nom = strip_tags($_POST['nom']);
         $sujet = strip_tags($_POST['sujet']);
-        //$_POST['newsLetter'] = 'Je souhaite recevoir la newsletter';
+        
+        if(isset($_POST['newsLetter'])){
+            $_POST['newsLetter'] = 'Je souhaite recevoir la newsletter';
+        }else{
+            $_POST['newsLetter'] = 'Je ne souhaite pas recevoir la newsletter';
+        }
+        
         
         $result = @mail('brusselswebfest@gmail.com', $sujet, $_POST['email'], 'Message de ' . $nom . ': ' . $msg . ' '. $_POST['newsLetter']);
         
         if($result){
-            $info = 'Message bien envoyer';
+            $info = 'Message bien envoyé';
         } else{
             $info = 'Problème Technique';
         }
     }else{
-        $info = 'Vous avez oublier de remplir un champ!';
+        $info = 'Vous avez oublié de remplir un champ!';
     }
 }
 ?>

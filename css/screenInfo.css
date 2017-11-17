@@ -100,7 +100,8 @@ header {
     transition: 5s;
 }
 header:hover{
-    background-image: url(../assets/images/logo/bronze.png);
+    background-image: url(../assets/images/logo/logo4.gif);
+    z-index: 0;
     
 }
 
