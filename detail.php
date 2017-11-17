@@ -51,7 +51,7 @@ $sql_films->execute();
         </div>
    
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="programme.php">Programme</a></li>
             <li><a href="infospratiques.html">Infos Pratiques</a></li>
             <li><a href="palmares.html">Palmares</a></li>

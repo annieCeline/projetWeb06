@@ -51,7 +51,6 @@ nav a:hover {
 }
 
 #nav_laterale {
-/*    color: #ef562d;*/
     align-items: center;
     border: 1px dashed #ef562d;
     border-radius: 10%;
@@ -67,6 +66,14 @@ nav a:hover {
     right: 0px;
     width: 2.5rem;
     z-index: 1;
+}
+
+#nav_laterale a {
+    color: #303030;
+}
+
+#nav_laterale a:hover {
+    color: #ef562d;
 }
 
 #reseaux_sociaux {
@@ -113,6 +120,17 @@ header > p {
 
 header > img {
     max-width: 100%;
+}
+
+
+/*    FORMULAIRE INSCRIPTION (<inscription.html)*/
+
+#formInscription, #formLogin, h1 { 
+    text-align: center;
+}
+
+#formInscription button, #formLogin button {
+    margin: 2rem;
 }
 
 /*    SECTIONS PROGRAMME*/

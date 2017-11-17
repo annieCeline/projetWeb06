@@ -12,10 +12,8 @@
     <link rel="stylesheet" href="./css/screen.css">
 
                     <!--    GOOGLE FONTS-->
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700,900" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i" rel="stylesheet"> 
 
-    
                     <!--    jQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
@@ -38,20 +36,9 @@
    
                     <!--NAVIGATION-->
                     
-    <nav>
-        <div>
-            <img src="./assets/images/logo/symboleMenu50x76.png" alt="Menu">
-        </div>
-   
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="programme.php">Programme</a></li>
-            <li><a href="infospratiques.html">Infos Pratiques</a></li>
-            <li><a href="palmares.html">Palmares</a></li>
-            <li><a href="festival.html">Le Festival</a></li>
-        </ul>
-    
-    </nav>
+    <?php 
+    include "./nav.php";
+    ?>
 
                     <!--HEADER-->
                     
@@ -65,14 +52,13 @@
                     <!--NAVIGATION SOCIAUX ET PROFIL-->
                     
         <div id="nav_laterale">
+            <div id="profil_recherche">
+                <a href="./inscription.php"><i class="fa fa-user" aria-hidden="true"></i></a>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
             <div id="reseaux_sociaux">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
                 <i class="fa fa-facebook" aria-hidden="true"></i>
-            </div>
-
-            <div id="profil_recherche">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                <i class="fa fa-search" aria-hidden="true"></i>
             </div>
         </div>
            
