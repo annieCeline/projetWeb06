@@ -71,16 +71,11 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 </head>
 
 <body>
-
-	<nav>
-		<ul>
-			<li><a href="index.php">Home</a></li>
-			<li><a href="programme.html">Programme</a></li>
-			<li><a href="infospratiques.html">Infos Pratiques</a></li>
-			<li><a href="palmares.html">Palmares</a></li>
-			<li><a href="lefestival.html">Le Festival</a></li>
-		</ul>
-	</nav>
+   
+    <?php 
+    include "./nav.php";
+    ?>
+    
 	<!--HEADER-->
 
 	<header>
@@ -95,13 +90,13 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 	<main>
 
 		<section id="nav_laterale">
+            <div id="profil_recherche">
+				<i class="fa fa-user" aria-hidden="true"></i>
+				<i class="fa fa-search" aria-hidden="true"></i>
+			</div>
 			<div id="reseaux_sociaux">
 				<i class="fa fa-twitter" aria-hidden="true"></i>
 				<i class="fa fa-facebook" aria-hidden="true"></i>
-			</div>
-			<div id="profil_recherche">
-				<i class="fa fa-user" aria-hidden="true"></i>
-				<i class="fa fa-search" aria-hidden="true"></i>
 			</div>
 		</section>
 
@@ -122,7 +117,7 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 			</div>
 
 
-			<h2>Les Lives</h2>
+			<h2>Agenda</h2>
 
 
 		</section>
