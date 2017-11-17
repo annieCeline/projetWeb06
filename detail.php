@@ -45,20 +45,10 @@ $sql_films->execute();
 </head>
 
 <body>
-    <nav>
-        <div>
-            <img src="./assets/images/logo/symboleMenu50x76.png" alt="Menu">
-        </div>
    
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="programme.php">Programme</a></li>
-            <li><a href="infospratiques.html">Infos Pratiques</a></li>
-            <li><a href="palmares.html">Palmares</a></li>
-            <li><a href="festival.html">Le Festival</a></li>
-        </ul>
-    
-    </nav>
+    <?php 
+    include "./nav.php";
+    ?>
 
     <header>
      
@@ -69,14 +59,13 @@ $sql_films->execute();
     <main>
 
         <div id="nav_laterale">
-            <div id="reseaux_sociaux">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-            </div>
-
             <div id="profil_recherche">
                 <i class="fa fa-user" aria-hidden="true"></i>
                 <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <div id="reseaux_sociaux">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
             </div>
         </div>
                <?php 
