@@ -19,20 +19,18 @@
 
     <script>
         $(document).ready(function() {
-
             $('#idTous').addClass('buttonSelected');
-
             $('#filmsCategories button').click(function(e) {
-
-
                 console.log("click");
                 var visibleTag = $(this).data('cat');
                 console.log(visibleTag);
-                //console.log(this);
                 
+                
+                //console.log(this);              
                 $('#filmsCategories button').removeClass('buttonSelected');
                 $(this).addClass('buttonSelected');
-
+                
+                
                 //LI//
                 $('#thumbnails > li').each(function(e) {
                     $(this).css('display', 'block');
@@ -99,18 +97,22 @@
         <section id="downloadProgramme">
 
             <div>
+                
                 <div>
+
+
 
 
                     <!--PDF-->
                     <p>Télécharger le programme</p>
-                    <a href="./assets/document/agenda.pdf"><img src="./assets/images/logo/pdf-file-hand-drawn-symbol-2.png" alt=""></a>
+                    <a href="./assets/document/agenda.pdf"><img src="./assets/images/logo/pdf.png" alt=""></a>
 
 
                 </div>
-
-
                 <h2>Agenda</h2>
+
+
+
             </div>
 
 
@@ -676,6 +678,10 @@
                             </div>
                         </a>
                     </li>
+
+
+                    <li style="width:30%;height:16%;list-style:none;"></li>
+
                 </ul>
 
             </section>

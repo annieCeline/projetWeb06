@@ -139,40 +139,54 @@ header > img {
 
 
 /* SECTION 2 : Download Programme*/
-
-#downloadProgramme {
-	margin: auto;
-	width: 100%;
-	background-color: #ef562d;
-	color: #e6e6e6;
+#downloadProgramme div:nth-child(1) {
+	display: flex;
+	flex-direction: row;
+   
+/*    border:2px solid black;*/
 }
+
+#downloadProgramme p{
+    color: #ffffff;
+    align-self: flex-end;
+}
+
+#downloadProgramme div:nth-child(2){
+/*     border:2px solid aqua;*/
+    display: flex;
+	flex-direction: row;
+    align-items: flex-start;
+    align-self: baseline;
+     justify-content: space-between;
+}
+
+ 
+#downloadProgramme div:nth-last-child(1) h2 {	
+    
+}
+
+
+#downloadProgramme div:nth-last-child(2) a {
+align-self: flex-start;
+}
+
+
+#downloadProgramme{
+    width:100%;
+    margin:0 auto;    
+    
+}
+
 
 section:nth-of-type(2) a {
 	color: #e6e6e6;
-}
-
-#downloadProgramme div:nth-last-child(1) {
-	width: 70%;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-#downloadProgramme div:nth-last-child(2) {
-	display: flex;
-	flex-direction: row;
-
-}
-
-#downloadProgramme div:nth-last-child(2) p {
-	align-self: center;
+    
 }
 
 #downloadProgramme a {
 	display: inline-block;
 	margin-top: 2rem;
+    align-self: center;
 }
 
 #downloadProgramme img {
@@ -180,9 +194,34 @@ section:nth-of-type(2) a {
 }
 
 #downloadProgramme h2 {
-	align-self: center;
-	font-size: 3rem;
+	font-size: 4rem;
+    color:#ffffff;
+    align-self: flex-end;
 }
+
+#downloadProgramme {
+    background-color: #ef562d;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+    transform: skewY(-1deg);
+}
+
+#downloadProgramme div {
+    width: 95rem;
+    margin: auto;
+    transform: skewY(1deg);
+}
+
+#downloadProgramme div:nth-child(2) {
+    width: 56rem;
+/*    height: 40rem;*/
+    margin-left: auto;
+    margin-right: auto;
+    transform: skewY(0deg);
+}
+
+
+
 
 /*SECTION 3 */
 
@@ -211,9 +250,8 @@ section:nth-of-type(2) a {
 }
 
 .buttonSelected {
-/*	border:2px solid #ef562d;*/
-    background-color: #ef562d;	
-		
+	border:2px solid #ef562d;
+
 }
 
 
@@ -224,11 +262,11 @@ button {
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 	width: 16.5%;
- 
-	border-left: none;
+    border-left: none;
 	border-right: none;
 	border-top: none;
-	border-bottom: 2px double #ef562d;
+
+	border-bottom: 2px solid #ef562d;
 	background-color: #ffffff;
 	cursor: pointer;
 	position: relative;
@@ -283,8 +321,6 @@ button:hover::after {
 	border-color: #ef562d;
 
 }
-
-
 
 
 /*THUMBNAILS*/
@@ -600,6 +636,14 @@ footer {
 		top: 20rem;
 		width: 2rem;
 	}
+    
+      #video-container div {
+        width: 25rem;
+    }
+    #video-container div:nth-child(2) {
+        width: 25rem;
+        height: 14rem;
+    }
 	/*Sections films*/
 	/*ul*/
 	#sectionFilms #thumbnails {
