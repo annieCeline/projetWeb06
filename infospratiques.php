@@ -56,7 +56,7 @@ if (isset($_POST['nom'], $_POST['email'], $_POST['sujet'], $_POST['message'])){
         </div>
    
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="programme.html">Programme</a></li>
             <li><a href="infospratiques.html">Infos Pratiques</a></li>
             <li><a href="palmares.html">Palmares</a></li>

@@ -74,7 +74,7 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 
 	<nav>
 		<ul>
-			<li><a href="index.html">Home</a></li>
+			<li><a href="index.php">Home</a></li>
 			<li><a href="programme.html">Programme</a></li>
 			<li><a href="infospratiques.html">Infos Pratiques</a></li>
 			<li><a href="palmares.html">Palmares</a></li>
