@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/screen.css">
 
                     <!--    GOOGLE FONTS-->
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i" rel="stylesheet">               
 
                     <!--    jQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -53,7 +53,7 @@
                     
         <div id="nav_laterale">
             <div id="profil_recherche">
-                <a href="./inscription.php"><i class="fa fa-user" aria-hidden="true"></i></a>
+                <a href="./login.php"><i class="fa fa-user" aria-hidden="true"></i></a>
                 <i class="fa fa-search" aria-hidden="true"></i>
             </div>
             <div id="reseaux_sociaux">
@@ -67,9 +67,9 @@
             <div class="programme">
 
                 <div class="programme_images">
-                    <img src="./assets/images/films/facebookistan-redimensionne60.jpg" alt="Facebookistan">
-                    <img src="./assets/images/films/memories1-redimensionne60.jpg" alt="These memories won't last">
-                    <img src="./assets/images/films/The-Foxy-Five-redimensionne60.jpg" alt="The Foxy Five">
+                    <img src="./assets/films/Facebookistan.png" alt="Facebookistan">
+                    <img src="./assets/films/Thesememorieswontlast.png" alt="These memories won't last">
+                    <img src="./assets/films/thefoxyfive.png" alt="The Foxy Five">
                 </div>
 
                 <h2><a href="programme.php">Programme</a></h2>
@@ -96,9 +96,9 @@
                 <h2>Regarder <br> en ligne</h2>
 
                 <div class="programme_images">
-                    <img src="./assets/images/films/facebookistan-redimensionne60.jpg" alt="Facebookistan">
-                    <img src="./assets/images/films/memories1-redimensionne60.jpg" alt="These memories won't last">
-                    <img src="./assets/images/films/The-Foxy-Five-redimensionne60.jpg" alt="The Foxy Five">
+                    <img src="./assets/films/Facebookistan.png" alt="Facebookistan">
+                    <img src="./assets/films/Thesememorieswontlast.png" alt="These memories won't last">
+                    <img src="./assets/films/thefoxyfive.png" alt="The Foxy Five">
                 </div>
             </div>
 

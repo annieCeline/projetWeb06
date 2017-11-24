@@ -14,12 +14,14 @@ try {
     die('Problème technique'); 
 }
 
+session_start();
 
 // incrementer le nombre de likes
-$sql ="UPDATE t_filmlikes SET t_filmlikes.nbLikes =  t_filmlikes.nbLikes + 1 WHERE t_filmlikes.id_film = :idfilm"; 
+$sql ="UPDATE t_filmlikes SET t_filmlikes.nbLikes =  t_filmlikes.nbLikes + 1 WHERE t_filmlikes.id_film = :idfilm AND id_user=:id_user"; 
 // AND t_filmlikes.id_user = unId";
 $resultat = $pdo->prepare($sql);
 $resultat->bindValue(":idfilm", $_POST['id_film']);
+$resultat->bindValue(":id_user", $_SESSION['id_user']);
 if (!$resultat->execute()){
     echo $resultat->errorInfo();
 } 
@@ -29,10 +31,11 @@ if (!$resultat->execute()){
 
 
 // obtenir et renvoyer le nombre de likes
-$sql = "SELECT SUM(nblikes) AS nombreLikes FROM t_filmlikes WHERE t_filmlikes.id_film = :idfilm";
+$sql = "SELECT SUM(nblikes) AS nombreLikes FROM t_filmlikes, t_users WHERE t_filmlikes.id_film = :idfilm AND t_users.id_user=:id_user";
 $resultat = $pdo->prepare($sql);
 // pour vérifier si on reçoit les params d'AJAX: var_dump ($_POST);
 $resultat->bindValue(":idfilm", $_POST['id_film']);
+$resultat->bindValue(":id_user", $_SESSION['id_user']);
 
 if ($resultat->execute()){
     $tableau = $resultat->fetchAll (PDO::FETCH_ASSOC);

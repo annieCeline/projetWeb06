@@ -52,7 +52,8 @@
                     
         <div id="nav_laterale">
             <div id="profil_recherche">
-                <i class="fa fa-user" aria-hidden="true"></i>
+                <a href="./inscription.php">
+                    <i class="fa fa-user" aria-hidden="true"></i></a>
                 <i class="fa fa-search" aria-hidden="true"></i>
             </div>
             <div id="reseaux_sociaux">
@@ -93,7 +94,20 @@
 
                 <div>
         
-                <img src="./assets/logos/partenaires/logo-arts-numeriques-150x150.png" alt="">
+                <img src="./assets/logos/partenaires/logo-80x80/logo-arts-numeriques-80x80.png" alt="Arts numériques">
+                <img src="./assets/logos/partenaires/logo-80x80/logo-bam-festival-80x80.png" alt="BAM Festival">
+                <img src="./assets/logos/partenaires/logo-80x80/logo-cinema-galleries-80x80.png" alt="Cinema Galleries">
+                <img src="./assets/logos/partenaires/logo-80x80/logo-cu-festival-80x80.png" alt="CU Festival">
+                <img src="./assets/logos/partenaires/logo-80x80/logo-federation-wallonie-bruxelles-80x80.png" alt="Fédération Wallonie-Bruxelles">
+                <img src="./assets/logos/partenaires/logo-80x80/logo-kisskissbankbank-80x80.png" alt="KissKissBankBank">
+                <img src="./assets/logos/partenaires/logo-80x80/logo-ladeux-80x80.png" alt="La Deux">
+                <img src="./assets/logos/partenaires/logo-80x80/logo-montreal-webfest-80x80.png" alt="Montreal Webfest">
+                <img src="./assets/logos/partenaires/logo-80x80/logo-roma-webfest-80x80.png" alt="Roma Webfest">
+                <img src="./assets/logos/partenaires/logo-80x80/logo-rtbf-80x80.png" alt="RTBF">
+                <img src="./assets/logos/partenaires/logo-80x80/logo-sacd-scam-sofam-80x80.png" alt="sacd-scam-sofam">
+                <img src="./assets/logos/partenaires/logo-80x80/logo-videographies-80x80.png" alt="Videographies">
+                <img src="./assets/logos/partenaires/logo-80x80/logo-wallimages-80x80.png" alt="Wallimages">
+                <img src="./assets/logos/partenaires/logo-80x80/regionbruxelles.png" alt="Region Bruxelles">
                 </div>
 
                 <h2>Partenaires</h2>
