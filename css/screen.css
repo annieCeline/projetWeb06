@@ -92,6 +92,12 @@ nav a:hover {
     text-align: center;
 }
 
+
+.dropdownParent i {
+	padding: 0rem;
+    color: #ffffff;
+}    
+
 .dropdownItems li:nth-child(1) {
     border-bottom: 1px solid white;
 }

@@ -64,11 +64,13 @@ nav>div {
 }
 
 .dropdownParent li {
-	color: white;
+	color: #ffffff;
 }
 
 .dropdownParent i {
 	padding: 0rem;
+     color: #ffffff;
+  
 }
 
 .dropdownItems {
