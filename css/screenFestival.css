@@ -110,7 +110,7 @@ nav div:nth-of-type(2) a:hover {
 
 header {
     align-items: center;
-    background-image: url(../assets/logos/Logo4.gif);
+    background-image: url(../assets/images/logos/Logo.png);
     background-position: left center;
     background-repeat: no-repeat;
     display: flex;
@@ -118,6 +118,11 @@ header {
     margin: auto;
     padding-top: 23rem;
     width: 75%;
+}
+
+header:hover {
+    background-image: url(../assets/images/logos/logo4.gif);
+    z-index: 0;
 }
 
 header > h1 {

@@ -13,7 +13,7 @@ $sql_films = $pdo->prepare('SELECT * FROM t_films WHERE id_film = :idfilm');
 $sql_films->bindValue(':idfilm', $_GET['id'], PDO::PARAM_INT);
 $sql_films->execute();
 
-session_start();
+//session_start();
 ?>
 
 <!DOCTYPE html>
