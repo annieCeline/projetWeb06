@@ -55,6 +55,74 @@ nav>div {
     display: none;
 }
 
+/*DROPDOWN*/
+
+.dropdownParent {
+	position: relative;
+	cursor: pointer;
+
+}
+
+.dropdownParent li {
+	color: white;
+}
+
+.dropdownParent i {
+	padding: 0rem;
+}
+
+.dropdownItems {
+	background-color: rgba(239, 86, 45, 0.90);
+	box-shadow: -2px 4px 10px -5px rgba(0, 0, 0, 0.75);
+	/*    background-color: #ef562d;*/
+	color: #ffffff;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	margin: 0;
+	visibility: hidden;
+	transform: translateY(-2em);
+	transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+	display: block;
+}
+
+.dropdownItems li {
+	margin: 0;
+	text-align: center;
+}
+
+.dropdownItems li:nth-child(1) {
+	border-bottom: 1px solid white;
+}
+
+.dropdownParent:hover .dropdownItems {
+	opacity: 1;
+	visibility: visible;
+	z-index: 3;
+	transform: translateY(0%);
+	transition-delay: 0s, 0s, 0.3s;
+}
+
+nav div:nth-of-type(2){
+    background-color: white;
+    border-bottom: 1px solid #ef562d;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav div:nth-of-type(2) a, p, span {
+    color: #303030;
+    padding: 1rem;
+}
+
+nav div:nth-of-type(2) a:hover {
+    border: none;
+    color: #ef562d;
+}
+
+
 #nav_laterale {
     /*    color: #ef562d;*/
     align-items: center;

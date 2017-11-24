@@ -115,38 +115,63 @@ nav > div {
 
 /*LES RESEAUX SOCIAUX */
 
-#nav_laterale {
-	/* color: #ef562d;*/
-	align-items: center;
-	border: 1px dashed #ef562d;
-	border-radius: 15%;
-	border-right: none;
-	box-shadow: 2px 9px 43px -5px rgba(0, 0, 0, 0.75);
-	display: flex;
-	flex-direction: column;
-	font-size: 1.6rem;
-	/*	height: 9rem;*/
-	justify-content: space-between;
-	padding: 1rem;
-	position: fixed;
-	width: 4rem;
-	right: 0px;
-	top: 20rem;
-	z-index: 2;
+
+nav div:nth-of-type(2){
+    background-color: white;
+    border-bottom: 1px solid #ef562d;
+    display: flex;
+    justify-content: flex-end;
 }
 
-i {
-	padding: 1rem;
+nav div:nth-of-type(2) a, p, span {
+    color: #303030;
+    padding: 1rem;
+}
+
+nav div:nth-of-type(2) a:hover {
+    border: none;
+    color: #ef562d;
+}
+
+#nav_laterale {
+    align-items: center;
+    border: 1px dashed #ef562d;
+    border-radius: 10%;
+    border-right: none;
+    box-shadow: -2px 4px 10px -5px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    height: 12rem;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    right: 0px;
+    top: 20rem;
+    width: 2.5rem;
+    z-index: 1;
+}
+
+#nav_laterale a {
+    color: #303030;
+}
+
+#nav_laterale a:hover {
+    color: #ef562d;
 }
 
 #reseaux_sociaux {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 #profil_recherche {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-user, .fa-twitter {
+    margin-bottom: 0.7rem;
 }
 
 /*MAIN*/
@@ -189,7 +214,7 @@ section:not(#nav_laterale) .thumbnailsContainer {
 
 header {
 	align-items: center;
-	background-image: url(../assets/images/logo/Logo4.gif);
+	background-image: url(../assets/images/logos/Logo.png);
 	background-position: left center;
 	background-repeat: no-repeat;
 	display: flex;
@@ -197,6 +222,12 @@ header {
 	margin: auto;
 	padding-top: 23rem;
 	width: 75%;
+}
+
+header:hover{
+    background-image: url(../assets/images/logos/logo4.gif);
+    z-index: 0;
+    
 }
 
 header > h1 {

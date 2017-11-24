@@ -52,15 +52,14 @@
                     
         <div id="nav_laterale">
             <div id="profil_recherche">
-                <a href="./inscription.php">
-                    <i class="fa fa-user" aria-hidden="true"></i></a>
+                <a href="./login.php"><i class="fa fa-user" aria-hidden="true"></i></a>
                 <i class="fa fa-search" aria-hidden="true"></i>
             </div>
             <div id="reseaux_sociaux">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
                 <i class="fa fa-facebook" aria-hidden="true"></i>
             </div>
-        </div> 
+        </div>
            
                     <!--SECTION EQUIPE-->
                     
