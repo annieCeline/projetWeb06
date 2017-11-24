@@ -21,7 +21,7 @@ nav {
 	position: fixed;
 	opacity: 1;
 	width: 100%;
-	z-index: 2;
+	z-index: 5;
 }
 
 nav ul {
@@ -149,7 +149,7 @@ nav div:nth-of-type(2) a:hover {
     right: 0px;
     top: 20rem;
     width: 2.5rem;
-    z-index: 1;
+    z-index: 4;
 }
 
 #nav_laterale a {
@@ -285,13 +285,9 @@ section h2 {
 
 	padding-left: 0;
 	width: 100%;
-	/*
-	margin-top: 3rem;
-*/
-	display: flex;
+    display: flex;
 	flex-direction: row;
-	/*	flex-wrap: wrap;*/
-	justify-content: space-around;
+    justify-content: space-around;
 	position: relative;
 /*	z-index: -1;*/
 
@@ -331,7 +327,7 @@ section h2 {
 	color: white;
 	text-align: center;
 	line-height: 1rem;
-	z-index: 0;
+	z-index: 4;
 }
 
 h3:nth-of-type(1) {
