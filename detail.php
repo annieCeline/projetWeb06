@@ -82,9 +82,14 @@ session_start();
             echo '<div>';
                 echo '<h2 id="trailer">' . $data[0]['titre'] . '</h2>';
                 echo '<div>';
-                echo '<iframe src="' . $data[0]['ressourceVideo'] . '"></iframe>';
-                echo '<img id="like" src="./assets/logos/applause32.png" alt="like">';
-                echo '<div id="nbLikes"></div>';
+                    echo '<iframe src="' . $data[0]['ressourceVideo'] . '"></iframe>';
+                echo '</div>';
+                echo '<div>';
+                    echo '<div id="like1">';
+                        echo '<div><img id="like" src="./assets/images/logos/applause32.png" alt="like"></div>';
+                        echo '<div id="nbLikes"></div>';
+                    echo '</div>';
+                    echo '<p><span>Diffusion :</span> ' . $data[0]['diffusion'] . '</p>';
                 echo '<input id="id_film" type="hidden" value="'.$data[0]['id_film'] . '">';
                 
                     if (isset ($_SESSION['id_user'])){
@@ -92,6 +97,7 @@ session_start();
                     } 
                 
                 echo '<div id="messageLike">Veuillez vous connecter pour liker</div>';        
+
                 echo '</div>';
             echo '</div>';
         echo '</div>';
@@ -100,7 +106,6 @@ session_start();
                 echo '<div>';
                     echo '<p><span>Réalisateur :</span> ' . $data[0]['realisateur'] . '</p>';
                     echo '<p><span>Origine :</span> ' . $data[0]['origine'] . '</p>';
-                    echo '<p><span>Diffusion :</span> ' . $data[0]['diffusion'] . '</p>';
                     echo '<p><span>Genre :</span> ' . $data[0]['genre'] . '</p>';
                     echo '<p><span>Saison :</span> ' . $data[0]['saison'] . '</p>';
                     echo '<p><span>Durée :</span> ' . $data[0]['duree'] . '</p>';

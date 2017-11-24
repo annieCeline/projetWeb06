@@ -48,9 +48,10 @@ nav a:hover {
     border-bottom: 1px solid #303030;
 }
 
-        /*MOBILE // MENU HAMBURGER REVISITE */
 
-nav > div {
+/*MOBILE // MENU HAMBURGER REVISITE */
+
+nav>div {
     display: none;
 }
 
@@ -100,7 +101,7 @@ nav > div {
 
 header {
     align-items: center;
-    background-image: url(../assets/logos/Logo4.gif);
+    background-image: url(../assets/images/logos/Logo.png);
     background-position: left center;
     background-repeat: no-repeat;
     display: flex;
@@ -110,6 +111,10 @@ header {
     width: 75%;
 }
 
+header:hover {
+    background-image: url(../assets/images/logos/logo4.gif);
+    z-index: 0;
+}
 
 header>h1 {
     color: #ef562d;
@@ -161,8 +166,6 @@ footer {
 }
 
 
-
-
 /*SECTION VIDEO*/
 
 #trailer {
@@ -176,7 +179,7 @@ footer {
 
 #video-container {
     background-color: #ef562d;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
     padding-top: 2rem;
     transform: skewY(-1deg);
 }
@@ -190,17 +193,43 @@ footer {
 #video-container div:nth-child(2) {
     width: 56rem;
     height: 31rem;
-    margin-left: auto;
-    margin-right: auto;
     transform: skewY(0deg);
 }
 
 #video-container iframe {
     width: 100%;
     height: 100%;
+    border: none;
 }
 
+#video-container div:nth-child(3) {
+    transform: skewY(0deg);
+    display: flex;
+    justify-content: space-between;
+}
 
+#like1{
+    display: flex;
+    justify-content: space-between;
+    width: 6rem !important;
+    transform: skewY(0deg) !important;
+    margin-left: 1rem !important;
+}
+
+#nbLikes{
+    width: 5rem !important;
+    height: 5rem !important;
+    margin: auto;
+}
+
+#video-container div:nth-child(3) p{
+    font-size: 2.5rem;
+    color: #fff;
+    margin-right: 1rem;
+}
+#video-container div:nth-child(3) p span{
+    font-weight: bold;
+}
 /*FOOTER*/
 
 footer {
@@ -208,7 +237,7 @@ footer {
     display: flex;
     font-size: 1.4rem;
     justify-content: space-between;
-    margin-top: 10rem;
+    margin-top: 4rem;
     padding-top: 2rem;
     padding-bottom: 1.5rem;
 }
@@ -242,8 +271,7 @@ footer {
         text-align: center;
     }
     /* SECTIONS INFO */
-    .programme,
-    #don {
+    .programme {
         flex-direction: column;
     }
     .programme h2 {
@@ -251,6 +279,9 @@ footer {
         font-size: 3rem;
     }
     .programme div {
+        width: 90%;
+    }
+    .programme p {
         width: 100%;
     }
     /*SECTION VIDEO*/
@@ -269,28 +300,24 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-	
     /*NAV     */
     .visible {
-        background-color: #ef562d; 
+        background-color: #ef562d;
         display: block;
         text-align: center;
     }
-    
     nav {
         background-color: white;
     }
-
-    nav > div { /*La souris/menu hamb apparait*/
+    nav>div {
+        /*La souris/menu hamb apparait*/
         display: flex;
         justify-content: flex-end;
     }
-
-    ul { 
+    ul {
         display: none;
-    } 
-    
-    nav > ul > li {
+    }
+    nav>ul>li {
         font-size: 2.5rem;
     }
     header {
@@ -327,11 +354,12 @@ footer {
     .programme div {
         width: 100%;
     }
+    .programme p {
+        width: 95%;
+    }
     #logoDon {
         width: 90%;
     }
-    
-
     /*SECTION VIDEO*/
     #video-container div {
         width: 25rem;
