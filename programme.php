@@ -108,20 +108,21 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 		<!--Download programme-->
 		<section id="downloadProgramme">
 
-            <div>
-			<div>
+            <div class="downloadProgrammeParent">
+            
+            <h2>Agenda</h2>
+            
+			<div class="downloadProgrammeEnfant">
 
-
+            
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
 
-				<a href=""><img src="./assets/images/logo/blackDownload.png" alt=""></a>
+				<a href=""><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></a>
 
-				<!--PDF-->
-				<!-- <a href=".pdf">Programme à télécharger</a>-->
 			</div>
 
 
-			<h2>Agenda</h2>
+			
         </div>
 
 		</section>

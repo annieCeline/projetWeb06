@@ -91,7 +91,7 @@
             <section>        
             <div class="programme">
 
-                <div>
+                <div id="partenaires">
         
                 <img src="./assets/images/logos/partenaires/logo-80x80/logo-arts-numeriques-80x80.png" alt="Arts numériques">
                 <img src="./assets/images/logos/partenaires/logo-80x80/logo-bam-festival-80x80.png" alt="BAM Festival">
@@ -107,6 +107,8 @@
                 <img src="./assets/images/logos/partenaires/logo-80x80/logo-videographies-80x80.png" alt="Videographies">
                 <img src="./assets/images/logos/partenaires/logo-80x80/logo-wallimages-80x80.png" alt="Wallimages">
                 <img src="./assets/images/logos/partenaires/logo-80x80/regionbruxelles.png" alt="Region Bruxelles">
+                <img src="./assets/images/logos/partenaires/logo-80x80/logo-cw.png" alt="Creative Wallonia">
+
                 </div>
 
                 <h2>Partenaires</h2>

@@ -78,6 +78,7 @@ nav div:nth-of-type(2) a:hover {
 
 .dropdownParent i {
 	padding: 0rem;
+    color: #ffffff;
 }
 
 .dropdownItems {
@@ -234,6 +235,10 @@ section, footer{
 /*    max-width: 120rem;*/
     padding: 1rem;
 /*    width: 250px;*/
+}
+
+#partenaires {
+    margin-right: 10rem;
 }
 
  /*FOOTER*/

@@ -138,7 +138,7 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 
 						<p>Télécharger votre agenda ici</p>
 
-						<a href=""><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></a>
+<a href=""><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></a>
 
 
 						<!--				<a href="./assets/document/agenda.pdf"><img src="./assets/images/logo/pdf.png" alt="pdf"></a>-->

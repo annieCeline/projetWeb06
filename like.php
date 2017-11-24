@@ -16,6 +16,17 @@ try {
 
 session_start();
 
+
+//test d'insertion de l'utilisateur et du film ds la BD
+//$sql ="INSERT INTO t_filmlikes (id_user, id_film) VALUES (:id_user, :id_film)";
+//$resultat = $pdo->prepare($sql);
+//$resultat->bindValue(":idfilm", $_POST['id_film']);
+//$resultat->bindValue(":id_user", $_SESSION['id_user']);
+//if (!$resultat->execute()){
+//    echo $resultat->errorInfo();
+//}
+
+
 // incrementer le nombre de likes
 $sql ="UPDATE t_filmlikes SET t_filmlikes.nbLikes =  t_filmlikes.nbLikes + 1 WHERE t_filmlikes.id_film = :idfilm AND id_user=:id_user"; 
 // AND t_filmlikes.id_user = unId";
