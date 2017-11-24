@@ -11,16 +11,20 @@ btnEnvoyer.addEventListener ('click', function (evenement){
 	var formulaire = new FormData (formLogin);
 
 	xhr.onreadystatechange = function (){
-		if (xhr.readyState == 4){
-			if (xhr.status==200){
-//				console.log (xhr.responseText); // le message du serveur concernant le login
-				if (xhr.responseText == "error"){
-                    message.innerHTML = "Mot de passe incorrect";
+		if (xhr.readyState == 4) {
+			if (xhr.status==200) {
+				console.log ('xhr.responseText', xhr.responseText); // le message du serveur concernant le login
+//				if (xhr.responseText == "compteinexistant"){
+//                    message.innerHTML = "Compte inexistant";
+//                } else 
+                
+                    if (xhr.responseText == "error") {
+                    message.innerHTML = "Couple / Mot de passe incorrects";
                 }
-                else {
+                else { 
                     window.location.href = "./index.php";
                 }
-
+                
 			}
 			else {
 				console.log ("error dans AJAX! "+ xhr.status);
