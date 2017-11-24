@@ -19,13 +19,31 @@
 	<script>
 		$(document).ready(function() {
 
-			$('nav > div').click(function(e) {
-				$('nav > ul').toggleClass("visible");
+		$('nav > div').click(function(e) {
+			$('nav > ul').toggleClass("visible");
 
-
-			});
 		});
+
+		$("nav ul li a").on("click", function() {
+			$(this).siblings().toggleClass('active');
+			
+		});
+			
+			
+				$(function() {
+					var pgurl = window.location.href.substr(window.location.href
+						.lastIndexOf("/") + 1);
+					$("#nav ul li a").each(function() {
+						if ($(this).attr("href") == pgurl || $(this).attr("href") == '')
+							$(this).addClass("active");
+					})
+				});
+
+		});
+
+
 	</script>
+
 
 </head>
 
@@ -36,7 +54,7 @@
 
 	<!--NAVIGATION -->
 
-    <?php 
+	<?php 
     include "./nav.php";
     ?>
 
@@ -77,12 +95,14 @@
 
 		<section id="sectionWebDoc">
 
-			<h2>Web doc</h2>
+
+			<div class="thumbnailsContainer">
 
 
-			<ul class="thumbnails">
-				<li data-tag="webdoc">
-					<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
+
+				<ul class="thumbnails">
+					<li data-tag="webdoc">
+						<a href="#"><img src="./assets/images/films/thumbnail/projet/Pass%C3%A9sauvage.png" alt="memories">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -100,9 +120,9 @@
 							</div>
 						</div>
 					</a>
-				</li>
-				<li data-tag="webdoc">
-					<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
+					</li>
+					<li data-tag="webdoc">
+						<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -120,9 +140,9 @@
 							</div>
 						</div>
 					</a>
-				</li>
-				<li data-tag="webdoc">
-					<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
+					</li>
+					<li data-tag="webdoc">
+						<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -140,12 +160,14 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
 
-			</ul>
+				</ul>
+				<h2>Webdoc</h2>
 
 
+			</div>
 
 
 		</section>
@@ -154,12 +176,13 @@
 
 		<section id="sectionWebSerie">
 
-			<h2>Web serie</h2>
+			<div class="thumbnailsContainer">
 
 
-			<ul class="thumbnails">
-				<li data-tag="webserie">
-					<a href="#"><img src="./assets/images/films/thumbnail/donottrack.png" alt="Do not Track">
+
+				<ul class="thumbnails">
+					<li data-tag="webserie">
+						<a href="#"><img src="./assets/images/films/thumbnail/donottrack.png" alt="Do not Track">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -177,11 +200,11 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
 
-				<li data-tag="webserie">
-					<a href="#"><img src="./assets/images/films/thumbnail/Alma.png" alt="memories">
+					<li data-tag="webserie">
+						<a href="#"><img src="./assets/images/films/thumbnail/Alma.png" alt="memories">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -199,11 +222,11 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
 
-				<li data-tag="webserie">
-					<a href="#"><img src="./assets/images/films/thumbnail/Alteration.png" alt="memories">
+					<li data-tag="webserie">
+						<a href="#"><img src="./assets/images/films/thumbnail/Alteration.png" alt="memories">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -221,14 +244,15 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
 
-			</ul>
+				</ul>
 
 
+				<h2>Web série</h2>
 
-
+			</div>
 
 		</section>
 
@@ -237,11 +261,12 @@
 
 		<section id="sectionTransmedia">
 
-			<h2>Transmedia</h2>
+			<div class="thumbnailsContainer">
 
-			<ul class="thumbnails">
-				<li data-tag="transmedia">
-					<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
+
+				<ul class="thumbnails">
+					<li data-tag="transmedia">
+						<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -259,9 +284,9 @@
 							</div>
 						</div>
 					</a>
-				</li>
-				<li data-tag="transmedia">
-					<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
+					</li>
+					<li data-tag="transmedia">
+						<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -279,9 +304,9 @@
 							</div>
 						</div>
 					</a>
-				</li>
-				<li data-tag="transmedia">
-					<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
+					</li>
+					<li data-tag="transmedia">
+						<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -299,11 +324,13 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
 
-			</ul>
+				</ul>
+				<h2>Transmedia</h2>
 
+			</div>
 
 		</section>
 
@@ -312,14 +339,15 @@
 
 		<section id="sectionProjet">
 
-			<h2>Projet</h2>
+			<div class="thumbnailsContainer">
 
 
 
 
-			<ul class="thumbnails">
-				<li data-tag="projet">
-					<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
+
+				<ul class="thumbnails">
+					<li data-tag="projet">
+						<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -337,9 +365,9 @@
 							</div>
 						</div>
 					</a>
-				</li>
-				<li data-tag="projet">
-					<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
+					</li>
+					<li data-tag="projet">
+						<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -357,9 +385,9 @@
 							</div>
 						</div>
 					</a>
-				</li>
-				<li data-tag="projet">
-					<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
+					</li>
+					<li data-tag="projet">
+						<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -377,10 +405,15 @@
 							</div>
 						</div>
 					</a>
-				</li>
+					</li>
 
 
-			</ul>
+				</ul>
+
+				<h2>Projet</h2>
+
+			</div>
+
 
 		</section>
 

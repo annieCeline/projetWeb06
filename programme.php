@@ -13,7 +13,8 @@ try {
 }
 
 //on selectionne tous les films (par ordre alphabétique ascendant) de la bdd via une requête sql statique
-$sql_films = $pdo->query('SELECT * FROM t_films ORDER BY titre ASC');
+//$sql_films = $pdo->query('SELECT * FROM t_films ORDER BY titre ASC');
+$sql_films = $pdo->query('SELECT * FROM t_films WHERE projet = 0');
 
 //le tout est stocké dans un tableau ($data)
 $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimensions
@@ -41,31 +42,36 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
-	<script>
-		$(document).ready(function() {
-            
-            // ajouter la classe pour que le bouton Tout soit active
-            // blablablabla
-            
-            $('#catalogueFilms button').click(function() {
-				//				console.log("click");
+	 <script>
+        $(document).ready(function() {
+			
+            $('#idTous').addClass('buttonSelected');
+			
+			
+            $('#catalogueFilms button').click(function(e) {
+                console.log("click");
+                var visibleTag = $(this).data('cat');
+                console.log(visibleTag);
+                //console.log(this);              
+                $('#catalogueFilms button').removeClass('buttonSelected');
+				 $(this).addClass('noBorderButton');
+                $(this).addClass('buttonSelected');
+                //LI//
+				
+                $('#thumbnails > li').each(function(e) {
+                    $(this).css('display', 'block');
+                    //console.log(this);
+                    if (visibleTag != 'tous' && $(this).data('tag') != visibleTag) {
+                        $(this).css('display', 'none');
+                    }
+                });
+            });
+            $('nav > div').click(function(e) {
+                $('nav > ul').toggleClass("visible");
 
-				var visibleTag = $(this).data('cat');
-				//				console.log(visibleTag);
-
-				$('#thumbnails > li').each(function() {
-
-					$(this).css('display', 'block');
-
-					if (visibleTag != 'tout' && $(this).data('tag') != visibleTag) {
-
-						$(this).css('display', 'none');
-					}
-				});
-			});
-		});
-	</script>
-
+            });
+        });
+    </script>
 
 
 </head>
@@ -125,10 +131,10 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 		<!--Catalogue des films-->
 
 		<section id="catalogueFilms">
-			<h2>Le catalogue</h2>
+			<h2>Le catalogue des projections</h2>
 			<div id="tagsFilms">
 				<!--Les buttons tags-->
-				<button data-cat="tout">Tout</button>
+				<button data-cat="tout" id="idTous">Tous</button>
 
 				<button data-cat="webdoc">Web Doc</button>
 
@@ -136,7 +142,7 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 
 				<button data-cat="transmedia">Transmedia</button>
 
-				<button data-cat="projet">Projet</button>
+<!--				<button data-cat="projet">Projet</button>-->
 			</div>
 		</section>
 

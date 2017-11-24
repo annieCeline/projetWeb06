@@ -10,7 +10,10 @@ body {
 }
 
 
-    /*    NAVIGATIONS */
+/*    NAVIGATIONS */
+
+
+
 
 nav {
     background-color: #ef562d;
@@ -38,6 +41,10 @@ li {
     padding: 1.2rem;
 }
 
+.active{
+	color: black;
+}
+
 nav a {
     color: white;
     padding-bottom: 0.2rem;
@@ -46,8 +53,55 @@ nav a {
 
 nav a:hover {
     color: #303030;
-/*    font-style: italic;*/
+    /*    font-style: italic;*/
     border-bottom: 2px solid #303030;
+}
+
+
+/*DROPDOWN*/
+
+.dropdownParent {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdownParent i {
+    padding: 0rem;
+}
+
+.dropdownItems {
+    background-color: rgba(239, 86, 45, 0.90);
+    box-shadow: -2px 4px 10px -5px rgba(0, 0, 0, 0.75);
+    /*    background-color: #ef562d;*/
+    color: #ffffff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    margin: 0;
+    visibility: hidden;
+    transform: translateY(-2em);
+    /*    z-index: -2;*/
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    display: block;
+}
+
+.dropdownItems li {
+    margin: 0;
+    text-align: center;
+}
+
+.dropdownItems li:nth-child(1) {
+    border-bottom: 1px solid white;
+}
+
+.dropdownParent:hover .dropdownItems {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
 }
 
 #nav_laterale {
@@ -55,11 +109,12 @@ nav a:hover {
     border: 1px dashed #ef562d;
     border-radius: 10%;
     border-right: none;
-    box-shadow: -2px 4px 10px -5px rgba(0,0,0,0.75);
+    box-shadow: -2px 4px 10px -5px rgba(0, 0, 0, 0.75);
     display: flex;
     flex-direction: column;
     font-size: 1.6rem;
-    height: 9rem;;
+    height: 9rem;
+    ;
     justify-content: space-between;
     padding: 1rem;
     position: fixed;
@@ -87,7 +142,7 @@ nav a:hover {
 }
 
 
-    /*    HEADER*/
+/*    HEADER*/
 
 header {
     align-items: center;
@@ -101,10 +156,10 @@ header {
     width: 75%;
 }
 
-header > h1 {
+header>h1 {
     color: #ef562d;
     font-family: 'Space Mono', monospace;
-    font-size: 5rem; 
+    font-size: 5rem;
     line-height: 8rem;
     margin-left: 20rem;
     position: relative;
@@ -112,30 +167,35 @@ header > h1 {
     z-index: -1;
 }
 
-header > p {
+header>p {
     line-height: 2.5rem;
     margin: 4rem;
-    width: 60%; 
+    width: 60%;
 }
 
-header > img {
+header>img {
     max-width: 100%;
 }
 
 
 /*    FORMULAIRE INSCRIPTION (<inscription.html)*/
 
-#formInscription, #formLogin, h1 { 
+#formInscription,
+#formLogin,
+h1 {
     text-align: center;
 }
 
-#formInscription button, #formLogin button {
+#formInscription button,
+#formLogin button {
     margin: 2rem;
 }
 
+
 /*    SECTIONS PROGRAMME*/
 
-section, footer{
+section,
+footer {
     margin: auto;
     width: 75%;
 }
@@ -144,7 +204,7 @@ section, footer{
     display: flex;
     justify-content: space-between;
     max-width: 120rem;
-    padding-bottom: 8rem;    
+    padding-bottom: 8rem;
     padding-top: 8rem;
 }
 
@@ -156,7 +216,7 @@ section, footer{
     color: #ef562d;
     font-family: 'Space Mono', monospace;
     font-size: 4rem;
-    line-height:4rem;
+    line-height: 4rem;
     padding-right: 2rem;
 }
 
@@ -171,7 +231,7 @@ section, footer{
 }
 
 .programme p {
-    font-size: 2rem;    
+    font-size: 2rem;
     font-weight: 400;
 }
 
@@ -183,13 +243,14 @@ section, footer{
     width: 250px;
 }
 
-    /*SECTION COUP DE COEUR*/
+
+/*SECTION COUP DE COEUR*/
 
 #coupDeCoeur_container {
     background-color: #ef562d;
     margin-top: 12rem;
     margin-bottom: 4rem;
-    padding-bottom: 8rem;    
+    padding-bottom: 8rem;
     padding-top: 11rem;
     transform: skewY(-1deg);
     z-index: -1;
@@ -212,7 +273,7 @@ q {
     vertical-align: middle;
 }
 
-#coupDeCoeur_container p{
+#coupDeCoeur_container p {
     color: white;
     text-align: center;
     transform: skewY(0deg);
@@ -229,7 +290,7 @@ q {
     color: white;
     font-size: 1.6rem;
     font-style: italic;
-    margin-left: 2rem; 
+    margin-left: 2rem;
     margin-right: 2rem;
     padding-bottom: 0.6rem;
     text-decoration: none;
@@ -239,11 +300,11 @@ q {
 #coupDeCoeur_container a:hover {
     border-bottom: 1px solid #303030;
     color: #303030;
-/*    text-decoration: underline;    */
+    /*    text-decoration: underline;    */
 }
 
 
-        /*FOOTER*/
+/*FOOTER*/
 
 footer {
     border-top: 1px solid #ef562d;
@@ -255,18 +316,21 @@ footer {
     padding-bottom: 1.5rem;
 }
 
-        /*MOBILE // MENU HAMBURGER REVISITE */
 
-nav > div {
+/*MOBILE // MENU HAMBURGER REVISITE */
+
+nav>div {
     display: none;
 }
 
 
-        /*MEDIA QUERIES*/
-        
-        /*VERSION TABLETTE*/
+/*MEDIA QUERIES*/
+
+
+/*VERSION TABLETTE*/
+
 @media screen and (min-width: 501px) and (max-width: 960px) {
-      /* HEADER */
+    /* HEADER */
     header {
         align-items: flex-start;
         background-size: 200px;
@@ -281,9 +345,8 @@ nav > div {
     }
     header>p {
         width: 90%;
-    } 
-    
-        /*NAVIGATIONS */
+    }
+    /*NAVIGATIONS */
     li {
         font-size: 1.5rem;
         margin-left: 1rem;
@@ -294,10 +357,8 @@ nav > div {
     #nav_laterale {
         width: 2rem;
     }
-    
-        /* SECTIONS*/
-    .programme
-     {
+    /* SECTIONS*/
+    .programme {
         flex-direction: column;
     }
     .programme_images {
@@ -309,34 +370,36 @@ nav > div {
     }
     .programme div {
         width: 100%;
-    }    
-}    
+    }
+}
 
-        /*VERSION MOBILE*/
+
+/*VERSION MOBILE*/
 
 @media screen and (max-width: 500px) {
-        
-        /*NAV*/
+    /*
+    *{
+        background-color: red;
+    }
+*/
+    /*NAV*/
     .visible {
-        background-color: #ef562d; 
+        background-color: #ef562d;
         display: block;
         text-align: center;
     }
-    
     nav {
         background-color: white;
     }
-
-    nav > div { /*La souris/menu hamb apparait*/
+    nav>div {
+        /*La souris/menu hamb apparait*/
         display: flex;
         justify-content: flex-end;
     }
-
-    ul { 
+    ul {
         display: none;
-    } 
-    
-    nav > ul > li {
+    }
+    nav>ul>li {
         font-size: 2.5rem;
     }
     #nav_laterale {
@@ -344,8 +407,7 @@ nav > div {
         width: 1.50rem;
         height: 7rem;
     }
-    
-        /*HEADER    */
+    /*HEADER    */
     header {
         align-items: flex-start;
         background-size: 140px;
@@ -354,28 +416,24 @@ nav > div {
         padding-top: 9rem;
         width: 90%;
     }
-    
-    header > h1 {
+    header>h1 {
         margin-left: 9.5rem;
         margin-top: 8rem;
         font-size: 3rem;
         line-height: 4.5rem;
     }
-    
-    header > p {
+    header>p {
         width: 90%;
         margin: 1rem;
     }
-    
-        /*SECTIONS*/
+    /*SECTIONS*/
     section,
     footer {
         width: 90%;
-    } 
+    }
     .programme {
         flex-direction: column;
     }
-    
     .programme_images {
         flex-direction: column;
     }
@@ -386,11 +444,21 @@ nav > div {
     .programme div {
         width: 100%;
     }
-    
-        /*FOOTER*/
+    #coupDeCoeur_container div:nth-child(2) {
+        margin-top: 1rem;
+        border: 1px solid black;
+    }
+    #coupDeCoeur_container img {
+/*        margin-left: 3rem;*/
+        width: 3rem;
+        height: 3rem;
+    }
+    #coupDeCoeur_container a {
+        margin-left: 2rem;
+
+    }
+    /*FOOTER*/
     footer {
         flex-direction: column;
     }
 }
-
-
