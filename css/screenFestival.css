@@ -28,7 +28,6 @@ ul {
 }
 
 li {
-     font-family: 'Pacifico', cursive;
     font-size: 1.9rem;
     font-weight: 700;
     margin-left: 4rem;
@@ -48,6 +47,23 @@ nav a:hover {
     border-bottom: 1px solid #303030;
 }
 
+nav div:nth-of-type(2){
+    background-color: white;
+    border-bottom: 1px solid #ef562d;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav div:nth-of-type(2) a, p, span {
+    color: #303030;
+    padding: 1rem;
+}
+
+nav div:nth-of-type(2) a:hover {
+    border: none;
+    color: #ef562d;
+}
+
 #nav_laterale {
 /*    color: #ef562d;*/
     align-items: center;
@@ -57,13 +73,23 @@ nav a:hover {
     box-shadow: -2px 4px 10px -5px rgba(0,0,0,0.75);
     display: flex;
     flex-direction: column;
-    font-size: 1.6rem;
-    height: 9rem;;
+    font-size: 2rem;
+    height: 12rem;
     justify-content: space-between;
     padding: 1rem;
     position: fixed;
     right: 0px;
+    top: 20rem;
     width: 2.5rem;
+    z-index: 1;
+}
+
+#nav_laterale a {
+    color: #303030;
+}
+
+#nav_laterale a:hover {
+    color: #ef562d;
 }
 
 #reseaux_sociaux {
@@ -76,11 +102,15 @@ nav a:hover {
     flex-direction: column;
 }
 
+.fa-user, .fa-twitter {
+    margin-bottom: 0.7rem;
+}
+
     /*    HEADER*/
 
 header {
     align-items: center;
-    background-image: url(../assets/images/logo/Logo.png);
+    background-image: url(../assets/logos/Logo4.gif);
     background-position: left center;
     background-repeat: no-repeat;
     display: flex;
@@ -92,7 +122,6 @@ header {
 
 header > h1 {
     color: #ef562d;
-    font-family: 'Pacifico', cursive;
     font-size: 5rem; 
     line-height: 8rem;
     margin-left: 20rem;
@@ -131,7 +160,6 @@ section, footer{
 
 .programme h2 {
     color: #ef562d;
-    font-family: 'Pacifico', cursive;
     font-size: 4rem;
     line-height:4rem;
     padding-right: 2rem;
@@ -145,11 +173,11 @@ section, footer{
 
 .programme img {
     border: 1px dashed #ef562d;
-    height: 200px;
+/*    height: 200px;*/
     margin: 1.4rem;
-    max-width: 120rem;
-    padding: 1.4rem;
-    width: 250px;
+/*    max-width: 120rem;*/
+    padding: 1rem;
+/*    width: 250px;*/
 }
 
  /*FOOTER*/
@@ -166,13 +194,63 @@ footer {
 
        /*MOBILE // MENU HAMBURGER REVISITE */
 
-nav > div {
+nav > div:nth-of-type(1) {
     display: none;
 }
 
         /*MEDIA QUERIES*/
         
-        /*MOBILE*/
+        /*VERSION TABLETTE*/
+
+@media screen and (min-width: 501px) and (max-width: 960px) {
+      /* HEADER */
+    header {
+        align-items: flex-start;
+        background-size: 200px;
+        background-position: left 10rem;
+        flex-direction: column;
+        width: 90%;
+        padding-top: 9rem;
+    }
+    header>h1 {
+        margin-left: 15rem;
+        margin-top: 9.5rem;
+    }
+    header>p {
+        width: 90%;
+    } 
+    
+        /*NAVIGATIONS */
+    li {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 0.2rem;
+        text-align: center;
+    }
+    #nav_laterale {
+        width: 2rem;
+    }
+    
+        /* SECTIONS*/
+    .programme
+     {
+        flex-direction: column;
+    }
+    .programme_images {
+        align-items: center;
+        flex-direction: column;
+    }
+    .programme h2 {
+        order: -1;
+        font-size: 3rem;
+    }
+    .programme div {
+        width: 100%;
+    }    
+}    
+
+        /*VERSION MOBILE*/
 
 @media screen and (max-width: 500px) {
         
@@ -187,7 +265,7 @@ nav > div {
         background-color: white;
     }
 
-    nav > div { /*La souris/menu hamb apparait*/
+    nav > div:nth-of-type(1) { /*La souris/menu hamb apparait*/
         display: flex;
         justify-content: flex-end;
     }
@@ -198,6 +276,10 @@ nav > div {
     
     nav > ul > li {
         font-size: 2.5rem;
+    }
+    
+    nav div:nth-of-type(2) {
+        display: none;
     }
 
         /*HEADER    */
@@ -232,6 +314,7 @@ nav > div {
     }
     
     .programme_images {
+        align-items: center;
         flex-direction: column;
     }
     .programme h2 {
@@ -241,12 +324,7 @@ nav > div {
     .programme div {
         width: 100%;
     }
-    #nav_laterale {
-        top: 15rem;
-        width: 1.50rem;
-        height: 7rem;
-    }
-
+    
 }
 
 

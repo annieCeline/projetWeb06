@@ -13,15 +13,14 @@ try {
 }
 
 //on selectionne tous les films (par ordre alphabétique ascendant) de la bdd via une requête sql statique
-//$sql_films = $pdo->query('SELECT * FROM t_films ORDER BY titre ASC');
-$sql_films = $pdo->query('SELECT * FROM t_films WHERE projet = 0');
+
+$sql_films = $pdo->query('SELECT * FROM t_films WHERE projet=0 ORDER BY titre ASC');
 
 //le tout est stocké dans un tableau ($data)
 $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimensions
 //var_dump($data); // L'entièreté de nos données
+
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">

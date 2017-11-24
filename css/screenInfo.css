@@ -89,7 +89,7 @@ nav > div {
 
 header {
     align-items: center;
-    background-image: url(../assets/images/logo/Logo.png);
+    background-image: url(../assets/images/logos/Logo.png);
     background-position: left center;
     background-repeat: no-repeat;
     display: flex;
@@ -97,10 +97,9 @@ header {
     margin: auto;
     padding-top: 23rem;
     width: 75%;
-    transition: 5s;
 }
 header:hover{
-    background-image: url(../assets/images/logo/logo4.gif);
+    background-image: url(../assets/images/logos/logo4.gif);
     z-index: 0;
     
 }
@@ -227,7 +226,7 @@ footer {
     display: flex;
     font-size: 1.4rem;
     justify-content: space-between;
-    margin-top: 10rem;
+    margin-top: 4rem;
     padding-top: 2rem;
     padding-bottom: 1.5rem;
 }
@@ -264,6 +263,9 @@ footer {
     .programme,
     #don {
         flex-direction: column;
+    }
+    #logoDon{
+        margin-top: 4rem;
     }
     .programme h2 {
         order: -1;
@@ -345,6 +347,11 @@ footer {
     #don {
         flex-direction: column;
     }
+    
+    #logoDon{
+        margin-top: 4rem;
+    }
+    
     .programme h2 {
         order: -1;
         font-size: 3rem;
@@ -382,11 +389,11 @@ footer {
     #carte iframe {
         left: 0;
         top: 0;
-        height: 100%;
-        width: 100%;
+        height: 95%;
+        width: 95%;
     }
     form {
-        width: 100%;
+        width: 95%;
     }
     /*FOOTER*/
     footer {

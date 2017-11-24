@@ -104,6 +104,23 @@ nav a:hover {
     transition-delay: 0s, 0s, 0.3s;
 }
 
+nav div:nth-of-type(2){
+    background-color: white;
+    border-bottom: 1px solid #ef562d;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav div:nth-of-type(2) a, p, span {
+    color: #303030;
+    padding: 1rem;
+}
+
+nav div:nth-of-type(2) a:hover {
+    border: none;
+    color: #ef562d;
+}
+
 #nav_laterale {
     align-items: center;
     border: 1px dashed #ef562d;
@@ -112,13 +129,13 @@ nav a:hover {
     box-shadow: -2px 4px 10px -5px rgba(0, 0, 0, 0.75);
     display: flex;
     flex-direction: column;
-    font-size: 1.6rem;
-    height: 9rem;
-    ;
+    font-size: 2rem;
+    height: 12rem;
     justify-content: space-between;
     padding: 1rem;
     position: fixed;
     right: 0px;
+    top: 20rem;
     width: 2.5rem;
     z-index: 1;
 }
@@ -141,12 +158,15 @@ nav a:hover {
     flex-direction: column;
 }
 
+.fa-user, .fa-twitter {
+    margin-bottom: 0.7rem;
+}
 
 /*    HEADER*/
 
 header {
     align-items: center;
-    background-image: url(../assets/images/logo/Logo.png);
+    background-image: url(../assets/logos/Logo4.gif);
     background-position: left center;
     background-repeat: no-repeat;
     display: flex;
@@ -179,6 +199,15 @@ header>img {
 
 
 /*    FORMULAIRE INSCRIPTION (<inscription.html)*/
+#lienFormLogin {
+    display: flex;
+    justify-content: center;
+}
+
+#lienFormLogin a {
+    color: #ef562d;
+    text-decoration: none;
+}
 
 #formInscription,
 #formLogin,
@@ -192,6 +221,16 @@ h1 {
 }
 
 
+h1 {
+    color: #ef562d;
+}
+
+button {
+    background-color: white;
+    border: 2px solid #ef562d;
+    padding: 0.8rem 3.5rem;
+}
+
 /*    SECTIONS PROGRAMME*/
 
 section,
@@ -203,8 +242,8 @@ footer {
 .programme {
     display: flex;
     justify-content: space-between;
-    max-width: 120rem;
-    padding-bottom: 8rem;
+/*    max-width: 120rem;*/
+    padding-bottom: 8rem;    
     padding-top: 8rem;
 }
 
@@ -237,10 +276,10 @@ footer {
 
 .programme img {
     border: 1px dashed #ef562d;
-    height: 200px;
+/*    height: 200px;*/
     margin: 1.4rem;
-    padding: 1.4rem;
-    width: 250px;
+    padding: 1rem;
+/*    width: 250px;*/
 }
 
 
@@ -248,6 +287,7 @@ footer {
 
 #coupDeCoeur_container {
     background-color: #ef562d;
+    box-shadow: -2px 4px 10px -5px rgba(0,0,0,0.75);
     margin-top: 12rem;
     margin-bottom: 4rem;
     padding-bottom: 8rem;
@@ -319,9 +359,10 @@ footer {
 
 /*MOBILE // MENU HAMBURGER REVISITE */
 
-nav>div {
+nav > div:nth-of-type(1) {
     display: none;
 }
+
 
 
 /*MEDIA QUERIES*/
@@ -362,6 +403,7 @@ nav>div {
         flex-direction: column;
     }
     .programme_images {
+        align-items: center;
         flex-direction: column;
     }
     .programme h2 {
@@ -391,8 +433,9 @@ nav>div {
     nav {
         background-color: white;
     }
-    nav>div {
-        /*La souris/menu hamb apparait*/
+
+
+    nav > div:nth-of-type(1) { /*La souris/menu hamb apparait*/
         display: flex;
         justify-content: flex-end;
     }
@@ -402,10 +445,9 @@ nav>div {
     nav>ul>li {
         font-size: 2.5rem;
     }
-    #nav_laterale {
-        top: 15rem;
-        width: 1.50rem;
-        height: 7rem;
+    
+    nav div:nth-of-type(2) {
+        display: none;
     }
     /*HEADER    */
     header {
@@ -435,6 +477,7 @@ nav>div {
         flex-direction: column;
     }
     .programme_images {
+        align-items: center;
         flex-direction: column;
     }
     .programme h2 {

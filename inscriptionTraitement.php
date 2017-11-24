@@ -31,8 +31,8 @@ $resultat->bindValue(":Email", $email);
 $resultat->bindValue(":MotDePasse", $password);
 
 if ($resultat->execute()) {
-    echo "Votre inscription a bien été validée";
+    echo "ok";
 } else {
-    echo "Oops, il y'a eu un problème. Veuillez rééssayer";
+    echo "error";
 }
 ?>

@@ -30,6 +30,9 @@
 
             <!--FORMULAIRE D'INSCRIPTION-->
     <main>
+    <div id="lienFormLogin">
+        <p>Déjà un compte ?<a href="login.php"> Connectez-vous par ici</a></p>
+    </div>
     <h1>Inscription</h1>
     <form action="inscriptionTraitement.php" method="post" id="formInscription">
     Nom:<br>
