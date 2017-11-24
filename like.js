@@ -10,7 +10,7 @@ xhr.onreadystatechange = function (){
         if (xhr.status == 200) {
             var nombreLikes = JSON.parse(xhr.responseText);
             console.log(nombreLikes);
-            nbLikes.innerHTML= "Le film comptabilise maintenant " + nombreLikes[0]['nombreLikes'] + " likes";
+            nbLikes.innerHTML=  nombreLikes[0]['nombreLikes'];
             messageLike.innerHTML = "Merci !";
         }
         else {

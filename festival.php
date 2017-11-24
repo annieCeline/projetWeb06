@@ -67,7 +67,7 @@
             <div class="programme">
 
                 <div class="programme_images">
-                    <img src="./assets/images/films/facebookistan-redimensionne60.jpg" alt="Facebookistan">
+                    <img src="./assets/images/am.png" alt="Facebookistan">
                     <img src="./assets/images/films/memories1-redimensionne60.jpg" alt="These memories won't last">
                     <img src="./assets/images/films/The-Foxy-Five-redimensionne60.jpg" alt="The Foxy Five">
                 </div>
@@ -93,20 +93,20 @@
 
                 <div>
         
-                <img src="./assets/logos/partenaires/logo-80x80/logo-arts-numeriques-80x80.png" alt="Arts numériques">
-                <img src="./assets/logos/partenaires/logo-80x80/logo-bam-festival-80x80.png" alt="BAM Festival">
-                <img src="./assets/logos/partenaires/logo-80x80/logo-cinema-galleries-80x80.png" alt="Cinema Galleries">
-                <img src="./assets/logos/partenaires/logo-80x80/logo-cu-festival-80x80.png" alt="CU Festival">
-                <img src="./assets/logos/partenaires/logo-80x80/logo-federation-wallonie-bruxelles-80x80.png" alt="Fédération Wallonie-Bruxelles">
-                <img src="./assets/logos/partenaires/logo-80x80/logo-kisskissbankbank-80x80.png" alt="KissKissBankBank">
-                <img src="./assets/logos/partenaires/logo-80x80/logo-ladeux-80x80.png" alt="La Deux">
-                <img src="./assets/logos/partenaires/logo-80x80/logo-montreal-webfest-80x80.png" alt="Montreal Webfest">
-                <img src="./assets/logos/partenaires/logo-80x80/logo-roma-webfest-80x80.png" alt="Roma Webfest">
-                <img src="./assets/logos/partenaires/logo-80x80/logo-rtbf-80x80.png" alt="RTBF">
-                <img src="./assets/logos/partenaires/logo-80x80/logo-sacd-scam-sofam-80x80.png" alt="sacd-scam-sofam">
-                <img src="./assets/logos/partenaires/logo-80x80/logo-videographies-80x80.png" alt="Videographies">
-                <img src="./assets/logos/partenaires/logo-80x80/logo-wallimages-80x80.png" alt="Wallimages">
-                <img src="./assets/logos/partenaires/logo-80x80/regionbruxelles.png" alt="Region Bruxelles">
+                <img src="./assets/images/logos/partenaires/logo-80x80/logo-arts-numeriques-80x80.png" alt="Arts numériques">
+                <img src="./assets/images/logos/partenaires/logo-80x80/logo-bam-festival-80x80.png" alt="BAM Festival">
+                <img src="./assets/images/logos/partenaires/logo-80x80/logo-cinema-galleries-80x80.png" alt="Cinema Galleries">
+                <img src="./assets/images/logos/partenaires/logo-80x80/logo-cu-festival-80x80.png" alt="CU Festival">
+                <img src="./assets/images/logos/partenaires/logo-80x80/logo-federation-wallonie-bruxelles-80x80.png" alt="Fédération Wallonie-Bruxelles">
+                <img src="./assets/images/logos/partenaires/logo-80x80/logo-kisskissbankbank-80x80.png" alt="KissKissBankBank">
+                <img src="./assets/images/logos/partenaires/logo-80x80/logo-ladeux-80x80.png" alt="La Deux">
+                <img src="./assets/images/logos/partenaires/logo-80x80/logo-montreal-webfest-80x80.png" alt="Montreal Webfest">
+                <img src="./assets/images/logos/partenaires/logo-80x80/logo-roma-webfest-80x80.png" alt="Roma Webfest">
+                <img src="./assets/images/logos/partenaires/logo-80x80/logo-rtbf-80x80.png" alt="RTBF">
+                <img src="./assets/images/logos/partenaires/logo-80x80/logo-sacd-scam-sofam-80x80.png" alt="sacd-scam-sofam">
+                <img src="./assets/images/logos/partenaires/logo-80x80/logo-videographies-80x80.png" alt="Videographies">
+                <img src="./assets/images/logos/partenaires/logo-80x80/logo-wallimages-80x80.png" alt="Wallimages">
+                <img src="./assets/images/logos/partenaires/logo-80x80/regionbruxelles.png" alt="Region Bruxelles">
                 </div>
 
                 <h2>Partenaires</h2>

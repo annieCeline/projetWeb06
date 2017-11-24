@@ -70,9 +70,9 @@
             <div class="programme">
 
                 <div class="programme_images">
-                    <img src="./assets/films/Facebookistan.png" alt="Facebookistan">
-                    <img src="./assets/films/Thesememorieswontlast.png" alt="These memories won't last">
-                    <img src="./assets/films/thefoxyfive.png" alt="The Foxy Five">
+                    <img src="./assets/images/films/Facebookistan.png" alt="Facebookistan">
+                    <img src="./assets/images/films/Thesememorieswontlast.png" alt="These memories won't last">
+                    <img src="./assets/images/films/thefoxyfive.png" alt="The Foxy Five">
                 </div>
 
                 <h2><a href="programme.php">Programme</a></h2>
@@ -92,7 +92,7 @@
 
 
                 <div>
-                   <a href="#"><img src="./assets/images/logo/symbolePlay.png" alt="Play"></a>
+                   <a href="#"><img src="./assets/images/logos/symbolePlay.png" alt="Play"></a>
                     
                     <p>To be continued</p>
 
@@ -110,9 +110,9 @@
                 <h2>Regarder <br> en ligne</h2>
 
                 <div class="programme_images">
-                    <img src="./assets/films/Facebookistan.png" alt="Facebookistan">
-                    <img src="./assets/films/Thesememorieswontlast.png" alt="These memories won't last">
-                    <img src="./assets/films/thefoxyfive.png" alt="The Foxy Five">
+                    <img src="./assets/images/films/Facebookistan.png" alt="Facebookistan">
+                    <img src="./assets/images/films/Thesememorieswontlast.png" alt="These memories won't last">
+                    <img src="./assets/images/films/thefoxyfive.png" alt="The Foxy Five">
                 </div>
             </div>
 
