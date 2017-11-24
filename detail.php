@@ -12,6 +12,8 @@ try {
 $sql_films = $pdo->prepare('SELECT * FROM t_films WHERE id_film = :idfilm');          
 $sql_films->bindValue(':idfilm', $_GET['id'], PDO::PARAM_INT);
 $sql_films->execute();
+
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +25,7 @@ $sql_films->execute();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/screenFiche.css">
 
@@ -60,7 +63,7 @@ $sql_films->execute();
 
         <div id="nav_laterale">
             <div id="profil_recherche">
-                <i class="fa fa-user" aria-hidden="true"></i>
+                <a href="./login.php"><i class="fa fa-user" aria-hidden="true"></i></a>
                 <i class="fa fa-search" aria-hidden="true"></i>
             </div>
             <div id="reseaux_sociaux">
@@ -83,6 +86,12 @@ $sql_films->execute();
                 echo '<img id="like" src="./assets/logos/applause32.png" alt="like">';
                 echo '<div id="nbLikes"></div>';
                 echo '<input id="id_film" type="hidden" value="'.$data[0]['id_film'] . '">';
+                
+                    if (isset ($_SESSION['id_user'])){
+                echo '<input id="id_user" type="hidden" value="'. $_SESSION['id_user'] . '">';
+                    } 
+                
+                echo '<div id="messageLike">Veuillez vous connecter pour liker</div>';        
                 echo '</div>';
             echo '</div>';
         echo '</div>';

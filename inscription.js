@@ -12,17 +12,21 @@ btnEnvoyer.addEventListener ("click", function(e){
         if (xhr.readyState == 4) {
 //            console.log("ok");
             if(xhr.status == 200) {
-                console.log(xhr.responseText); //le message du serveur concernant l'inscription
-                message.innerHTML = xhr.responseText;
+//                console.log(xhr.responseText);
+                if(xhr.responseText == "error") { //le message du serveur concernant l'inscription
+                    message.innerHTML = "Oops, il y'a eu un problème. Veuillez rééssayer";
                 
-            } else {
-                console.log("error dans AJAX " + xhr.status);
-                message.innerHTML =xhr.responseText;
+                } else {
+                window.location.href = "./login.php";
             }
+        }
+        else {
+				console.log ("error dans AJAX! "+ xhr.status);
+			}
         }
     }
     
     //on appelle le serveur et on envoie le formulaire
-    xhr.open('POST', './inscriptionTraitement.php');
-    xhr.send(formulaire);
+    xhr.open ('POST', './inscriptionTraitement.php');
+    xhr.send (formulaire);
 });

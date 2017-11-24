@@ -30,10 +30,13 @@
 
             <!--FORMULAIRE DE CONNEXION-->
     <main>
+    <div id="lienFormLogin">
+        <p>Pas encore de compte ?<a href="inscription.php"> Inscrivez-vous par ici</a></p>
+    </div>
     <h1>Connexion</h1>
     <form action="loginTraitement.php" method="post" id="formLogin">
     Email:<br> 
-    <input type="email" name="email"><br>
+    <input type="email" name="Email"><br>
     Mot de passe:<br> 
     <input type="password" name="MotDePasse"><br> 
 
