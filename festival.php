@@ -67,7 +67,7 @@
             <div class="programme">
 
                 <div class="programme_images">
-                    <img src="./assets/images/films/facebookistan-redimensionne60.jpg" alt="Facebookistan">
+                    <img src="./assets/images/am.png" alt="Facebookistan">
                     <img src="./assets/images/films/memories1-redimensionne60.jpg" alt="These memories won't last">
                     <img src="./assets/images/films/The-Foxy-Five-redimensionne60.jpg" alt="The Foxy Five">
                 </div>
@@ -108,6 +108,7 @@
                 <img src="./assets/images/logos/partenaires/logo-80x80/logo-wallimages-80x80.png" alt="Wallimages">
                 <img src="./assets/images/logos/partenaires/logo-80x80/regionbruxelles.png" alt="Region Bruxelles">
                 <img src="./assets/images/logos/partenaires/logo-80x80/logo-cw.png" alt="Creative Wallonia">
+
                 </div>
 
                 <h2>Partenaires</h2>

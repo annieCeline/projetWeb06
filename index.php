@@ -70,9 +70,9 @@
             <div class="programme">
 
                 <div class="programme_images">
-                    <img src="./assets/films/Facebookistan.png" alt="Facebookistan">
-                    <img src="./assets/films/Thesememorieswontlast.png" alt="These memories won't last">
-                    <img src="./assets/films/thefoxyfive.png" alt="The Foxy Five">
+                    <img src="./assets/images/films/Facebookistan.png" alt="Facebookistan">
+                    <img src="./assets/images/films/Thesememorieswontlast.png" alt="These memories won't last">
+                    <img src="./assets/images/films/thefoxyfive.png" alt="The Foxy Five">
                 </div>
 
                 <h2><a href="programme.php">Programme</a></h2>
@@ -87,8 +87,16 @@
         <div id="coupDeCoeur_container">
             <div>
                 <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quisquam in, consequatur distinctio odio natus hic porro? Consectetur sed commodi blanditiis mollitia rerum similique voluptatum dignissimos nisi eum id, tenetur.</q>
+              
 
-                                <p><img src="./assets/images/logo/symbolePlay.png" alt="Play"><a href="">To be continued</a> - Coup de coeur de Mélissa</p>
+                <div>
+                   <a href="#"><img src="./assets/images/logos/symbolePlay.png" alt="Play"></a>
+                    
+                    <p>To be continued</p>
+
+                    <p>Coup de coeur de Mélissa</p>
+                </div>
+
 
 
             </div>
@@ -101,9 +109,9 @@
                 <h2>Regarder <br> en ligne</h2>
 
                 <div class="programme_images">
-                    <img src="./assets/films/Facebookistan.png" alt="Facebookistan">
-                    <img src="./assets/films/Thesememorieswontlast.png" alt="These memories won't last">
-                    <img src="./assets/films/thefoxyfive.png" alt="The Foxy Five">
+                    <img src="./assets/images/films/Facebookistan.png" alt="Facebookistan">
+                    <img src="./assets/images/films/Thesememorieswontlast.png" alt="These memories won't last">
+                    <img src="./assets/images/films/thefoxyfive.png" alt="The Foxy Five">
                 </div>
             </div>
 

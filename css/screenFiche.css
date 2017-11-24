@@ -273,6 +273,7 @@ footer {
 }
 
 #video-container div:nth-child(3) {
+    height: 5rem;
     transform: skewY(0deg);
     display: flex;
     justify-content: space-between;
@@ -287,18 +288,25 @@ footer {
 }
 
 #nbLikes{
-    width: 5rem !important;
-    height: 5rem !important;
-    margin: auto;
+    width: 4rem !important;
+    height: 4rem !important;
+/*    margin: auto;*/
+}
+#messageLike{
+    height: 4rem !important;
+    color: #fff;
 }
 
-#video-container div:nth-child(3) p{
-    font-size: 2.5rem;
+#diffusion p{
+    margin: 0 !important;
+    text-align: right;
+    font-size: 2rem;
     color: #fff;
     margin-right: 1rem;
 }
-#video-container div:nth-child(3) p span{
+#diffusion p span{
     font-weight: bold;
+    color: #fff;
 }
 /*FOOTER*/
 
@@ -438,12 +446,7 @@ footer {
         width: 25rem;
         height: 14rem;
     }
-    /*    NAVIGATIONS */
-    #nav_laterale {
-        top: 15rem;
-        width: 1.50rem;
-        height: 7rem;
-    }
+  
     /*SECTION PLAN*/
     #carte iframe {
         left: 0;

@@ -89,15 +89,16 @@ $sql_films->execute();
                         echo '<div><img id="like" src="./assets/images/logos/applause32.png" alt="like"></div>';
                         echo '<div id="nbLikes"></div>';
                     echo '</div>';
-                    echo '<p><span>Diffusion :</span> ' . $data[0]['diffusion'] . '</p>';
+                    echo '<div id="messageLike">Veuillez vous connecter pour liker</div>';
                 echo '<input id="id_film" type="hidden" value="'.$data[0]['id_film'] . '">';
                 
                     if (isset ($_SESSION['id_user'])){
                 echo '<input id="id_user" type="hidden" value="'. $_SESSION['id_user'] . '">';
                     } 
-                
-                echo '<div id="messageLike">Veuillez vous connecter pour liker</div>';        
 
+                echo '</div>';
+                echo '<div id="diffusion">';
+                    echo '<p><span>Diffusion :</span> ' . $data[0]['diffusion'] . '</p>';
                 echo '</div>';
             echo '</div>';
         echo '</div>';
