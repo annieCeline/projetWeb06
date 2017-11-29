@@ -129,7 +129,7 @@ nav div:nth-of-type(2) a:hover {
 #nav_laterale {
 	align-items: center;
 	border: 1px dashed #ef562d;
-	border-radius: 15%;
+	border-radius: 10%;
 	border-right: none;
 	box-shadow: -2px 4px 10px -5px rgba(0, 0, 0, 0.75);
 	display: flex;
@@ -385,37 +385,37 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-.visible {
-        background-color: #ef562d; 
+    .visible {
+        background-color: #ef562d;
         display: block;
         text-align: center;
     }
-    
     nav {
         background-color: white;
     }
 
-    nav > div { /*La souris/menu hamb apparait*/
+
+    nav > div:nth-of-type(1) { /*La souris/menu hamb apparait*/
         display: flex;
         justify-content: flex-end;
     }
-
-    ul { 
+    ul {
         display: none;
-    } 
-    
-    nav > ul > li {
+    }
+    nav>ul>li {
         font-size: 2.5rem;
     }
     
     nav div:nth-of-type(2) {
         display: none;
     }
-    
+  
     #nav_laterale {
         width: 1.2rem;
     }
     
+/*HEADER    */
+
     header {
         align-items: flex-start;
         background-size: 140px;

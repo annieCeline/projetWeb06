@@ -129,7 +129,7 @@ nav div:nth-of-type(2) a:hover {
     /*    color: #ef562d;*/
     align-items: center;
     border: 1px dashed #ef562d;
-    border-radius: 15%;
+    border-radius: 10%;
     border-right: none;
     box-shadow: -2px 4px 10px -5px rgba(0, 0, 0, 0.75);
     display: flex;
@@ -247,58 +247,66 @@ footer {
     text-align: center;
 }
 
-#video-container {
+.video-container {
     background-color: #ef562d;
+    box-shadow: -2px 4px 10px -5px rgba(0,0,0,0.75);
     padding-bottom: 2rem;
     padding-top: 2rem;
     transform: skewY(-1deg);
 }
 
-#video-container div {
+.video-container div {
     width: 56rem;
     margin: auto;
     transform: skewY(1deg);
 }
 
-#video-container div:nth-child(2) {
+.video-container div:nth-child(2) {
     width: 56rem;
     height: 31rem;
     transform: skewY(0deg);
 }
 
-#video-container iframe {
+.video-container iframe {
     width: 100%;
     height: 100%;
     border: none;
 }
 
-#video-container div:nth-child(3) {
-    height: 5rem;
+.video-container div:nth-child(3) {
+    height: 8rem;
     transform: skewY(0deg);
     display: flex;
     justify-content: space-between;
+    transform: skewY(0deg);
 }
+
 
 #like1{
     display: flex;
     justify-content: space-between;
-    width: 6rem !important;
-    transform: skewY(0deg) !important;
-    margin-left: 1rem !important;
+    width: 10rem;
+    transform: skewY(0deg);
+    margin-left: 1rem;
 }
 
 #nbLikes{
-    width: 4rem !important;
-    height: 4rem !important;
+    padding: 0;
+    color: #fff;
 /*    margin: auto;*/
 }
 #messageLike{
-    height: 4rem !important;
+    width: 35rem;
+    height: 4rem;
     color: #fff;
 }
 
+#diffusion{
+    transform: skewY(0deg);
+    }
+
 #diffusion p{
-    margin: 0 !important;
+    margin: 0;
     text-align: right;
     font-size: 2rem;
     color: #fff;
@@ -363,10 +371,10 @@ footer {
         width: 100%;
     }
     /*SECTION VIDEO*/
-    #video-container div {
+    .video-container div {
         width: 40rem;
     }
-    #video-container div:nth-child(2) {
+    .video-container div:nth-child(2) {
         width: 40rem;
         height: 22rem;
     }
@@ -387,8 +395,9 @@ footer {
     nav {
         background-color: white;
     }
-    nav>div {
-        /*La souris/menu hamb apparait*/
+
+
+    nav > div:nth-of-type(1) { /*La souris/menu hamb apparait*/
         display: flex;
         justify-content: flex-end;
     }
@@ -399,10 +408,16 @@ footer {
         font-size: 2.5rem;
     }
     
+
     #nav_laterale {
         width: 1.2rem;
     }
     
+    nav div:nth-of-type(2) {
+        display: none;
+    }
+    /*HEADER    */
+
     header {
         align-items: flex-start;
         background-size: 140px;
@@ -444,14 +459,35 @@ footer {
         width: 90%;
     }
     /*SECTION VIDEO*/
-    #video-container div {
-        width: 25rem;
+    .video-container div {
+        width: 28rem;
+        margin: auto;
     }
-    #video-container div:nth-child(2) {
-        width: 25rem;
-        height: 14rem;
+    .video-container div:nth-child(2) {
+        width: 28rem;
+        height: 16rem;
     }
-  
+    
+    .video-container div:nth-child(3) {
+        height: 10rem;
+        flex-direction: column;
+    }
+    
+    #like1{
+        justify-content: space-around;
+    }
+    
+    #messageLike{
+        width: 30rem;
+        margin-top: 0;
+    }
+    
+    #diffusion p{
+        text-align: center;
+        margin-right: 0;
+        font-size: 1.7rem;
+    }
+    
     /*SECTION PLAN*/
     #carte iframe {
         left: 0;

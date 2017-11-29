@@ -81,7 +81,7 @@ if (isset($_POST['nom'], $_POST['email'], $_POST['sujet'], $_POST['message'])){
             </div>
         </div>
         
-        </div>
+      
 
         <section>
             <div class="programme">
@@ -98,10 +98,10 @@ if (isset($_POST['nom'], $_POST['email'], $_POST['sujet'], $_POST['message'])){
             <div id="don">
                 <button>Faite un don</button>
                 <div id="logoDon">
-                    <img src="assets/images/logo/Maestro.png" alt="maestro">
-                    <img src="assets/images/logo/Mastercard.png" alt="mastercard">
-                    <img src="assets/images/logo/Paypal.png" alt="paypal">
-                    <img src="assets/images/logo/Visa.png" alt="visa">
+                    <img src="assets/images/logos/Maestro.png" alt="maestro">
+                    <img src="assets/images/logos/Mastercard.png" alt="mastercard">
+                    <img src="assets/images/logos/Paypal.png" alt="paypal">
+                    <img src="assets/images/logos/Visa.png" alt="visa">
                 </div>
             </div>
 

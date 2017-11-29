@@ -218,6 +218,8 @@ section, footer{
 
 .programme_images {
     display: flex;
+    width: 70rem;
+    justify-content: space-between;
 }
 
 .programme h2 {

@@ -27,17 +27,18 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Brussels WebFest</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Brussels WebFest</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--    STYLE-->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/screen.css">
+	<!--    STYLE-->
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/screen.css">
 
-    <!--    GOOGLE FONTS-->
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i" rel="stylesheet">
+	<!--    GOOGLE FONTS-->
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i" rel="stylesheet">
+
 
 
     <!--    jQUERY-->
@@ -48,20 +49,21 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
     <link rel="stylesheet" href="./jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-    <!--    MENU "HAMBURGER"-->
-    <script>
-        $(document).ready(function() {
 
+	
 
-            $('nav > div').click(function(e) {
-                $('nav > ul').toggleClass("visible");
+	<!--    MENU "HAMBURGER"-->
+	<script>
+		$(document).ready(function() {
+	    $('nav > div').click(function(e) {
+				$('nav > ul').toggleClass("visible");
 
-            });	
-        });
-    </script>
+			});
+
+		
+ 
     
     <!--    Autocomplete-->
-    <script>
   $( function() {
     var availableTags = [
 <?php
@@ -75,16 +77,19 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
       minLength: 2,    
     });
   } );
+});
     </script>    
+
 </head>
 
 <body>
 
-    <!--NAVIGATION-->
+	<!--NAVIGATION-->
 
-    <?php 
+	<?php 
     include "./nav.php";
     ?>
+
 
    
     <!--HEADER-->
@@ -107,77 +112,147 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 
     </header>
 
-    <main>
-        <!--NAVIGATION SOCIAUX ET PROFIL-->
 
-        <div id="nav_laterale">
-            <div id="profil_recherche">
-                <a href="./login.php"><i class="fa fa-user" aria-hidden="true"></i></a>
-                <i id="searchFilms" class="fa fa-search" aria-hidden="true"></i>
-<!--                        <input id="rechercheFilms" type="text" placeholder="Rechercher un film">-->
-            </div>
-            <div id="reseaux_sociaux">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-            </div>
-        </div>
+	<main>
+		<!--NAVIGATION SOCIAUX ET PROFIL-->
 
-        <!--SECTION PROGRAMME-->
-        <section>
-            <div class="programme">
+		<div id="nav_laterale">
+			<div id="profil_recherche">
+				<a href="./login.php"><i class="fa fa-user" aria-hidden="true"></i></a>
+				<i class="fa fa-search" aria-hidden="true"></i>
+			</div>
+			<div id="reseaux_sociaux">
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+				<i class="fa fa-facebook" aria-hidden="true"></i>
+			</div>
+		</div>
 
-                <div class="programme_images">
-                    <img src="./assets/images/films/Facebookistan.png" alt="Facebookistan">
-                    <img src="./assets/images/films/Thesememorieswontlast.png" alt="These memories won't last">
-                    <img src="./assets/images/films/thefoxyfive.png" alt="The Foxy Five">
-                </div>
 
-                <h2><a href="programme.php">Programme</a></h2>
+		<!--SECTION PROGRAMME-->
+		<section>
+			<div class="programme">
 
-            </div>
+
+
+				<div class="programme_images">
+					<img src="./assets/indexImages/Facebookistan.png" alt="Facebookistan">
+					<img src="./assets/indexImages/thefoxyfive.png" alt="These memories won't last">
+					<img src="./assets/indexImages/thesememorieswontlast.png" alt="The Foxy Five">
+				</div>
+
+				<h2><a href="programme.php">Programme</a></h2>
+
+			</div>
 
             <p>Le web, un terrain de jeux qui permet des explorations originales portées par des créateurs innovants. Découvrez le programme des projections en salle de ces oeuvres d'une nouvelle ère.</p>
-        </section>
+		</section>
 
-        <!--SECTION COUP DE COEUR-->
+		<!--SECTION COUP DE COEUR-->
 
-        <div id="coupDeCoeur_container">
-            <div>
+		<section>
+
+			<div id="coupDeCoeur_container">
+
                 <q> Un web drama sympa pour faire connaitre le futur groupe Astro. Ces jeunes ont un sacré talent aussi bien en chant qu'en danse. C’est frais, original, drôle et ça chante. </q>
-              
-
-               
-                    <p><img src="./assets/images/logos/symbolePlay.png" alt="Play"><a href="">To be continued</a> - Coup de coeur de Mélissa</p>
-            
 
 
+				<div id="ContainerPlayVideo">
 
-            </div>
-        </div>
+					<div id="containerVideo">
 
-        <section>
-            <!--SECTION REGARDER EN LIGNE-->
+						<img id="playVideo" src="./assets/images/logos/symbolePlay.png" alt="Play">
 
-            <div class="programme">
-                <h2>Regarder <br> en ligne</h2>
 
-                <div class="programme_images">
-                    <img src="./assets/images/films/Facebookistan.png" alt="Facebookistan">
-                    <img src="./assets/images/films/Thesememorieswontlast.png" alt="These memories won't last">
-                    <img src="./assets/images/films/thefoxyfive.png" alt="The Foxy Five">
-                </div>
-            </div>
+
+						<h3>To be continued</h3>
+
+					</div>
+
+
+
+					<p>Coup de coeur de Mélissa</p>
+
+				</div>
+
+			</div>
+
+
+		</section>
+		
+<!--		Iframe-->
+
+		<div id="iframeVideo">
+			
+
+			<div>
+				<button id="buttonClose">X</button>
+				
+				
+
+				<iframe src="https://www.youtube.com/embed/5EG_7_4ffYI" frameborder="0" allowfullscreen="true"></iframe>
+			</div>
+
+
+		</div>
+
+
+
+		<section>
+			<!--SECTION REGARDER EN LIGNE-->
+
+			<div class="programme">
+
+				<h2><a href="projet.php">Regarder <br> en ligne</a></h2>
+
+
+				<div class="programme_images">
+					<img src="./assets/indexImages/ellesprennentlaparole.png" alt="Elles prennent la parole">
+					<img src="./assets/indexImages/savannahbrown.png" alt="Les petits aventuriers">
+					<img src="./assets/indexImages/cecileemeke.png" alt="Cecile Emeke">
+				</div>
+			</div>
 
             <p>&#192 l'occasion du festival et suite à l'appel à projets, les internautes présentent leurs dernières &#156uvres. Découvrez en ligne ces nouvelles voix de la création.</p>
-        </section>
-    </main>
+		</section>
+	</main>
 
-    <!--FOOTER-->
+	<!--FOOTER-->
 
-    <footer>
-        <p>&copy;Interface3 - 2017</p>
-        <p>info@brusselswebfest.com</p>
-    </footer>
+	<footer>
+		<p>&copy;Interface3 - 2017</p>
+		<p>info@brusselswebfest.com</p>
+	</footer>
+
+	
+	<script>
+		document.getElementById("playVideo").addEventListener("click", function(e) {
+
+
+			var iframeVideo = document.getElementById('iframeVideo');
+			iframeVideo.style.display = 'block';
+
+			window.onwheel = function() {
+				return false;
+			}
+
+              
+
+		});
+
+
+		document.getElementById("buttonClose").addEventListener("click", function(e) {
+
+			var iframeVideo = document.getElementById('iframeVideo');
+
+			iframeVideo.style.display = 'none';
+
+			window.onwheel = function() {
+				return true;
+			}
+
+		});
+	</script>
+
 
 </body>
 
