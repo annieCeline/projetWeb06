@@ -82,7 +82,7 @@
             <div class="programme">
                 <h2>Contact</h2> 
                 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit tenetur nostrum, sit mollitia recusandae, vel dolorum corporis eum quis. Deleniti ad repellat hic pariatur fuga quaerat quis dignissimos consectetur, aliquam.</p>
+                <p>Cinéma Galeries: Galerie de la Reine 26, 1000 Bruxelles<br> Brussels WebFest: info@brusselswebfest.com</p>
             </div>    
             </section>
         

@@ -398,6 +398,11 @@ footer {
     nav>ul>li {
         font-size: 2.5rem;
     }
+    
+    #nav_laterale {
+        width: 1.2rem;
+    }
+    
     header {
         align-items: flex-start;
         background-size: 140px;

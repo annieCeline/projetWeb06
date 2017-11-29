@@ -835,8 +835,17 @@ footer {
 		display: none;
 	}
 	nav > ul > li {
-		font-size: 2rem;
+		font-size: 2.5rem;
 	}
+    
+    nav div:nth-of-type(2) {
+        display: none;
+    }
+    
+    #nav_laterale {
+        width: 1.2rem;
+    }
+    
 	/*	header*/
 	header {
 		align-items: flex-start;

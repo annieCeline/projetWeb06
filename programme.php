@@ -84,9 +84,9 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 	<!--HEADER-->
 
 	<header>
-		<h1>Le <br>Festival</h1>
+		<h1>Le <br>Programme</h1>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nobis, at neque nostrum. Dolorum porro totam aut cumque distinctio, ipsa, iusto sequi. Quis assumenda, repellendus.</p>
+		<p>Plongez dans la séléction officielle du festival. Des &#156uvres au format court ou long, de tous horizons abordant des thématiques originales à découvrir au cinéma ! </p>
 	</header>
 
 

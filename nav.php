@@ -1,6 +1,6 @@
 <nav>
     <div>
-        <img src="./assets/images/logo/symboleMenu50x76.png" alt="Menu">
+        <img src="./assets/images/logos/symboleMenu50x76.png" alt="Menu">
     </div>
 
     <ul>
@@ -28,6 +28,7 @@
           <?php
             session_start();
             
+
             if (isset($_SESSION['Email'])){
                 echo "<span>Bienvenue " .  $_SESSION['Prenom'] . "&nbsp" . $_SESSION['Nom'] . "</span>";
                 echo "<a href='./logout.php'> / Se déconnecter</a>";
@@ -35,7 +36,9 @@
             echo '<a href="login.php">Se connecter </a>';
             echo '<span> / </span>';
             echo '<a href="inscription.php">Se créer un compte</a>';
+   
             }
-                  ?>
+            ?>
+                 
         </div>
 </nav>

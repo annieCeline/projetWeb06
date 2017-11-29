@@ -11,7 +11,25 @@
     <link rel="stylesheet" href="./css/screen.css">
     
                     <!--    GOOGLE FONTS-->
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i" rel="stylesheet">
+    
+                    <!--    jQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+                    <!--    MENU "HAMBURGER"-->
+    <script>
+        $(document).ready(function() {
+
+
+            $('nav > div').click(function(e) {
+                $('nav > ul').toggleClass("visible");
+
+            });
+			
+			
+
+        });
+    </script>  
 </head>
 <body>
                     <!--NAVIGATION-->
