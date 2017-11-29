@@ -18,6 +18,11 @@
 
 	<script>
 		$(document).ready(function() {
+            
+                  $('nav > div').click(function(e) {
+                $('nav > ul').toggleClass("visible");
+
+            });
 
 		
 

@@ -182,6 +182,11 @@ nav div:nth-of-type(2) a:hover {
     margin-bottom: 0.7rem;
 }
 
+.fa-twitter {
+    border-top: 1px dashed #ef562d;
+    padding-top: 1rem;
+}
+
 
 /*MAIN*/
 
@@ -288,7 +293,7 @@ header > img {
 
 .downloadProgrammendChild h2 {
 	font-size: 4.5rem;
-	color: #303030;
+	color: #e6e6e6;
 	
 }
 
@@ -657,9 +662,11 @@ footer {
 	}
 	
 	
+/*
 	.downloadProgrammeParent {
 		width: 85%;
 	}
+*/
 
 	.downloadProgrammeFirstChild {
 		margin-right: 6rem;
