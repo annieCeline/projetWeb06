@@ -19,25 +19,7 @@
 	<script>
 		$(document).ready(function() {
 
-		$('nav > div').click(function(e) {
-			$('nav > ul').toggleClass("visible");
-
-		});
-
-		$("nav ul li a").on("click", function() {
-			$(this).siblings().toggleClass('active');
-			
-		});
-			
-			
-				$(function() {
-					var pgurl = window.location.href.substr(window.location.href
-						.lastIndexOf("/") + 1);
-					$("#nav ul li a").each(function() {
-						if ($(this).attr("href") == pgurl || $(this).attr("href") == '')
-							$(this).addClass("active");
-					})
-				});
+		
 
 		});
 
@@ -102,12 +84,12 @@
 
 				<ul class="thumbnails">
 					<li data-tag="webdoc">
-						<a href="#"><img src="./assets/images/films/thumbnail/projet/Pass%C3%A9sauvage.png" alt="memories">
+						<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
-								<h3>Memories</h3>
-								<h3>Jakob Gottschau</h3>
+								<h3>Titre</h3>
+								<h3>Realisateur</h3>
 							</div>
 							<div class="infosAnnexes">
 								<div class="dateLieu">
@@ -122,12 +104,12 @@
 					</a>
 					</li>
 					<li data-tag="webdoc">
-						<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
+						<a href="#"><img src="./assets/images/films/thumbnail/gentriville.png" alt="memories">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
-								<h3>Memories</h3>
-								<h3>Jakob Gottschau</h3>
+								<h3>Titre</h3>
+								<h3>Realisateur</h3>
 							</div>
 							<div class="infosAnnexes">
 								<div class="dateLieu">
@@ -142,12 +124,12 @@
 					</a>
 					</li>
 					<li data-tag="webdoc">
-						<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
+						<a href="#"><img src="./assets/images/films/thumbnail/donottrack.png" alt="memories">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
-								<h3>Memories</h3>
-								<h3>Jakob Gottschau</h3>
+								<h3>Titre</h3>
+								<h3>Realisateur</h3>
 							</div>
 							<div class="infosAnnexes">
 								<div class="dateLieu">
@@ -171,6 +153,8 @@
 
 
 		</section>
+		
+		<hr noshade>
 
 		<!--Section Web Serie-->
 
@@ -182,12 +166,12 @@
 
 				<ul class="thumbnails">
 					<li data-tag="webserie">
-						<a href="#"><img src="./assets/images/films/thumbnail/donottrack.png" alt="Do not Track">
+						<a href="#"><img src="./assets/images/films/thumbnail/browngirls.png" alt="Do not Track">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
-								<h3>Memories</h3>
-								<h3>Jakob Gottschau</h3>
+								<h3>Titre</h3>
+								<h3>Realisateur</h3>
 							</div>
 							<div class="infosAnnexes">
 								<div class="dateLieu">
@@ -202,14 +186,13 @@
 					</a>
 					</li>
 
-
 					<li data-tag="webserie">
-						<a href="#"><img src="./assets/images/films/thumbnail/Alma.png" alt="memories">
+						<a href="#"><img src="./assets/images/films/thumbnail/projet/frannerd.png" alt="memories">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
-								<h3>Memories</h3>
-								<h3>Jakob Gottschau</h3>
+								<h3>Titre</h3>
+								<h3>Realisateur</h3>
 							</div>
 							<div class="infosAnnexes">
 								<div class="dateLieu">
@@ -223,15 +206,16 @@
 						</div>
 					</a>
 					</li>
+			
 
 
 					<li data-tag="webserie">
-						<a href="#"><img src="./assets/images/films/thumbnail/Alteration.png" alt="memories">
+						<a href="#"><img src="./assets/images/films/thumbnail/nanaroscope.png" alt="memories">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
-								<h3>Memories</h3>
-								<h3>Jakob Gottschau</h3>
+								<h3>Titre</h3>
+								<h3>Realisateur</h3>
 							</div>
 							<div class="infosAnnexes">
 								<div class="dateLieu">
@@ -256,6 +240,7 @@
 
 		</section>
 
+        <hr noshade>
 
 		<!--Section Transmedia-->
 
@@ -266,7 +251,27 @@
 
 				<ul class="thumbnails">
 					<li data-tag="transmedia">
-						<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
+						<a href="#"><img src="./assets/images/films/thumbnail/legrandcomplot.png" alt="memories">
+						<!--Hover info-->
+						<div class="hoverInfo">
+							<div class="infoFilm">
+								<h3>Titre</h3>
+								<h3>Realisateur</h3>
+							</div>
+							<div class="infosAnnexes">
+								<div class="dateLieu">
+									<h4></h4>
+									<!--<h4>Cinema Galeries</h4>-->
+								</div>
+								<div class="moreInfo">
+									<h4>More info</h4>
+								</div>
+							</div>
+						</div>
+					</a>
+					</li>
+					<li data-tag="transmedia">
+						<a href="#"><img src="./assets/images/films/thumbnail/Alma.png" alt="memories">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
@@ -286,32 +291,12 @@
 					</a>
 					</li>
 					<li data-tag="transmedia">
-						<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
+						<a href="#"><img src="./assets/images/films/thumbnail/seances.png" alt="memories">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
-								<h3>Memories</h3>
-								<h3>Jakob Gottschau</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4></h4>
-									<!--<h4>Cinema Galeries</h4>-->
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-					<li data-tag="transmedia">
-						<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Memories</h3>
-								<h3>Jakob Gottschau</h3>
+								<h3>Titre</h3>
+								<h3>Realisateur</h3>
 							</div>
 							<div class="infosAnnexes">
 								<div class="dateLieu">
@@ -331,89 +316,6 @@
 				<h2>Transmedia</h2>
 
 			</div>
-
-		</section>
-
-		<!--sectionProjet-->
-
-
-		<section id="sectionProjet">
-
-			<div class="thumbnailsContainer">
-
-
-
-
-
-				<ul class="thumbnails">
-					<li data-tag="projet">
-						<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Memories</h3>
-								<h3>Jakob Gottschau</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4></h4>
-									<!--<h4>Cinema Galeries</h4>-->
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-					<li data-tag="projet">
-						<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Memories</h3>
-								<h3>Jakob Gottschau</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4></h4>
-									<!--<h4>Cinema Galeries</h4>-->
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-					<li data-tag="projet">
-						<a href="#"><img src="./assets/images/films/thumbnail/memories.png" alt="memories">
-						<!--Hover info-->
-						<div class="hoverInfo">
-							<div class="infoFilm">
-								<h3>Memories</h3>
-								<h3>Jakob Gottschau</h3>
-							</div>
-							<div class="infosAnnexes">
-								<div class="dateLieu">
-									<h4></h4>
-									<!--<h4>Cinema Galeries</h4>-->
-								</div>
-								<div class="moreInfo">
-									<h4>More info</h4>
-								</div>
-							</div>
-						</div>
-					</a>
-					</li>
-
-
-				</ul>
-
-				<h2>Projet</h2>
-
-			</div>
-
 
 		</section>
 

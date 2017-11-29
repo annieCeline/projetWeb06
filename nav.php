@@ -12,8 +12,8 @@
       
             <ul class="dropdownItems">
 
-                <li> <a href="programme.php">Projection</a></li>
-                <li> <a href="projet.php">Online</a></li>
+                <li> <a href="programme.php">En salle</a></li>
+                <li> <a href="projet.php">En ligne</a></li>
 
             </ul>
         </li>
@@ -23,10 +23,14 @@
         <li><a href="palmares.php">Palmares</a></li>
         <li><a href="festival.php">Le Festival</a></li>
     </ul>
+        
+        
+        
+        
 
         <div>
           <?php
-            session_start();
+//            session_start();
             
             if (isset($_SESSION['Email'])){
                 echo "<span>Bienvenue " .  $_SESSION['Prenom'] . "&nbsp" . $_SESSION['Nom'] . "</span>";

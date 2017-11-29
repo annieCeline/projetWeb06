@@ -107,10 +107,33 @@ nav div:nth-of-type(2){
     justify-content: flex-end;
 }
 
+/*
 nav div:nth-of-type(2) a, p, span {
     color: #303030;
     padding: 1rem;
 }
+*/
+
+nav > div:nth-of-type(2) a {
+	color: #303030;
+	padding: 1rem;
+}
+
+nav > div:nth-of-type(2) p {
+	color: #303030;
+	padding: 1rem;
+}
+
+nav > div:nth-of-type(2) span {
+	color: #303030;
+	padding: 1rem;
+}
+
+nav div:nth-of-type(2) a:hover {
+	border: none;
+	color: #ef562d;
+}
+
 
 nav div:nth-of-type(2) a:hover {
     border: none;
@@ -198,7 +221,7 @@ header:hover{
 
 header > h1 {
 	color: #ef562d;
-	font-family: 'Megrim', cursive;
+	font-family: 'Space Mono', monospace;
 	font-size: 5rem;
 	line-height: 8rem;
 	margin-left: 20rem;
@@ -220,7 +243,6 @@ header > img {
 
 /* SECTION 2 : Download Programme*/
 
-/* SECTION 2 : Download Programme*/
 
 /*barre oblique*/
 
@@ -231,31 +253,43 @@ header > img {
 	background-color: #ef562d;
 	padding-bottom: 2rem;
 	padding-top: 2rem;
-	transform: skewY(-1deg);
+		transform: skewY(-1deg);
 }
-
-
-/*premier div*/
 
 .downloadProgrammeParent {
-	width: 25%;
-	margin-right: auto;
+	width: 50%;
 	margin-left: auto;
+	margin-right: auto;
 	margin-top: 3rem;
 	margin-bottom: 3rem;
-	transform: skewY(1deg);
 	display: flex;
-	flex-direction: column;
+	justify-content: space-around;
+		transform: skewY(0deg);
 }
 
-
-/*deuxième div */
-
-.downloadProgrammeEnfant {
-
+.downloadProgrammeFirstChild {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	transform: skewY(1deg)
+}
+
+/*
+.downloadProgrammeFirstChild img {
+	margin-top: 1rem;
+	width: 70%;
+
+}
+*/
+
+.downloadProgrammendChild {
 	transform: skewY(1deg);
+}
+
+.downloadProgrammendChild h2 {
+	font-size: 4.5rem;
+	color: #303030;
+	
 }
 
 #downloadProgramme a {
@@ -263,25 +297,9 @@ header > img {
 	color: #e6e6e6;
 }
 
-#downloadProgramme i {
-	padding: 0rem;
-	margin-left: 10rem;
-	margin-right: 10rem;
-}
 
-#downloadProgramme h2 {
-	display: inline-block;
-	font-size: 3rem;
-	font-weight: 700;
-	color: #ffffff;
-	margin: 0;
-	/*    margin: 1rem;*/
-}
 
-#downloadProgramme p {
-	color: #ffffff;
-	display: inline-block;
-}
+
 
 
 
@@ -597,17 +615,13 @@ footer {
 
 @media screen and (min-width: 924px) and (max-width: 1653px) {
 
-/*
-	#nav_laterale {
-		top: 20rem;
-		width: 2rem;
-	}
-*/
+
 	section,
 	footer {
 		margin: 0 auto;
 		width: 80%;
 	}
+
 	/*Sections films*/
 	/*ul*/
 	#sectionFilms #thumbnails {
@@ -619,8 +633,8 @@ footer {
 	}
 	.hoverInfo h3
 	{
-		line-height: 1.2rem;
-		font-size: 1.2rem;
+		line-height: 1.5rem;
+		font-size: 1.5rem;
 	}
 	
 	.hoverInfo .infoFilm {
@@ -640,6 +654,15 @@ footer {
 	}
 	.hoverInfo .moreInfo{
 		bottom:1%;
+	}
+	
+	
+	.downloadProgrammeParent {
+		width: 85%;
+	}
+
+	.downloadProgrammeFirstChild {
+		margin-right: 6rem;
 	}
 
 
@@ -706,6 +729,28 @@ footer {
 	.hoverInfo .moreInfo{
 		bottom:1%;
 	}
+	
+		.downloadProgrammendChild {
+		margin-left: 0rem;
+		margin-right: 0rem;
+	}
+
+	.downloadProgrammeFirstChild {
+		margin-left: 0rem;
+		margin-right: 7rem;
+	}
+
+	.downloadProgrammendChild h2:nth-of-type(1) {
+		font-size: 3.5rem;
+	}
+	.downloadProgrammendChild h2:nth-of-type(2) {
+		font-size: 3.5rem;
+
+	}
+	.downloadProgrammeParent {
+		width: 80%;
+	}
+
 
 
 
@@ -799,6 +844,38 @@ footer {
 	.hoverInfo .moreInfo{
 		bottom:1%;
 	}
+	
+		.downloadProgrammeParent {
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: flex-start;
+	}
+
+	.downloadProgrammeFirstChild {
+		margin-left: 0rem;
+		margin-right: 0rem;
+	}
+
+	.downloadProgrammeFirstChild img {
+		width: 60%;
+	}
+
+	.downloadProgrammendChild {
+		margin-left: 0rem;
+		order: -1;
+	}
+
+	.downloadProgrammendChild h2:nth-of-type(1) {
+		font-size: 2.5rem;
+	}
+	.downloadProgrammendChild h2:nth-of-type(2) {
+		font-size: 2rem;
+		margin-top: 1rem;
+	}
+
+	.downloadProgrammeFirstChild p:nth-of-type(1) {
+		margin-top: 3rem;
+	}
 
 
 
@@ -868,15 +945,8 @@ footer {
 		margin: 0 auto;
 		width: 100%;
 	}
-	/*	SECTIONS .downloadProgramme*/
-	.downloadProgrammeParent {
-		width: 70%;
-	}
-	/*
-	#downloadProgramme h2 {
-		font-size: 2.5rem;
-	}
-*/
+	
+
 	/*	id="catalogueFilms"*/
 	#catalogueFilms {
 		width: 70%;
@@ -946,6 +1016,53 @@ footer {
 		left: 15%;
 		right: 15%;
 		top: 20%;
+	}
+    
+        nav div:nth-of-type(2) {
+        display: none;
+    }
+	
+	/*	SECTIONS .downloadProgramme*/
+	
+	.downloadProgrammeParent {
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: flex-start;
+
+
+	}
+
+	.downloadProgrammeFirstChild {
+		margin-left: 0rem;
+		margin-right: 0rem;
+	}
+
+	.downloadProgrammeFirstChild img {
+		width: 60%;
+	}
+
+	.downloadProgrammendChild {
+		margin-left: 0rem;
+		order: -1;
+		margin-right: 0rem;
+
+
+	}
+	
+	.downloadProgrammeParent{
+		width:74%;
+	}
+
+	.downloadProgrammendChild h2:nth-of-type(1) {
+		font-size: 2.5rem;
+	}
+	.downloadProgrammendChild h2:nth-of-type(2) {
+		font-size: 2rem;
+		margin-top: 1rem;
+	}
+
+	.downloadProgrammeFirstChild p:nth-of-type(1) {
+		margin-top: 3rem;
 	}
 
 	/*FOOTER*/
