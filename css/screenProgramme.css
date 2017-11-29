@@ -292,7 +292,8 @@ header > img {
 
 .downloadProgrammendChild h2 {
 	font-size: 4.5rem;
-	color: #fff;
+	color: #e6e6e6;
+
 	
 }
 
@@ -661,9 +662,11 @@ footer {
 	}
 	
 	
+/*
 	.downloadProgrammeParent {
 		width: 85%;
 	}
+*/
 
 	.downloadProgrammeFirstChild {
 		margin-right: 6rem;

@@ -191,6 +191,7 @@ nav div:nth-of-type(2) a:hover {
     padding-top: 1rem;
 }
 
+
 /*MAIN*/
 
 /*SECTIONS*/
@@ -294,7 +295,7 @@ header > img {
 
 .downloadProgrammendChild h2 {
 	font-size: 4.5rem;
-	color: #303030;
+	color: #e6e6e6;
 
 }
 

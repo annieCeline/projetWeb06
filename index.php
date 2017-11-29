@@ -135,9 +135,9 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 
 
 				<div class="programme_images">
-					<img src="./assets/indexImages/Facebookistan.png" alt="Facebookistan">
-					<img src="./assets/indexImages/thefoxyfive.png" alt="These memories won't last">
-					<img src="./assets/indexImages/thesememorieswontlast.png" alt="The Foxy Five">
+					<img src="./assets/images/indexImages/Facebookistan.png" alt="Facebookistan">
+					<img src="./assets/images/indexImages/thefoxyfive.png" alt="These memories won't last">
+					<img src="./assets/images/indexImages/thesememorieswontlast.png" alt="The Foxy Five">
 				</div>
 
 				<h2><a href="programme.php">Programme</a></h2>
@@ -206,9 +206,9 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 
 
 				<div class="programme_images">
-					<img src="./assets/indexImages/ellesprennentlaparole.png" alt="Elles prennent la parole">
-					<img src="./assets/indexImages/savannahbrown.png" alt="Les petits aventuriers">
-					<img src="./assets/indexImages/cecileemeke.png" alt="Cecile Emeke">
+					<img src="./assets/images/indexImages/ellesprennentlaparole.png" alt="Elles prennent la parole">
+					<img src="./assets/images/indexImages/savannahbrown.png" alt="Les petits aventuriers">
+					<img src="./assets/images/indexImages/cecileemeke.png" alt="Cecile Emeke">
 				</div>
 			</div>
 

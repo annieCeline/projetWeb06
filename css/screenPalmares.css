@@ -175,10 +175,12 @@ nav div:nth-of-type(2) a:hover {
     margin-bottom: 0.7rem;
 }
 
+
 .fa-twitter {
     border-top: 1px dashed #ef562d;
     padding-top: 1rem;
 }
+
 
 /*MAIN*/
 
@@ -477,7 +479,7 @@ footer {
 
 /*Tablets*/
 
-@media screen and (min-width: 1025px) and (max-width: 1500px) {
+@media screen and (min-width: 1125px) and (max-width: 1500px) {
 
 	section {
 		width: 90%;
@@ -504,7 +506,7 @@ footer {
 	section h2 {
 		order: -1;
 		align-self: flex-end;
-		font-size:4.5rem;
+		font-size:3.5rem;
 	}
 
 	.hoverInfo h3,
@@ -533,7 +535,7 @@ footer {
 
 }
 
-@media screen and (min-width: 591px) and (max-width: 1024px) {
+@media screen and (min-width: 591px) and (max-width: 1125px) {
 
 	header {
 		align-items: flex-start;
@@ -563,7 +565,8 @@ footer {
 		padding: 1rem;
 		text-align: center;
 	}
-
+    
+    section
     
 	#nav_laterale {
 		top: 20rem;
