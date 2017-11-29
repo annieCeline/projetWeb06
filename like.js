@@ -1,6 +1,6 @@
 like.addEventListener("click", likeFunction );
 function likeFunction (e){
-   like.addClass = "animated pulse";
+   like.src = "./assets/images/logos/applause32a.png";
 
 
 var xhr = new XMLHttpRequest();
@@ -10,8 +10,8 @@ xhr.onreadystatechange = function (){
         if (xhr.status == 200) {
             var nombreLikes = JSON.parse(xhr.responseText);
             console.log(nombreLikes);
-            nbLikes.innerHTML=  nombreLikes[0]['nombreLikes'];
-            messageLike.innerHTML = "Merci !";
+            nbLikes.innerHTML=  nombreLikes[0]['nombreLikes'] + ' likes';
+            messageLike.innerHTML = " ";
         }
         else {
             console.log("pas ok");

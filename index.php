@@ -170,12 +170,15 @@
 	<script>
 		document.getElementById("playVideo").addEventListener("click", function(e) {
 
+
 			var iframeVideo = document.getElementById('iframeVideo');
 			iframeVideo.style.display = 'block';
 
 			window.onwheel = function() {
 				return false;
 			}
+
+              
 
 		});
 

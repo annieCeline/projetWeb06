@@ -76,7 +76,7 @@ $sql_films->execute();
         
         if($sql_films->errorInfo()[0] == "00000"){
             $data = $sql_films->fetchAll(PDO::FETCH_ASSOC);
-        echo '<div id="video-container">';
+        echo '<div class="video-container">';
 //var_dump($data); 
             if (count($data) == 1) { 
             echo '<div>';
@@ -87,7 +87,7 @@ $sql_films->execute();
                 echo '<div>';
                     echo '<div id="like1">';
                         echo '<div><img id="like" src="./assets/images/logos/applause32.png" alt="like"></div>';
-                        echo '<div id="nbLikes"></div>';
+                        echo '<p id="nbLikes"></p>';
                     echo '</div>';
                     echo '<div id="messageLike">Veuillez vous connecter pour liker</div>';
                 echo '<input id="id_film" type="hidden" value="'.$data[0]['id_film'] . '">';
