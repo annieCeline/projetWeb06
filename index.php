@@ -89,13 +89,7 @@
                 <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quisquam in, consequatur distinctio odio natus hic porro? Consectetur sed commodi blanditiis mollitia rerum similique voluptatum dignissimos nisi eum id, tenetur.</q>
               
 
-                <div>
-                   <a href="#"><img src="./assets/images/logos/symbolePlay.png" alt="Play"></a>
-                    
-                    <p>To be continued</p>
-
-                    <p>Coup de coeur de Mélissa</p>
-                </div>
+                 <p><img src="./assets/images/logos/symbolePlay.png" alt="Play"><a href="">To be continued</a> - Coup de coeur de Mélissa</p>
 
 
 

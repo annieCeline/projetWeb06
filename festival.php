@@ -67,9 +67,9 @@
             <div class="programme">
 
                 <div class="programme_images">
-                    <img src="./assets/images/am.png" alt="Facebookistan">
-                    <img src="./assets/images/films/memories1-redimensionne60.jpg" alt="These memories won't last">
-                    <img src="./assets/images/films/The-Foxy-Five-redimensionne60.jpg" alt="The Foxy Five">
+                    <img src="./assets/images/avatar/amelie.png" alt="Amélie">
+                    <img src="./assets/images/avatar/annie.png" alt="Annie">
+                    <img src="./assets/images/avatar/melissa.png" alt="Mélissa">
                 </div>
 
                 <h2>L'Equipe</h2>

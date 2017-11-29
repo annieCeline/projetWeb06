@@ -1,6 +1,6 @@
 <nav>
     <div>
-        <img src="./assets/images/logo/symboleMenu50x76.png" alt="Menu">
+        <img src="./assets/images/logos/symboleMenu50x76.png" alt="Menu">
     </div>
 
     <ul>
