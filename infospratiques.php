@@ -112,8 +112,8 @@ if (isset($_POST['nom'], $_POST['email'], $_POST['sujet'], $_POST['message'])){
                 <h2>Plan</h2>
 
                 <div id="carte">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.2354310726582!2d4.358573615585128!3d50.863841065372704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c37b0b18e0ab%3A0xa7dcedc9c29a0d35!2sInterface3+asbl!5e0!3m2!1sfr!2sbe!4v1507812180019" width="600" height="450" style="border:0" allowfullscreen></iframe>
-                    <p>Au fond de la cour, 25 <br> 1050 Ixelles
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.120221613309!2d4.3524353157458044!3d50.84745797953215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47f64b4b03b%3A0xb60ed3be0edcc0f!2sCin%C3%A9ma+GALERIES!5e0!3m2!1sfr!2sbe!4v1511959592334"></iframe>
+                    <p>Galerie de la Reine 26,  <br> 1000 Bruxelles
                     </p>
                 </div>
             </div>

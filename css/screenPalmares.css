@@ -175,6 +175,11 @@ nav div:nth-of-type(2) a:hover {
     margin-bottom: 0.7rem;
 }
 
+.fa-twitter {
+    border-top: 1px dashed #ef562d;
+    padding-top: 1rem;
+}
+
 /*MAIN*/
 
 /*SECTIONS*/
