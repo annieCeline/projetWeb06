@@ -22,160 +22,159 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 
 
 
-	<!DOCTYPE html>
-	<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-	<head>
-		<meta charset="UTF-8" />
-		<title>Projet</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="./css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="./css/screenProjet.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <title>Projet</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="./css/screenProjet.css" />
 
-		<link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
 
-		<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i" rel="stylesheet">
 
-		<!--	<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">-->
+        <!--	<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">-->
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-		<script>
-			$(document).ready(function() {
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
-
-				$('#idTous').addClass('buttonSelected');
+        <script>
+            $(document).ready(function() {
 
 
 
-				$('#catalogueFilms button').click(function(e) {
-					//console.log("click");
-
-
-					var visibleTag = $(this).data('cat');
-					console.log(visibleTag);
-
-
-					$('#catalogueFilms button').removeClass('buttonSelected');
-					$(this).addClass('buttonSelected');
+                $('#idTous').addClass('buttonSelected');
 
 
 
-					//LI//
-					$('#thumbnails > li').each(function(e) {
+                $('#catalogueFilms button').click(function(e) {
+                    //console.log("click");
 
-						//$('#catalogueFilms button').addClass('noBorderButton');
 
-						$(this).css('display', 'block');
-						//console.log(this);
-						if (visibleTag != 'tous' && $(this).data('tag') != visibleTag) {
+                    var visibleTag = $(this).data('cat');
+                    console.log(visibleTag);
 
-							$(this).css('display', 'none');
-						}
-					});
-				});
-				$('nav > div').click(function(e) {
-					$('nav > ul').toggleClass("visible");
 
-				});
-
-				//		 $("nav ul li a").on("click", function() {
-				//        $(this).siblings().removeClass('active');
-				//        $(this).addClass("active");
-				//    });	
+                    $('#catalogueFilms button').removeClass('buttonSelected');
+                    $(this).addClass('buttonSelected');
 
 
 
-			});
-		</script>
+                    //LI//
+                    $('#thumbnails > li').each(function(e) {
+
+                        //$('#catalogueFilms button').addClass('noBorderButton');
+
+                        $(this).css('display', 'block');
+                        //console.log(this);
+                        if (visibleTag != 'tous' && $(this).data('tag') != visibleTag) {
+
+                            $(this).css('display', 'none');
+                        }
+                    });
+                });
+                $('nav > div').click(function(e) {
+                    $('nav > ul').toggleClass("visible");
+
+                });
+
+                //		 $("nav ul li a").on("click", function() {
+                //        $(this).siblings().removeClass('active');
+                //        $(this).addClass("active");
+                //    });	
 
 
 
-	</head>
+            });
+        </script>
 
-	<body>
 
-		<?php 
+
+    </head>
+
+    <body>
+
+        <?php 
     include "./nav.php";
     ?>
 
-		<!--HEADER-->
+        <!--HEADER-->
 
-		<header>
-			<h1>Le <br>Festival</h1>
+        <header>
+            <h1>Le <br>Festival</h1>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nobis, at neque nostrum. Dolorum porro totam aut cumque distinctio, ipsa, iusto sequi. Quis assumenda, repellendus.</p>
-		</header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nobis, at neque nostrum. Dolorum porro totam aut cumque distinctio, ipsa, iusto sequi. Quis assumenda, repellendus.</p>
+        </header>
 
 
-		<!-- Les réseaux sociaux -->
+        <!-- Les réseaux sociaux -->
 
-		<main>
+        <main>
 
-	     <div id="nav_laterale">
-            <div id="profil_recherche">
-                <a href="./login.php"><i class="fa fa-user" aria-hidden="true"></i></a>
-                <i class="fa fa-search" aria-hidden="true"></i>
+            <div id="nav_laterale">
+                <div id="profil_recherche">
+                    <a href="./login.php"><i class="fa fa-user" aria-hidden="true"></i></a>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <div id="reseaux_sociaux">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
             </div>
-            <div id="reseaux_sociaux">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-            </div>
-        </div>
 
 
-			<!--Download programme-->
-			<section id="downloadProgramme">
 
-				<div class="downloadProgrammeParent">
+            <!--Download programme-->
+            <section id="downloadProgramme">
 
-					<h2>Agenda</h2>
+                <div class="downloadProgrammeParent">
+                    
 
-					<div class="downloadProgrammeEnfant">
+                    <div class="downloadProgrammeFirstChild">
+                        <p>Télécharger votre agenda ici</p>
+                        <a href="./assets/document/agenda.pdf"><img src="./assets/images/logos/fileMainBlanc64.png" alt=""></a>
+                    </div>
+                    
+                    
 
-
-						<p>Télécharger votre agenda ici</p>
-
-<a href=""><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></a>
-
-
-						<!--				<a href="./assets/document/agenda.pdf"><img src="./assets/images/logo/pdf.png" alt="pdf"></a>-->
-
-					</div>
-
-
-				</div>
-
-			</section>
-
-			<!--Catalogue des films-->
-
-			<section id="catalogueFilms">
+                    <div class="downloadProgrammendChild">
+                        <h2>En  ligne</h2>
+                    </div>
 
 
-				<h2>Catalogue</h2>
-				<div id="tagsFilms">
-					<!--Les buttons tags-->
-					<button data-cat="tous" id="idTous">Tout</button>
+                </div>
 
-					<button data-cat="webdoc">Web Doc</button>
+            </section>
 
-					<button data-cat="webserie">Web Serie</button>
+            <!--Catalogue des films-->
 
-					<button data-cat="transmedia">Transmedia</button>
-
-					<!--				<button data-cat="projet">Projet</button>-->
-				</div>
+            <section id="catalogueFilms">
 
 
-			</section>
+                <h2>Catalogue</h2>
+                <div id="tagsFilms">
+                    <!--Les buttons tags-->
+                    <button data-cat="tous" id="idTous">Tout</button>
 
-			<!--THUMBNAIL-->
-			<section id="sectionFilms">
-				<ul id="thumbnails">
-					<?php
+                    <button data-cat="webdoc">Web Doc</button>
+
+                    <button data-cat="webserie">Web Serie</button>
+
+                    <button data-cat="transmedia">Transmedia</button>
+
+                    <!--				<button data-cat="projet">Projet</button>-->
+                </div>
+
+
+            </section>
+
+            <!--THUMBNAIL-->
+            <section id="sectionFilms">
+                <ul id="thumbnails">
+                    <?php
 
 // On boucle à travers le tableau data(qui contient tous les films de la bdd) et pour chaque itération on affiche l'image et on récupère les infos qui s'affichent avec le hover (catégorie, titre, diffusion, etc.)
 
@@ -211,17 +210,17 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
                 
 ?>
 
-				</ul>
+                </ul>
 
-			</section>
-		</main>
+            </section>
+        </main>
 
-		<!--FOOTER-->
-		<footer>
-			<p>&copy;Interface3 - 2017</p>
-			<p>info@brusselswebfest.be</p>
-		</footer>
+        <!--FOOTER-->
+        <footer>
+            <p>&copy;Interface3 - 2017</p>
+            <p>info@brusselswebfest.be</p>
+        </footer>
 
-	</body>
+    </body>
 
-	</html>
+    </html>
