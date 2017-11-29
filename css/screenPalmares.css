@@ -118,8 +118,7 @@ nav > div {
 
 nav div:nth-of-type(2){
     background-color: white;
-/*    border-bottom: 1px solid #ef562d;*/
- 
+    border-bottom: 1px solid #ef562d;
     display: flex;
     justify-content: flex-end;
 }

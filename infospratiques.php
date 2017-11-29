@@ -65,7 +65,9 @@ if (isset($_POST['nom'], $_POST['email'], $_POST['sujet'], $_POST['message'])){
 
         <h1>Info <br>Pratiques</h1>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nobis, at neque nostrum. Dolorum porro totam aut cumque distinctio, ipsa, iusto sequi. Quis assumenda, repellendus.</p>
+        <p>Nouvelles écritures et créations visuelles sur le web.
+        Webdocumentaires - Webséries - Projets transmedia.<br>
+        Du 15/11 au 28/11 au Cinéma Galeries à Bruxelles.</p>
     </header>
 
     <main>
@@ -88,7 +90,8 @@ if (isset($_POST['nom'], $_POST['email'], $_POST['sujet'], $_POST['message'])){
 
                 <div>
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam molestias, explicabo ipsa veniam officiis laboriosam itaque voluptate laudantium, earum optio. Vel nostrum aliquam dicta maiores ducimus quod ea velit unde?
+                     Le festival est gratuit !<br> 
+                     Mais si vous voulez nous soutenir, vous pouvez nous faire un don.
                     </p>
                 </div>
 

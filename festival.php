@@ -44,7 +44,7 @@
     <header>
         <h1>Le <br>Festival</h1>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nobis, at neque nostrum. Dolorum porro totam aut cumque distinctio, ipsa, iusto sequi. Quis assumenda, repellendus.</p>
+        <p> Nouvelles écritures et créations visuelles sur le web. <br> Webdocumentaires - Webséries - Projets transmedia. <br> Du 15/11 au 28/11 au Cinéma Galeries à Bruxelles.</p>
     </header>
     
     <main>

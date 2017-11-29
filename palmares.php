@@ -45,7 +45,7 @@
 	<header>
 		<h1>Le <br>Palmarès</h1>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nobis, at neque nostrum. Dolorum porro totam aut cumque distinctio, ipsa, iusto sequi. Quis assumenda, repellendus.</p>
+		<p>Retrouvez le palmarès des &#156uvres plébiscitées par le public !</p>
 	</header>
 
 

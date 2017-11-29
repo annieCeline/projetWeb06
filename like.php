@@ -18,13 +18,13 @@ session_start();
 
 
 //test d'insertion de l'utilisateur et du film ds la BD
-//$sql ="INSERT INTO t_filmlikes (id_user, id_film) VALUES (:id_user, :id_film)";
-//$resultat = $pdo->prepare($sql);
-//$resultat->bindValue(":idfilm", $_POST['id_film']);
-//$resultat->bindValue(":id_user", $_SESSION['id_user']);
-//if (!$resultat->execute()){
-//    echo $resultat->errorInfo();
-//}
+$sql ="INSERT INTO t_filmlikes (id_user, id_film) VALUES (:id_user, :idfilm)";
+$resultat = $pdo->prepare($sql);
+$resultat->bindValue(":idfilm", $_POST['id_film']);
+$resultat->bindValue(":id_user", $_SESSION['id_user']);
+if (!$resultat->execute()){
+    echo $resultat->errorInfo();
+}
 
 
 // incrementer le nombre de likes

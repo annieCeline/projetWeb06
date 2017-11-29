@@ -59,25 +59,28 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 				$('nav > ul').toggleClass("visible");
 
 			});
-
-		
+        });
+    </script>
+     
+      <!--    Autocomplete-->
+     <script>
+      $(function() {
+        var availableTags = [
+    <?php
+      for ($i=0; $i < count($data); $i++){
+          echo '"' . substr($data[$i]['titre'], 0, 24) . '",';
+      }      
+    ?>        
+        ];
+        $( "#tags" ).autocomplete({
+          source: availableTags,
+          minLength: 2,
+          select: function(event, ui) {
+              location.href = './detail.php?id=9'; 
+          }    
+        });
+      });
  
-    
-    <!--    Autocomplete-->
-  $( function() {
-    var availableTags = [
-<?php
-  for ($i=0; $i < count($data); $i++){
-      echo '"' . substr($data[$i]['titre'], 0, 24) . '",';
-  }      
-?>        
-    ];
-    $( "#tags" ).autocomplete({
-      source: availableTags,
-      minLength: 2,    
-    });
-  } );
-});
     </script>    
 
 </head>

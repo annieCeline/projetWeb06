@@ -19,7 +19,7 @@ btnEnvoyer.addEventListener ('click', function (evenement){
 //                } else 
                 
                     if (xhr.responseText == "error") {
-                    message.innerHTML = "Couple / Mot de passe incorrects";
+                    message.innerHTML = "Couple login/mot de passe incorrect";
                 }
                 else { 
                     window.location.href = "./index.php";
