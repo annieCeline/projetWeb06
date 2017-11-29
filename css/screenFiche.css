@@ -408,10 +408,16 @@ footer {
         font-size: 2.5rem;
     }
     
+
+    #nav_laterale {
+        width: 1.2rem;
+    }
+    
     nav div:nth-of-type(2) {
         display: none;
     }
     /*HEADER    */
+
     header {
         align-items: flex-start;
         background-size: 140px;

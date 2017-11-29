@@ -104,10 +104,11 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
         <!--HEADER-->
 
         <header>
-            <h1>Le <br>Festival</h1>
+            <h1>Le <br>Programme</h1>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nobis, at neque nostrum. Dolorum porro totam aut cumque distinctio, ipsa, iusto sequi. Quis assumenda, repellendus.</p>
+			<p>Le Brussels WebFest vous donne la parole -et la caméra. De nombreux artistes se sont associés au festival, en répondant à l'appel à projets (merci!) Découvrez en exclusivité cette sélection de films en ligne durant le festival !</p>
         </header>
+
 
 
         <!-- Les réseaux sociaux -->

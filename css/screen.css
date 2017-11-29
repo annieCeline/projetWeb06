@@ -105,11 +105,14 @@ nav a:hover {
 	transition-delay: 0s, 0s, 0.3s;
 }
 
-nav div:nth-of-type(2) {
-	background-color: white;
-	border-bottom: 1px solid #ef562d;
-	display: flex;
-	justify-content: flex-end;
+
+/*CONNEXION/INSCRIPTION*/
+
+nav div:nth-of-type(2){
+    background-color: white;
+    border-bottom: 1px solid #ef562d;
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav div:nth-of-type(2) a,
@@ -123,6 +126,27 @@ nav div:nth-of-type(2) a:hover {
 	border: none;
 	color: #ef562d;
 }
+
+/*RECHERCHE PAR FILM - AUTOCOMPLETE*/
+
+.ui-widget {
+    text-align: right;
+}
+
+#tags {
+    border: none;
+    font-family: 'Space Mono', monospace;
+    width: 25rem;
+}
+
+.ui-menu-item {
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+
+/*NAV LATERALE - RESEAUX SOCIAUX ET PROFIL*/
 
 #nav_laterale {
 	align-items: center;
@@ -166,6 +190,11 @@ nav div:nth-of-type(2) a:hover {
 	margin-bottom: 0.7rem;
 }
 
+.fa-twitter {
+    border-top: 1px dashed #ef562d;
+    padding-top: 1rem;
+}
+
 /*    HEADER*/
 
 header {
@@ -185,6 +214,7 @@ header:hover {
 	z-index: 0;
 }
 
+
 header > h1 {
 	color: #ef562d;
 	font-family: 'Space Mono', monospace;
@@ -200,6 +230,7 @@ header > p {
 	line-height: 2.5rem;
 	margin: 4rem;
 	width: 60%;
+
 }
 
 header > img {
@@ -219,19 +250,13 @@ header > img {
 	text-decoration: none;
 }
 
-/*
-#formInscription,
-#formLogin,
-h1 {
-	text-align: center;
-} 
-=> problème car h1 se décale
-*/
 
 #formInscription,
-#formLogin {
-	text-align: center;
-}
+#formLogin,
+main h1 {
+    text-align: center;
+  }
+
 
 
 #formInscription button,
@@ -615,6 +640,7 @@ nav > div:nth-of-type(1) {
 
 /*VERSION MOBILE*/
 
+
 @media screen and (min-width:501px) and (max-width:737px) {
 
 	/*NAVIGATIONS */
@@ -746,6 +772,10 @@ nav > div:nth-of-type(1) {
 	nav div:nth-of-type(2) {
 		display: none;
 	}
+  
+  #nav_laterale {
+        width: 1.2rem;
+    }
 
 	header {
 		align-items: flex-start;

@@ -409,7 +409,13 @@ footer {
     nav div:nth-of-type(2) {
         display: none;
     }
+  
+    #nav_laterale {
+        width: 1.2rem;
+    }
+    
 /*HEADER    */
+
     header {
         align-items: flex-start;
         background-size: 140px;
