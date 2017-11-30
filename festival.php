@@ -56,8 +56,8 @@
                 <i class="fa fa-search" aria-hidden="true"></i>
             </div>
             <div id="reseaux_sociaux">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <a href="twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             </div>
         </div>
            
@@ -107,6 +107,8 @@
                 <img src="./assets/images/logos/partenaires/logo-80x80/logo-videographies-80x80.png" alt="Videographies">
                 <img src="./assets/images/logos/partenaires/logo-80x80/logo-wallimages-80x80.png" alt="Wallimages">
                 <img src="./assets/images/logos/partenaires/logo-80x80/regionbruxelles.png" alt="Region Bruxelles">
+                
+                
                 <img src="./assets/images/logos/partenaires/logo-80x80/logo-cw.png" alt="Creative Wallonia">
 
                 </div>

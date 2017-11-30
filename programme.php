@@ -42,35 +42,57 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 
 
 	 <script>
-        $(document).ready(function() {
-			
-            $('#idTous').addClass('buttonSelected');
-			
-			
-            $('#catalogueFilms button').click(function(e) {
-                console.log("click");
-                var visibleTag = $(this).data('cat');
-                console.log(visibleTag);
-                //console.log(this);              
-                $('#catalogueFilms button').removeClass('buttonSelected');
-				 $(this).addClass('noBorderButton');
-                $(this).addClass('buttonSelected');
-                //LI//
-				
-                $('#thumbnails > li').each(function(e) {
-                    $(this).css('display', 'block');
-                    //console.log(this);
-                    if (visibleTag != 'tous' && $(this).data('tag') != visibleTag) {
-                        $(this).css('display', 'none');
-                    }
+            $(document).ready(function() {
+
+
+
+                $('#idTous').addClass('buttonSelected');
+
+
+
+                $('#catalogueFilms button').click(function(e) {
+                    //console.log("click");
+
+
+                    var visibleTag = $(this).data('cat');
+                    console.log(visibleTag);
+
+
+                    $('#catalogueFilms button').removeClass('buttonSelected');
+                    $(this).addClass('buttonSelected');
+
+
+
+                    //LI//
+                    $('#thumbnails > li').each(function(e) {
+
+                        //$('#catalogueFilms button').addClass('noBorderButton');
+
+                        $(this).css('display', 'block');
+                        //console.log(this);
+                        if (visibleTag != 'tous' && $(this).data('tag') != visibleTag) {
+
+                            $(this).css('display', 'none');
+                        }
+                    });
                 });
-            });
-            $('nav > div').click(function(e) {
-                $('nav > ul').toggleClass("visible");
+				
+				
+				
+                $('nav > div').click(function(e) {
+                    $('nav > ul').toggleClass("visible");
+
+                });
+
+                //		 $("nav ul li a").on("click", function() {
+                //        $(this).siblings().removeClass('active');
+                //        $(this).addClass("active");
+                //    });	
+
+
 
             });
-        });
-    </script>
+        </script>
 
 
 </head>
@@ -100,8 +122,8 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
                 <i class="fa fa-search" aria-hidden="true"></i>
             </div>
             <div id="reseaux_sociaux">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <a href="twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             </div>
         </div>
 
@@ -113,7 +135,7 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
                     <div class="downloadProgrammeFirstChild">
 
                         <p>Télécharger votre agenda ici</p>
-                        <a href="./assets/document/agenda.pdf"><img src="./assets/images/logos/fileMainBlanc64.png" alt=""></a>
+                        <a href="./assets/document/agendaNoprint.pdf"><img src="./assets/images/logos/fileMainBlanc64.png" alt=""></a>
 
 
 
@@ -137,7 +159,7 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 			<h2>Le catalogue</h2>
 			<div id="tagsFilms">
 				<!--Les buttons tags-->
-				<button data-cat="tout" id="idTous">Tous</button>
+				<button data-cat="tous" id="idTous">Tout</button>
 
 				<button data-cat="webdoc">Web Doc</button>
 
@@ -182,10 +204,17 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 							echo '</div>';
 						echo '</div>';
 					echo '</a>';
-				echo '</li>'; 
+				echo '</li>';
+					
+				
                                                }
+					
+				
+				
 ?>
-            </ul>                
+            </ul>    
+            
+                                      
 
 		</section>
 	</main>

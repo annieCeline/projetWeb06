@@ -70,8 +70,8 @@
                 <i class="fa fa-search" aria-hidden="true"></i>
             </div>
             <div id="reseaux_sociaux">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <a href="twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             </div>
         </div>
 
@@ -95,8 +95,8 @@
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
-								<h3>Titre</h3>
-								<h3>Realisateur</h3>
+								<h3>These memories won't last</h3>
+								<h3>Stuart Campbell</h3>
 							</div>
 							<div class="infosAnnexes">
 								<div class="dateLieu">
@@ -111,12 +111,12 @@
 					</a>
 					</li>
 					<li data-tag="webdoc">
-						<a href="#"><img src="./assets/images/films/thumbnail/gentriville.png" alt="memories">
+						<a href="#"><img src="./assets/images/films/thumbnail/gentriville.png" alt="gentriville">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
-								<h3>Titre</h3>
-								<h3>Realisateur</h3>
+								<h3>Gentriville</h3>
+								<h3>Sterlin&amp;Walter</h3>
 							</div>
 							<div class="infosAnnexes">
 								<div class="dateLieu">
@@ -135,8 +135,8 @@
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
-								<h3>Titre</h3>
-								<h3>Realisateur</h3>
+								<h3>Do not track</h3>
+								<h3>Brett Gaylor</h3>
 							</div>
 							<div class="infosAnnexes">
 								<div class="dateLieu">
@@ -177,8 +177,8 @@
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
-								<h3>Titre</h3>
-								<h3>Realisateur</h3>
+								<h3>Brown Girls</h3>
+								<h3>Sam Bailey</h3>
 							</div>
 							<div class="infosAnnexes">
 								<div class="dateLieu">
@@ -194,12 +194,12 @@
 					</li>
 
 					<li data-tag="webserie">
-						<a href="#"><img src="./assets/images/films/thumbnail/projet/frannerd.png" alt="memories">
+						<a href="#"><img src="./assets/images/films/thumbnail/projet/frannerd.png" alt="Frannerd">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
-								<h3>Titre</h3>
-								<h3>Realisateur</h3>
+								<h3>Frannerd</h3>
+								<h3>Fran Meneses</h3>
 							</div>
 							<div class="infosAnnexes">
 								<div class="dateLieu">
@@ -217,12 +217,12 @@
 
 
 					<li data-tag="webserie">
-						<a href="#"><img src="./assets/images/films/thumbnail/nanaroscope.png" alt="memories">
+						<a href="#"><img src="./assets/images/films/thumbnail/nanaroscope.png" alt="nanaroscope">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
-								<h3>Titre</h3>
-								<h3>Realisateur</h3>
+								<h3>Nanaroscope</h3>
+								<h3>Régis Brochier</h3>
 							</div>
 							<div class="infosAnnexes">
 								<div class="dateLieu">
@@ -258,12 +258,12 @@
 
 				<ul class="thumbnails">
 					<li data-tag="transmedia">
-						<a href="#"><img src="./assets/images/films/thumbnail/legrandcomplot.png" alt="memories">
+						<a href="#"><img src="./assets/images/films/thumbnail/legrandcomplot.png" alt="Le grand complot">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
-								<h3>Titre</h3>
-								<h3>Realisateur</h3>
+								<h3>Le grand complot</h3>
+								<h3>Junge Römer</h3>
 							</div>
 							<div class="infosAnnexes">
 								<div class="dateLieu">
@@ -278,12 +278,12 @@
 					</a>
 					</li>
 					<li data-tag="transmedia">
-						<a href="#"><img src="./assets/images/films/thumbnail/Alma.png" alt="memories">
+						<a href="#"><img src="./assets/images/films/thumbnail/Alma.png" alt="Alma, a tale of violence">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
-								<h3>Memories</h3>
-								<h3>Jakob Gottschau</h3>
+								<h3>Alma, a tale of violence</h3>
+								<h3>Ruben Korenfeld</h3>
 							</div>
 							<div class="infosAnnexes">
 								<div class="dateLieu">
@@ -298,12 +298,12 @@
 					</a>
 					</li>
 					<li data-tag="transmedia">
-						<a href="#"><img src="./assets/images/films/thumbnail/seances.png" alt="memories">
+						<a href="#"><img src="./assets/images/films/thumbnail/seances.png" alt="seances">
 						<!--Hover info-->
 						<div class="hoverInfo">
 							<div class="infoFilm">
-								<h3>Titre</h3>
-								<h3>Realisateur</h3>
+								<h3>Seances</h3>
+								<h3>Guy Maddin</h3>
 							</div>
 							<div class="infosAnnexes">
 								<div class="dateLieu">
