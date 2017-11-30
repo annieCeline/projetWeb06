@@ -137,7 +137,7 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 			<h2>Le catalogue</h2>
 			<div id="tagsFilms">
 				<!--Les buttons tags-->
-				<button data-cat="tout" id="idTous">Tous</button>
+				<button data-cat="tous" id="idTous">Tous</button>
 
 				<button data-cat="webdoc">Web Doc</button>
 
