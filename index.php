@@ -23,240 +23,244 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
 ?>
 
 
-<!DOCTYPE html>
-<html lang="fr">
+	<!DOCTYPE html>
+	<html lang="fr">
 
-<head>
-	<meta charset="UTF-8">
-	<title>Brussels WebFest</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8">
+		<title>Brussels WebFest</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!--    STYLE-->
-	<link rel="stylesheet" href="./css/normalize.css">
-	<link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="./css/screen.css">
+		<!--    STYLE-->
+		<link rel="stylesheet" href="./css/normalize.css">
+		<link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/screen.css">
 
-	<!--    GOOGLE FONTS-->
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i" rel="stylesheet">
-
-
-
-    <!--    jQUERY-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-    <!--     jQueryUi et sa feuille de style-->
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="./jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<!--    GOOGLE FONTS-->
+		<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i" rel="stylesheet">
 
 
-	
 
-	<!--    MENU "HAMBURGER"-->
-	<script>
-		$(document).ready(function() {
-	    $('nav > div').click(function(e) {
-				$('nav > ul').toggleClass("visible");
+		<!--    jQUERY-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+		<!--     jQueryUi et sa feuille de style-->
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="./jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+
+
+
+
+		<!--    MENU "HAMBURGER"-->
+		<script>
+			$(document).ready(function() {
+				$('nav > div').click(function(e) {
+					$('nav > ul').toggleClass("visible");
+
+				});
 			});
-        });
-    </script>
-     
-      <!--    Autocomplete-->
-     <script>
-      $(function() {
-        var availableTags = [
-    <?php
+		</script>
+
+		<!--    Autocomplete-->
+		<script>
+			$(function() {
+				var availableTags = [
+					<?php
       for ($i=0; $i < count($data); $i++){
           echo '"' . substr($data[$i]['titre'], 0, 24) . '",';
       }      
-    ?>        
-        ];
-        $( "#tags" ).autocomplete({
-          source: availableTags,
-          minLength: 2,
-          select: function(event, ui) {
-              location.href = './detail.php?id=9'; 
-          }    
-        });
-      });
- 
-    </script>    
+    ?>
+				];
+				$("#tags").autocomplete({
+					source: availableTags,
+					minLength: 2,
+					select: function(event, ui) {
+						location.href = './detail.php?id=9';
+					}
+				});
+			});
+		</script>
 
-</head>
+	</head>
 
-<body>
+	<body>
 
-	<!--NAVIGATION-->
+		<!--NAVIGATION-->
 
-	<?php 
+		<?php 
     include "./nav.php";
     ?>
 
 
-   
-    <!--HEADER-->
 
-    <header>
-        <h1>Le <br>Festival</h1>
-             
-       <div>
-       
-        <div class="ui-widget">
-            <label for="tags"></label>
-            <i class="fa fa-search" aria-hidden="true"></i> &nbsp;
-            <input id="tags" placeholder="Rechercher un film"> 
-        </div> 
-              
-        <p>
-        Nouvelles écritures et créations visuelles sur le web. <br> Webdocumentaires - Webséries - Projets transmedia. <br> Du 15/11 au 28/11 au Cinéma Galeries à Bruxelles.</p>
-        
-      </div>  
+		<!--HEADER-->
 
-    </header>
+		<header>
+			<h1>Le <br>Festival</h1>
 
+			<div>
 
-	<main>
-		<!--NAVIGATION SOCIAUX ET PROFIL-->
-
-		<div id="nav_laterale">
-			<div id="profil_recherche">
-				<a href="./login.php"><i class="fa fa-user" aria-hidden="true"></i></a>
-				<i class="fa fa-search" aria-hidden="true"></i>
-			</div>
-			<div id="reseaux_sociaux">
-				<i class="fa fa-twitter" aria-hidden="true"></i>
-				<i class="fa fa-facebook" aria-hidden="true"></i>
-			</div>
-		</div>
-
-
-		<!--SECTION PROGRAMME-->
-		<section>
-			<div class="programme">
-
-
-
-				<div class="programme_images">
-					<img src="./assets/images/indexImages/Facebookistan.png" alt="Facebookistan">
-					<img src="./assets/images/indexImages/thefoxyfive.png" alt="These memories won't last">
-					<img src="./assets/images/indexImages/thesememorieswontlast.png" alt="The Foxy Five">
+				<div class="ui-widget">
+					<label for="tags"></label>
+					<i class="fa fa-search" aria-hidden="true"></i> &nbsp;
+					<input id="tags" placeholder="Rechercher un film">
 				</div>
 
-				<h2><a href="programme.php">Programme</a></h2>
+				<p>
+					Nouvelles écritures et créations visuelles sur le web. <br> Webdocumentaires - Webséries - Projets transmedia. <br> Du 15/11 au 28/11 au Cinéma Galeries à Bruxelles.</p>
 
 			</div>
 
-            <p>Le web, un terrain de jeux qui permet des explorations originales portées par des créateurs innovants. Découvrez le programme des projections en salle de ces oeuvres d'une nouvelle ère.</p>
-		</section>
-
-		<!--SECTION COUP DE COEUR-->
-
-		<section>
-
-			<div id="coupDeCoeur_container">
-
-                <q> Un web drama sympa pour faire connaitre le futur groupe Astro. Ces jeunes ont un sacré talent aussi bien en chant qu'en danse. C’est frais, original, drôle et ça chante. </q>
+		</header>
 
 
-				<div id="ContainerPlayVideo">
+		<main>
+			<!--NAVIGATION SOCIAUX ET PROFIL-->
 
-					<div id="containerVideo">
+			<div id="nav_laterale">
+				<div id="profil_recherche">
+					<a href="./login.php"><i class="fa fa-user" aria-hidden="true"></i></a>
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</div>
+				<div id="reseaux_sociaux">
+					<a href="twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				</div>
+			</div>
 
-						<img id="playVideo" src="./assets/images/logos/symbolePlay.png" alt="Play">
+
+			<!--SECTION PROGRAMME-->
+			<section>
+				<div class="programme">
 
 
 
-						<h3>To be continued</h3>
+					<div class="programme_images">
+						<img src="./assets/images/indexImages/Facebookistan.png" alt="Facebookistan">
+						<img src="./assets/images/indexImages/thefoxyfive.png" alt="These memories won't last">
+						<img src="./assets/images/indexImages/thesememorieswontlast.png" alt="The Foxy Five">
+					</div>
+
+					<h2><a href="programme.php">Programme</a></h2>
+
+				</div>
+
+				<p>Le web, un terrain de jeux qui permet des explorations originales portées par des créateurs innovants. Découvrez le programme des projections en salle de ces oeuvres d'une nouvelle ère.</p>
+			</section>
+
+			<!--SECTION COUP DE COEUR-->
+
+			<section>
+
+				<div id="coupDeCoeur_container">
+
+					<q> Un web drama sympa pour faire connaitre le futur groupe Astro. Ces jeunes ont un sacré talent aussi bien en chant qu'en danse. C’est frais, original, drôle et ça chante. </q>
+
+
+					<div id="ContainerPlayVideo">
+
+						<div id="containerVideo">
+
+							<img id="playVideo" src="./assets/images/logos/symbolePlay.png" alt="Play">
+							<h3>To be continued</h3>
+
+						</div>
+
+
+
+						<p>Coup de coeur de Mélissa</p>
 
 					</div>
 
+				</div>
 
 
-					<p>Coup de coeur de Mélissa</p>
+			</section>
 
+
+			<!--		Iframe- -->
+			<div id="iframeVideo">
+				<div>
+					<button id="buttonClose">X</button>
+
+					<iframe src="https://www.youtube.com/embed/5EG_7_4ffYI" frameborder="0" allowfullscreen="true"></iframe>
 				</div>
 
 			</div>
 
 
-		</section>
-		
-<!--		Iframe-->
-
-		<div id="iframeVideo">
-			
-
-			<div>
-				<button id="buttonClose">X</button>
-				
-				
-
-				<iframe src="https://www.youtube.com/embed/5EG_7_4ffYI" frameborder="0" allowfullscreen="true"></iframe>
-			</div>
-
-
-		</div>
 
 
 
-		<section>
-			<!--SECTION REGARDER EN LIGNE-->
-
-			<div class="programme">
-
-				<h2><a href="projet.php">Regarder <br> en ligne</a></h2>
 
 
-				<div class="programme_images">
-					<img src="./assets/images/indexImages/ellesprennentlaparole.png" alt="Elles prennent la parole">
-					<img src="./assets/images/indexImages/savannahbrown.png" alt="Les petits aventuriers">
-					<img src="./assets/images/indexImages/cecileemeke.png" alt="Cecile Emeke">
+
+
+
+			<section>
+				<!--SECTION REGARDER EN LIGNE-->
+
+				<div class="programme">
+
+					<h2><a href="projet.php">Regarder <br> en ligne</a></h2>
+
+
+					<div class="programme_images">
+						<img src="./assets/images/indexImages/ellesprennentlaparole.png" alt="Elles prennent la parole">
+						<img src="./assets/images/indexImages/savannahbrown.png" alt="Les petits aventuriers">
+						<img src="./assets/images/indexImages/cecileemeke.png" alt="Cecile Emeke">
+					</div>
 				</div>
-			</div>
 
-            <p>&#192 l'occasion du festival et suite à l'appel à projets, les internautes présentent leurs dernières &#156uvres. Découvrez en ligne ces nouvelles voix de la création.</p>
-		</section>
-	</main>
-
-	<!--FOOTER-->
-
-	<footer>
-		<p>&copy;Interface3 - 2017</p>
-		<p>info@brusselswebfest.com</p>
-	</footer>
-
-	
-	<script>
-		document.getElementById("playVideo").addEventListener("click", function(e) {
+				<p>&#192 l'occasion du festival et suite à l'appel à projets, les internautes présentent leurs dernières &#156uvres. Découvrez en ligne ces nouvelles voix de la création.</p>
+			</section>
+		</main>
 
 
-			var iframeVideo = document.getElementById('iframeVideo');
-			iframeVideo.style.display = 'block';
+		<!--FOOTER-->
 
-			window.onwheel = function() {
-				return false;
-			}
-
-              
-
-		});
+		<footer>
+			<p>&copy;Interface3 - 2017</p>
+			<p>info@brusselswebfest.com</p>
+		</footer>
 
 
-		document.getElementById("buttonClose").addEventListener("click", function(e) {
+		<script>
+			document.getElementById("playVideo").addEventListener("click", function(e) {
+				var iframeVideo = document.getElementById('iframeVideo');
+				iframeVideo.style.display = 'block';
 
-			var iframeVideo = document.getElementById('iframeVideo');
+				window.onwheel = function() {
+					return false;
+				}
+			});
+			document.getElementById("buttonClose").addEventListener("click", function(e) {
 
-			iframeVideo.style.display = 'none';
+				var iframeVideo = document.getElementById('iframeVideo');
 
-			window.onwheel = function() {
-				return true;
-			}
+				iframeVideo.style.display = 'none';
 
-		});
-	</script>
+				window.onwheel = function() {
+					return true;
+				}
+
+			});
+
+			window.addEventListener("click", function(e) {
+				//				e.preventDefault();
+				//				console.log(e);
+
+				var iframeVideo = document.getElementById('iframeVideo');
+				if (e.target == iframeVideo) {
+					iframeVideo.style.display = "none";
+				}
+			});
+		</script>
 
 
-</body>
+	</body>
 
-</html>
+	</html>

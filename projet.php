@@ -76,6 +76,9 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
                         }
                     });
                 });
+				
+				
+				
                 $('nav > div').click(function(e) {
                     $('nav > ul').toggleClass("visible");
 
@@ -121,8 +124,8 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </div>
                 <div id="reseaux_sociaux">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <a href="twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 </div>
             </div>
 
@@ -135,8 +138,8 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
                     
 
                     <div class="downloadProgrammeFirstChild">
-                        <p>Télécharger votre agenda ici</p>
-                        <a href="./assets/document/agenda.pdf"><img src="./assets/images/logos/fileMainBlanc64.png" alt=""></a>
+                        <p>Regardez et votez!</p>
+
                     </div>
                     
                     
@@ -158,7 +161,7 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
                 <h2>Catalogue</h2>
                 <div id="tagsFilms">
                     <!--Les buttons tags-->
-                    <button data-cat="tous" id="idTous">Tout</button>
+                    <button data-cat="tous" id="idTous">Tous</button>
 
                     <button data-cat="webdoc">Web Doc</button>
 
@@ -210,7 +213,8 @@ $data = $sql_films->fetchAll(PDO::FETCH_ASSOC); // tableau associatif à 2 dimen
                 
                 
 ?>
-
+                
+                
                 </ul>
 
             </section>

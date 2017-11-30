@@ -264,8 +264,10 @@ header > img {
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
+/*
 	margin-top: 3rem;
 	margin-bottom: 3rem;
+*/
 	display: flex;
 	justify-content: space-around;
 		transform: skewY(0deg);
@@ -353,13 +355,6 @@ header > img {
 
 }
 
-/*
-.noBorderButton:not(.no-hover):hover{
-	border-top: none; 
-	border-left: none; 
-	border-right: none; 
-}
-*/
 
 button {
 	color: #303030;
@@ -367,7 +362,7 @@ button {
 	font-size: 1.5rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
-	width: 20%;
+	width: 20rem;
 	border-left: none;
 	border-right: none;
 	border-top: none;
@@ -391,7 +386,7 @@ button::before {
 	left: 0;
 	width: 99%;
 	height: 2px;
-	/*	border-bottom: 2px solid transparent;*/
+/*		border-bottom: 2px solid transparent;*/
 	border-left: 2px solid transparent;
 
 
